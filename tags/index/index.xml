@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>index on tzl</title>
+    <link>https://leo-cl26.github.io/test_blog/tags/index/</link>
+    <description>Recent content in index on tzl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Copyright 2023-2024, tzl</copyright><atom:link href="https://leo-cl26.github.io/test_blog/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Posts</title>
+      <link>https://leo-cl26.github.io/test_blog/post/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://leo-cl26.github.io/test_blog/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
