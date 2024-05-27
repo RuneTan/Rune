@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>text on tzl</title>
-    <link>https://leo-cl26.github.io/test_blog/tags/text/</link>
-    <description>Recent content in text on tzl</description>
+    <title>text on tune</title>
+    <link>https://www.runetan.site/tags/text/</link>
+    <description>Recent content in text on tune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Copyright 2023-2024, tzl</copyright>
-    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://leo-cl26.github.io/test_blog/tags/text/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; Copyright 2023-2077, tune</copyright>
+    <lastBuildDate>Sat, 09 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.runetan.site/tags/text/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Placeholder Text</title>
-      <link>https://leo-cl26.github.io/test_blog/post/placeholder-text/</link>
+      <link>https://www.runetan.site/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://leo-cl26.github.io/test_blog/post/placeholder-text/</guid>
+      <guid>https://www.runetan.site/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
 pectora summo.&lt;/p&gt;</description>
     </item>

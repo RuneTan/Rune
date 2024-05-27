@@ -1,62 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tune</title>
-    <link>https://www.runetan.site/</link>
-    <description>Recent content on tune</description>
+    <title>emoji，好像也没什么用 on tune</title>
+    <link>https://www.runetan.site/tags/emoji%E5%A5%BD%E5%83%8F%E4%B9%9F%E6%B2%A1%E4%BB%80%E4%B9%88%E7%94%A8/</link>
+    <description>Recent content in emoji，好像也没什么用 on tune</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Copyright 2023-2077, tune</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://www.runetan.site/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://www.runetan.site/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.runetan.site/archives/</guid>
-      <description>这个似乎没什么用</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://www.runetan.site/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.runetan.site/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;每个文章都要加上面这个头，要不然不会渲染出来&lt;/p&gt;
-&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://www.runetan.site/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.runetan.site/post/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://www.runetan.site/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.runetan.site/post/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
-pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.runetan.site/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.runetan.site/about/</guid>
-      <description>Change this in /content/about.md
-tanzli@mail2.sysu.edu.cn
-这是about</description>
-    </item>
-    
+    <copyright>&amp;copy; Copyright 2023-2077, tune</copyright><atom:link href="https://www.runetan.site/tags/emoji%E5%A5%BD%E5%83%8F%E4%B9%9F%E6%B2%A1%E4%BB%80%E4%B9%88%E7%94%A8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Math Support网站上的标题，这个和你的文件名无关</title>
       <link>https://www.runetan.site/post/1/emoji-support/</link>
