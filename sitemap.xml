@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.runetan.site/archives/</loc>
+    <loc>https://www.runetan.site/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://www.runetan.site/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://www.runetan.site/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.runetan.site/categories/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
@@ -15,6 +15,9 @@
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.runetan.site/tags/html/</loc>
+    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.runetan.site/tags/index/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.runetan.site/tags/markdown/</loc>
@@ -57,8 +60,6 @@
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.runetan.site/tags/emoji%E5%A5%BD%E5%83%8F%E4%B9%9F%E6%B2%A1%E4%BB%80%E4%B9%88%E7%94%A8/</loc>
-  </url><url>
-    <loc>https://www.runetan.site/tags/index/</loc>
   </url><url>
     <loc>https://www.runetan.site/post/1/emoji-support/</loc>
   </url>
