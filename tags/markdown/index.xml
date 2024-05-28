@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on RuneTan</title>
-    <link>http://localhost:1313/tags/markdown/</link>
+    <link>https://www.runetan.site/tags/markdown/</link>
     <description>Recent content in Markdown on RuneTan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2024-2077(even more), Rune</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.runetan.site/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/post/markdown-syntax/</link>
+      <link>https://www.runetan.site/post/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/markdown-syntax/</guid>
+      <guid>https://www.runetan.site/post/markdown-syntax/</guid>
       <description>&lt;p&gt;每个文章都要加上面这个头，要不然不会渲染出来&lt;/p&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Placeholder Text</title>
-      <link>http://localhost:1313/post/placeholder-text/</link>
+      <link>https://www.runetan.site/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/placeholder-text/</guid>
+      <guid>https://www.runetan.site/post/placeholder-text/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de&#xA;pectora summo.&lt;/p&gt;</description>
     </item>
   </channel>
