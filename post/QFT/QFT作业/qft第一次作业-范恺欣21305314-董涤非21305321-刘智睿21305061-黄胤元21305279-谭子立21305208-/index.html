@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ol>
+<li>论证达朗贝尔算符$\Box\coloneqq \partial^\mu \partial_\mu $是洛伦兹标量
+根据内积的洛伦兹变换不变性：$$g_{\mu\nu}=g_{\lambda\rho}\Lambda_\mu^\lambda\Lambda_\nu^\rho$$
+我们有：$$\begin{aligned}
+\Box&amp;=\partial^\mu\partial_\mu=g_{\mu\nu}\partial^\mu\partial^\nu\
+&amp;\rightarrow g_{\lambda\rho}\partial^\lambda\partial^\rho=g_{\lambda\rho}\Lambda_\mu^\lambda\partial^\mu\Lambda_\nu^\rho\partial^\nu=g_{\mu\nu}\partial^\mu\partial^\nu
+\end{aligned}$$
+故可知拉朗贝尔算符是洛伦兹标量。</li>
+<li>简要比较$\partial^{i = 1,2,3}$与$\partial_{i = 1,2,3}$的差别
+我们有：$$\begin{aligned}
+\partial^\mu&amp;=(\partial^0,\partial^{i = 1,2,3})\
+\partial_\mu&amp;=g_{\mu\nu}\partial^\nu=(\partial^0,-\partial^{i=1,2,3})=(\partial_0,\partial_{i=1,2,3})
+\end{aligned}$$
+对比可知：$$\partial^{i=1,2,3}=-\partial_{i=1,2,3}$$</li>
+<li>如果一个$(2,0)$-型张量$T^{\mu\nu}$满足$T^{\mu \nu} = T^{\nu \mu}$，则称为一个<strong>对称张量</strong>；若它满足$T^{\mu \nu} = - T^{\nu \mu}$则称为一个<strong>反对称张量</strong>。
+<ol>
+<li>考虑任意一个$(2,0)$-型张量$A^{\mu \nu}$。论证$A^{\mu \nu}$一定可以写成一个<strong>对称</strong>张量和一个<strong>反对称</strong>张量的和。
+给定$(2,0)$-型张量$A^{\mu\nu}$，我们总可以把其写成：$$A^{\mu\nu}=\frac{1}{2}(A^{\mu\nu}+A^{\nu\mu})+\frac{1}{2}(A^{\mu\nu}-A^{\nu\mu})$$
+上式第一项是对称张量，第二项是反对称张量。</li>
+<li>假设$F^{\mu \nu}$是一个<strong>反对称</strong>的张量，且$J^\mu = \partial_\nu F^{\mu \nu}$。论证$J^\mu$是一个<strong>守恒流</strong>。
+考虑：$$\begin{aligned}
+\partial_\mu J^\mu&amp;=\partial_\mu\partial_\nu F^{\mu\nu}=-\partial_\mu\partial_\nu F^{\nu\mu}=-\partial_\nu\partial_\mu F^{\mu\nu}\
+\partial_\nu J^\nu&amp;=\partial_\nu\partial_\mu F^{\nu\mu}=\partial_\mu J^\mu
+\end{aligned}$$
+有：$\partial_\nu\partial_\mu F^{\nu\mu}=-\partial_\nu\partial_\mu F^{\nu\mu}=0$，故有：$$\partial_\mu J^\mu=0$$得证。</li>
+</ol>
+</li>
+<li>论证
+$$
+\frac{\partial}{\partial \partial_\mu \phi} (\partial_\nu \phi \partial^\nu \phi ) = 2 \partial^\mu \phi\ ,
+\qquad
+\frac{\partial}{\partial \partial^\mu \phi} (\partial_\nu \phi \partial^\nu \phi ) = 2 \partial_\mu \phi\ .
+$$可以通过把$\partial_\nu \phi\partial^\nu \phi$写成具体分量形式来说明。
+依题意：$$\begin{aligned}
+\frac{\partial}{\partial \partial_\mu \phi} (\partial_\nu \phi \partial^\nu \phi)&amp;=\frac{\partial\partial_\nu\phi}{\partial\partial_\mu\phi}\partial^\nu\phi+\partial_\nu\phi\frac{\partial\partial^\nu\phi}{\partial\partial_\mu\phi}=\delta^{\mu}<em>{\nu}\partial^\nu\phi+\partial</em>\nu\phi g^{\nu\mu}=2\partial^\mu\phi\
+\frac{\partial}{\partial \partial^\mu \phi} (\partial_\nu \phi \partial^\nu \phi)&amp;=\frac{\partial\partial_\nu\phi}{\partial\partial^\mu\phi}\partial^\nu\phi+\partial_\nu\phi\frac{\partial\partial^\nu\phi}{\partial\partial^\mu\phi}=g_{\mu\nu}\partial^\nu\phi+\partial_\nu\phi\delta^\nu_\mu=2\partial_\mu\phi\end{aligned}$$
+故得证，此方法无需写成具体分量。</li>
+</ol>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

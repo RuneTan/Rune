@@ -6,7 +6,7 @@
     <description>Recent content in Html on RuneTan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Copyright 2024-2077(even more), Tune</copyright>
+    <copyright>&amp;copy; Copyright 2024-2077(even more), Rune</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.runetan.site/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -15,6 +15,13 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       <guid>https://www.runetan.site/post/markdown-syntax/</guid>
       <description>&lt;p&gt;每个文章都要加上面这个头，要不然不会渲染出来&lt;/p&gt;&#xA;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>QFT Lecture 1</title>
+      <link>https://www.runetan.site/post/1/qft-lecture-1/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://www.runetan.site/post/1/qft-lecture-1/</guid>
+      <description>量子场论Quantum Field Theory 参考书目&#xA;Lecture 1. 往量子力学里加入狭义相对论 1.1 引言 引入相对论的必要性 在$E\geq mc^2$的能级上，会发生反应$p+p\rightarrow p+p+\pi^0$，在更高能级上，会发生：$p+p\rightarrow p+p+p+\bar{p}$，此时相对论效应显著，量子力学不能够准确预测结果。&#xA;那么也许在低能态下可以不用考虑相对论效应？考虑对$H$的微扰$\delta V$，微扰论告诉我们能量的一阶微扰项为：$$\delta E_0=\bra{0}\delta V\ket{0}+\sum_n\cfrac{|\bra{0}\delta V\ket{n}|^2}{E_0-E_n}$$&#xA;这个表达式中含有$E_n$，涉及所有可能的能级，自然包括那些相对论能级。对于低能量的高精度计算，考虑相对论效应是合理的；同时，有额外粒子的Intermediate states也会贡献$(v/c)^2$量级的修正量。总之，相对论修正和多体中间态的修正具有相同量级，相对论迫使我们考虑多体问题。&#xA;符号规定 我们规定$$\hbar=c=1$$&#xA;这个规定下有一个自由度，从量纲的角度来说：$$[m]=[E]=[T]^{-1}=[L]^{-1}$$&#xA;此外有：$$(1\ {\rm fermi})^{-1}\approx 197{\rm MeV},\ m_e\approx0.5{\rm MeV}=7.8\times10^{20}{\rm s^{-1}}=2.6\times10^{10}{\rm cm^{-1}}$$&#xA;洛伦兹不变性 我们的物理建立在闵可夫斯基空间上，这是一个平坦的四维时空，我们可以写下坐标：$$x^\mu=(x^0,x^1,x^2,x^3)=(t,\mathbf{x})$$&#xA;和四维动量：$$p^\mu=(p^0,\mathbf{p})=(\varepsilon,\bf{p})$$&#xA;由于$\hbar=1$，我们有$p=k$，其中$k^0=\omega$。&#xA;在空间中，任一逆变矢量$a^\mu$可被写成$a^\mu=(a^0,a^i)=(a^0,\mathbf{a})$ 与之相应的协变矢量$a_\mu=(a_0,a_i)=(a^0,-\mathbf{a})$ 故两者内积为：$$a\cdot b\equiv a^\mu b_\mu=a_\mu b^\mu=a^0b_0+a^1b_1+a^2b_2+a^3b_3=a^0b^0-\mathbf{a}\cdot\mathbf{b}$$&#xA;其中$\mathbf{a}\cdot\mathbf{b}$为三维空间的内积。&#xA;我们在这里采用爱因斯坦求和约定并将沿用，在该规定下，重复指标代表求和&#xA;内积是洛伦兹不变量，也可以被写成$g_{\mu\nu}a^\mu b^\nu$的形式。在此之上得到：&#xA;$$ g=\begin{pmatrix} 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; -1 &amp;amp; 0 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; -1 &amp;amp; 0 \ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; -1 \ \end{pmatrix}$$</description>
     </item>
   </channel>
 </rss>

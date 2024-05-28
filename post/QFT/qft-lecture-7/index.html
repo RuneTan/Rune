@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-7-微扰散射导论">Lecture 7. 微扰散射导论</h2>
+<h3 id="71-薛定谔图景和海森堡图景">7.1 薛定谔图景和海森堡图景</h3>
+<p>首先介绍薛定谔图景，其中动力学变量不随时改变：$$q_S(t)=q_S(0)=q_S\ \ \ p_S(t)=p_S(0)=p_S$$</p>
+<p>态是随时的，遵守薛定谔方程：$$i\frac{d}{dt}\ket{\psi(t)}_S=H(p_S,q_S,t)\ket{\psi(t)}_S$$</p>
+<p>薛定谔图景的基本动力学问题是，给定态$\ket{\psi(t&rsquo;)}$，我们需要定义演化算符$U(t,t&rsquo;)$，从而使：$$\ket{\psi(t)}_S=U(t,t&rsquo;)\ket{\psi(t&rsquo;)}$$</p>
+<p>$U$是一个酉算符，可以由薛定谔方程保概率幅性质推出。算符$U$满足群性质：$$U(t,t&rsquo;)U(t&rsquo;,t&rsquo;&rsquo;)=U(t,t&rsquo;&rsquo;)$$</p>
+<p>$U$算符也满足薛定谔方程：$$i\frac{\partial}{\partial t}U(t,t&rsquo;)=H(p_S,q_S,t)U(t,t&rsquo;)$$</p>
+<p>初始条件为$U(t&rsquo;,t&rsquo;)=1$。初始条件和传递性的约束告诉我们：$U(t,t&rsquo;)=U^{-1}(t&rsquo;,t)$</p>
+<p>求解薛定谔方程得到：$$U(t,t&rsquo;)=e^{-iH(p_S,q_S)(t-t&rsquo;)}$$</p>
+<p>海森堡图景告诉我们：态不随时，算符随时，有定义：$$\ket{\psi(t)}_H=\ket{\psi(0)}_H=\ket{\psi(0)}_S$$</p>
+<p>所以我们有：$$\ket{\psi(0)}_H=e^{iH(p_S,q_S)t}\ket{\psi(t)}_S$$</p>
+<p>海森堡图景中基本的$p$和$q$算符随时，有：$$q_H(t)=U(t,0)^\dagger q_H(0)U(t,0)=U(t,0)^\dagger q_SU(t,0)$$</p>
+<p>无论哪种图景，都要求测量值相等：$$_S\bra{\psi(t)}A_S(t)\ket{\psi(t)}_S=_H\bra{\psi(t)}A_H(t)\ket{\psi(t)}_H$$</p>
+<p>由该性质我们得到两种图景之间的算符变换：$$A_H(t)=U^\dagger(t,0)A_S(t)U(t,0)=U(0,t)A_S(t)U^\dagger(0,t)$$</p>
+<p>把其作用到$p_H(t)$和$q_H(t)$上，我们就得到海森堡图景下的运动方程：$$\cfrac{d}{dt}p_H(t)=i[H(p_H,q_H,t),p_H(t)]$$</p>
+<h3 id="72-相互作用图景">7.2 相互作用图景</h3>
+<p>薛定谔图景和海森堡图景的动力学都依赖于求解$U$算符。我们设$$H=H_0(p,q)+H&rsquo;(p,q,t)$$</p>
+<p>于是我们就得到了相互作用图景，也称狄拉克图景。在此图景下，我们有：$$\begin{aligned}
+q_I(t)&amp;=e^{iH_0(p_S,q_S)t}q_S(t)e^{-iH_0(p_S,q_S)t}\
+\ket{\psi(t)}_I&amp;=e^{iH_0(p_S,q_S)t}\ket{\psi(t)}_S\
+A_I(t)&amp;=e^{iH_0(p_S,q_S)t}A_S(t)e^{-iH_0(p_S,q_S)t}=U_0(t,0)^\dagger A_S(t)U_0(t,0)\
+\end{aligned}$$</p>
+<p>对其求导，得到：$$\begin{aligned}
+\cfrac{d}{dt}\ket{\psi(t)}_I&amp;=e^{iH_0(p_S,q_S)t}(iH_0-iH)\ket{\psi(t)}_S\
+&amp;=e^{iH_0(p_S,q_S)t}(-iH&rsquo;_S(p_S,q_S,t))e^{-iH_0(p_S,q_S)t}\ket{\psi(t)}_I\
+&amp;=-iH&rsquo;(p_I,q_I,t)\ket{\psi(t)}_I
+\end{aligned}$$</p>
+<p>这里$H&rsquo;(p_I,q_I,t)\equiv H_I(t)=e^{iH_0(p_S,q_S)t}H&rsquo;_S(p_S,q_S,t)e^{-iH_0(p_S,q_S)t}$。</p>
+<p>$H&rsquo;_S(p_S,q_S,t)$可以被展开为$p_S$和$q_S$的级数，并且我们可以把$e^{-iH_0t}e^{iH_0t}$插到各个地方来吧$p_S$和$q_S$转化为$p_I$和$q_I$。实际上，关键在于求解上面的动力学方程，注意到微扰可以含时或者不含时，但我们总是会视$H_I$为一个多项式，比如$\lambda\phi^4$。</p>
+<p>为了求解动力学方程，我们引入$U_I(t,t&rsquo;)$，满足：$$\ket{\psi(t)}_I=U_I(t,t&rsquo;)\ket{\psi(t&rsquo;)}_I$$</p>
+<p>我们可以对其做像之前一样的操作，并且得到$U_I$也是一个酉算符，也满足传递性，也有其逆元。实际上，$U_I$并不是一个独立的量，首先我们有：$$\ket{\psi(0)}_H=\ket{\psi(0)}_I=\ket{\psi(0)}_S;\ \ \ A_H(0)=A_I(0)=A_S(0)$$</p>
+<p>然后我们有：$$\ket{\psi(t)}_I=e^{iH_0t}\ket{\psi(t)}_S=U_I(t,0)\ket{\psi(0)}_I$$</p>
+<p>于是便得到：$$\begin{aligned}
+U_I(t,0)&amp;=e^{iH_0t}U(t,0)=e^{iH_0t}e^{-iHt}\
+U_I(t,t&rsquo;)&amp;=U_I(t,0)U^\dagger_I(t&rsquo;,0)=e^{iH_0t}U(t,t&rsquo;)e^{-iH_0t&rsquo;}
+\end{aligned}$$</p>
+<p>最后，我们得到：$$i\frac{\partial}{\partial t}U_I(t,t&rsquo;)=H_I(t)U_I(t,t&rsquo;)$$</p>
+<h3 id="73-戴森公式">7.3 戴森公式</h3>
+<p>我们的目标是求解上面的微分方程，因此，我们想要找到一个形式上的级数解来求解狄拉克图景下的动力学。如果我们要求解一维的量子力学系统，那么解的形式很简单：$$U_I(t,t&rsquo;)=T\exp{\bigg(-i\int^t_{t&rsquo;}dt&rsquo;&rsquo;\ H_I(t&rsquo;&rsquo;)\bigg)}$$</p>
+<p>这就是戴森公式，只有当$t&gt;t&rsquo;$时有效，不过这并不影响，因为我们只需要取逆就可以得到$t&lt;t&rsquo;$的$U_I$。将指数项展开可以得到：$$U_I(t,t&rsquo;)=1-i\int^t_{t&rsquo;}dt_1H_I(t_1)+\frac{(-i)^2}{2!}T\bigg(\int^t_{t&rsquo;}\int^t_{t&rsquo;}dt_1dt_2H_I(t_1)H_I(t_2)\bigg)+&hellip;$$</p>
+<p>第一项是1，第二项只包含一个算符，时间排序算符对它们没有作用。而对第三项包含双重积分，在$t_1&gt;t_2$时，我们首先有$H_I(t_1)$然后再写$H_I(t_2)$，当$t_2&gt;t_1$时，两个算符的顺序将会改变。</p>
+<p>容易验证其满足$$i\frac{\partial}{\partial t}U_I(t,t&rsquo;)=H_I(t)U_I(t,t&rsquo;)$$</p>
+<h3 id="74-散射和rm-s矩阵">7.4 散射和$\rm S$矩阵</h3>
+<p>接下来介绍散射理论。我们有经典非相对论性哈密顿量：$$H=\frac{p^2}{2m}+V(x)$$</p>
+<p>假设有一个波包，从无穷远处入射，进入势场，然后变成很多碎片从射向各个方向，过了很久之后又变成波包，那么散射理论就是要描述中间发生了什么。我们采用薛定谔图景。</p>
+<p>对自由粒子，我们有哈密顿量$H_0$，和态矢量$\ket{\psi(t)}$，希尔伯特空间$\mathcal{H}<em>0$。我们设实际的哈密顿量为$H$，希尔伯特空间为$\mathcal{H}$。在离势场很远的地方，我们可以认为波包满足自由粒子的薛定谔方程。我们把这个时候的态叫做$\ket{\psi(t)}^{\rm in}$，它与自由粒子态的关系满足：$$\lim</em>{t\rightarrow-\infty}\bigg|\bigg|e^{-iH_0t}\ket{\psi}-e^{-iHt}\ket{\psi}^{\rm in}\bigg|\bigg|=0$$</p>
+<p>另一边，考虑$\ket{\phi(t)}\in\mathcal{H}<em>0$，同样定义$\ket{\phi(t)}^{\rm out}$，满足：$$\lim</em>{t\rightarrow\infty}\bigg|\bigg|e^{-iH_0t}\ket{\phi}-e^{-iHt}\ket{\phi}^{\rm out}\bigg|\bigg|=0$$</p>
+<p>现在进入散射过程，图示如下。</p>
+<!-- raw HTML omitted -->
+<p><img src="11.png" alt="intergrate">{width=70% height=auto}</p>
+<p>自由粒子和散射</p>
+<!-- raw HTML omitted -->
+<p>现在我们想要获得概率，然后得到振幅，一个之前像$\ket{\psi}$的态在未来变成一个像$\ket{\phi}$的态，也就是$^{\rm out}\braket{\phi|\psi}^{\rm in}$。实际势场和自由场的偏差促使我们定义一个$\mathcal{H}_0$上的非常重要的算符：散射矩阵$\rm S$。它的定义如下：$$\braket{\phi|\rm S|\psi}\equiv\ ^{\rm out}\braket{\phi|\psi}^{\rm in}$$</p>
+<p>$\rm S$矩阵满足${\rm S}{\rm S}^\dagger={\rm S}^\dagger{\rm S}=1$，如果哈密顿量不含时，那么$[{\rm S},H_0]=0$。</p>
+<p>现在我们进入一个例子。考虑一个三粒子体系，所有粒子具有相同质量，哈密顿量可以写为：$$H=\sum_{i=1}^3\frac{p_i^2}{2m}+V_{12}(|\mathbf{x}_1-\mathbf{x}<em>2|)+V</em>{23}(|\mathbf{x}_2-\mathbf{x}<em>3|)+V</em>{13}(|\mathbf{x}_1-\mathbf{x}_3|)$$</p>
+<p>更进一步，让我们假设只凭$V_{12}(|\mathbf{x}_1-\mathbf{x}<em>2|)$就可以形成一个单独的束缚态，质心薛定谔方程为：$$-\frac{1}{2\mu}\nabla^2\psi_0(r)+V</em>{12}(r)\psi_0(r)=\epsilon\psi_0(r)$$</p>
+<p>再进一步，我们可以看作这是一个质子，一个电子和一个中性$\pi_0$介子。这里面只有质子和电子可以结合形成氢原子，当然，氢原子有无数种结合态。现在考虑散射，我们想象在很久以前，它们三都是自由粒子，于是我们有态：$\ket{\mathbf{p}_1,\mathbf{p}_2,\mathbf{p}_3}<em>I^{\rm in,\ out}$，那么哈密顿量：$$H_0=\sum</em>{i=1}^3\frac{p_i^2}{2m}$$这是第一种情况。第二种情况是质子和电子形成氢原子，介子是自由粒子，于是我们有态$\ket{\mathbf{p},\mathbf{p}<em>3}<em>II^{\rm in,\ out}$，哈密顿量：$$H_0=\frac{p^2}{2\mu}+\frac{p^2_3}{2m}+V</em>{12}(r)+\frac{p^2</em>{\rm cm}}{4m}$$</p>
+<p>所有I情况的in态与II情况的in态正交，out态之间也正交。三个遥远的自由粒子不经过散射的话没有理由结合形成束缚态。另一方面，对于I的in和II的out，情况就不一样了，反过来也一样。</p>
+<p>那么在量子场论中，我们如何漂亮地描述相对论性量子散射，幸运的是，我们有局域性(locality)。我们可以同样假设在很久以前有很多相隔甚远的粒子，它们属于一个巨大的Fock空间，我们可以设想一个有1个电子，17个光子，14个质子，4个$\alpha$粒子和4种束缚态的体系，然后我们就会有很多很多$\rm S$矩阵。</p>
+<p>因为关于散射的内容在之后会变得非常非常抽象，所以我们会举很多例子。回到之前的例子，让我们采用一个非常粗略的近似，那就是令：$$H=H_0+H_I(t)\rightarrow H_0+f(t,T,\Delta)H_I(t)$$</p>
+<p>这里我们引入了函数$f$，它的示意图如下。</p>
+<!-- raw HTML omitted -->
+<p><img src="12.png" alt="intergrate">{width=60% height=auto}
+开关函数(adiabatic function)$f$</p>
+<!-- raw HTML omitted -->
+<p>这个函数的出现使得在无穷远处，原本理论只是渐近于自由理论，现在则完全就是自由理论。现在粒子就是自由粒子，随着它接近势场，$f$函数开始增大，就好像我们打开了相互作用的开关，然后散射发生，在那之后，我们把开关关掉，于是场又变成了自由场。</p>
+<p>这样做的好处是我们可以得到一个非常简单的$\rm S$矩阵表达式，由于在很久以前和很远以后的哈密顿量就是$H_0$，所以矩阵可以被写为：$$\rm S=\lim_{\tiny\begin{aligned}
+T\rightarrow\infty\
+\Delta\rightarrow\infty\
+(\Delta/T)\rightarrow0
+\end{aligned}}U_I(\infty,-\infty)$$</p>
+<p>也就是说，我们首先定义了开关函数$f$，然后我们再通过求极限去掉它。</p>
+<blockquote>
+<p>至于求极限右边的表达式，证明过程如下。$$\begin{aligned}
+\braket{\phi|\rm S|\psi}&amp;=^{\rm out}\braket{\phi|\psi}^{\rm in}=\lim_{\tiny \begin{aligned}
+t\rightarrow-\infty\
+t&rsquo;\rightarrow\infty
+\end{aligned}}\braket{\phi|U^\dagger_I(0,t&rsquo;)U_I(0,t)|\psi}\
+&amp;=\lim_{\tiny \begin{aligned}
+t\rightarrow-\infty\
+t&rsquo;\rightarrow\infty
+\end{aligned}}\braket{\phi|U_I(t&rsquo;,t)|\psi}=\braket{\phi|U_I(\infty,-\infty)|\psi}\
+&amp;\Rightarrow S=U_I(\infty,-\infty)
+\end{aligned}$$</p>
+</blockquote>
+<p>这个方法确实存在问题，但我们会暂时先采用它，以快速进入含时微扰部分，我们会做大量计算，最终，我们会发现这个方案太过简单，从而完全抛弃它，并用新的模型取而代之。下一节，我们会从戴森公式开始，到用图(diagrams)的方式来评估(evaluate)$U_I$矩阵。</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-20-狄拉克方程方程的解">Lecture 20 狄拉克方程Ⅱ：方程的解</h2>
+<h3 id="201-狄拉克基">20.1 狄拉克基</h3>
+<p>上一节中我们得到：$$\mathscr{L}=\pm\Big[i\psi^\dagger(\partial_0+\bm{\alpha}\cdot\nabla)\psi-m\psi^\dagger\beta\psi\Big]$$</p>
+<p>其中$m$是实数，我们还得到$\bm{\alpha}$、$\beta$和$\psi$。注意到两个矩阵是厄米的，它们遵守狄拉克代数（也称Clifford代数）：$${\alpha_i,\alpha_j}=2\delta_{ij}\ \ \ {\alpha_i,\beta}=0$$</p>
+<p>另外，我们可以将洛伦兹布施和旋转的生成元用$\alpha$和$\beta$表示，我们有：$$\begin{aligned}
+\mathbf{M}&amp;=\frac{i}{2}\bm{\alpha}\\
+\mathbf{L}&amp;=\frac{1}{2}\begin{pmatrix}
+\bm{\sigma}&amp;0\0&amp;\bm{\sigma}
+\end{pmatrix}\equiv\frac{1}{2}\bm{\Sigma}
+\end{aligned}$$</p>
+<p>这是因为，$u_+$和$u_-$在旋转下变换形式相同。然后我们有宇称：$$P:\psi(\mathbf{x},t)\rightarrow\beta\psi(-\mathbf{x},t)$$</p>
+<p>如果我们改变$\psi$的组合方式，那么两个矩阵和生成元的表达式也会改变，但是狄拉克和洛伦兹代数不会变，实际上我们先前选取的特殊基被称为狄拉克方程的Weyl表示，而狄拉克一开始写下的表示是：$$\psi=\frac{1}{\sqrt{2}}\begin{pmatrix}
+u_++u_-\u_+-u_-
+\end{pmatrix}$$</p>
+<p>在这个基下拉格朗日密度中的项不变：$$i\psi^\dagger\partial_0\psi=iu_+^\dagger\partial_0u_++iu_-^\dagger\partial_0u_-$$</p>
+<p>但是在这个我们称为标准表示的表示下，两个矩阵有如下形式：$$\bm{\alpha}=\begin{pmatrix}
+\mathbf{0}&amp;\bm{\sigma}\\bm{\sigma}&amp;\mathbf{0}
+\end{pmatrix}\ \ \ \beta=\begin{pmatrix}
+\mathbf{1}&amp;\mathbf{0}\\mathbf{0}&amp;-\mathbf{1}
+\end{pmatrix}$$</p>
+<p>但是其他式子都不变。</p>
+<h3 id="202-平面波解">20.2 平面波解</h3>
+<p>标准表示使我们寻找小$\mathbf{p}$极限下的解变得非常容易，此时$\beta$项占主导。对于狄拉克方程：$$i\partial_0\psi+i\bm{\alpha}\cdot\nabla\psi=\beta m\psi$$</p>
+<p>首先我们考虑正频率解：$$\psi(\mathbf{x},t)=u_\mathbf{p}e^{-ip\cdot x}$$</p>
+<p>由于我们知道所有狄拉克方程的解都应该满足K-G方程，所以$p^0$也就是$E_\mathbf{p}$：$$E_\mathbf{p}=\sqrt{\mathbf{p}^2+m^2}$$</p>
+<p>我们把解代入狄拉克方程，得到：$$[E_\mathbf{p}-\bm{\alpha}\cdot\mathbf{p}]u_\mathbf{p}=\beta mu_\mathbf{p}$$</p>
+<p>当$\mathbf{p}=0$，在标准表示下方程就很好解，首先$E=m$，然后我们有：$$u_\mathbf{0}=\beta u_\mathbf{0}$$</p>
+<p>这个方程有两个独立解$u_\mathbf{0}^{(r)},r=1,2$。显式地写出来就是：$$u_\mathbf{0}^{(1)}=\sqrt{2m}\begin{pmatrix}
+1\0\0\0\
+\end{pmatrix}
+\ \ \ u_\mathbf{0}^{(2)}=\sqrt{2m}\begin{pmatrix}
+0\1\0\0\
+\end{pmatrix}$$</p>
+<p>这一组解可以被归一化如下：$$\begin{aligned}u_\mathbf{0}^{(r)\dagger}u_\mathbf{0}^{(s)}=&amp;2m\delta^{rs}\u_\mathbf{0}^{(r)\dagger}\bm{\alpha}u_\mathbf{0}^{(s)}=&amp;0
+\end{aligned}$$</p>
+<p>把这两个条件并在一起我们得到：$$(u_\mathbf{0}^{(r)\dagger}u_\mathbf{0}^{(s)},u_\mathbf{0}^{(r)\dagger}\bm{\alpha}u_\mathbf{0}^{(s)})=(2m,\mathbf{0})\delta^{rs}$$</p>
+<p>这种归一化，看上去可能是洛伦兹不变的，如果是的话，那其对于非零$\mathbf{p}$的解也成立。</p>
+<p>通过像我们在Weyl方程中做的那样，我们发现$u^{(1)}$对应一个$J_z=\frac{1}{2}$的解，而$u^{(2)}$对应一个$J_z=-\frac{1}{2}$的解，就像是电子一样。于是我们得到了一个有质量$\frac{1}{2}$自旋粒子的理论，其对每一个$\mathbf{p}$都至少有两个解。</p>
+<p>现在考虑动量非零的情况，由于我们的理论是洛伦兹不变的，所以只需要施加一个布施在零动量上就可以了，让我们定义：$$u_\mathbf{p}^{(r)}=e^{-i\hat{\mathbf{a}}\cdot\mathbf{M}\phi}u_\mathbf{0}^{(r)}=e^{\frac{1}{2}\bm{\alpha}\cdot\hat{\mathbf{a}}\phi}u_\mathbf{0}^{(r)}$$</p>
+<p>其中$\hat{\mathbf{a}}=\frac{\mathbf{p}}{|\mathbf{p}|}$，$\cosh{\phi}=\frac{E_\mathbf{p}}{m}$，由于对静止粒子$E_\mathbf{p}=m$，所以得到$\phi=0$。于是我们发现，归一化条件对所有动量都成立：$$(u_\mathbf{p}^{(r)\dagger}u_\mathbf{p}^{(s)},u_\mathbf{p}^{(r)\dagger}\bm{\alpha}u_\mathbf{p}^{(s)})=2(E_\mathbf{p},\mathbf{p})\delta^{rs}$$</p>
+<p>类似地，我们有负频率解：$$\psi(\mathbf{x},t)=v_\mathbf{p}e^{+ip\cdot x}$$</p>
+<p>代入狄拉克方程得到：$$v_\mathbf{0}=-\beta v_\mathbf{0}$$</p>
+<p>于是有：$$v_\mathbf{0}^{(1)}=\sqrt{2m}\begin{pmatrix}
+0\0\0\1\
+\end{pmatrix}
+\ \ \ v_\mathbf{0}^{(2)}=\sqrt{2m}\begin{pmatrix}
+0\0\1\0\
+\end{pmatrix}$$</p>
+<p>同样有归一化关系：$$(v_\mathbf{p}^{(r)\dagger}v_\mathbf{p}^{(s)},v_\mathbf{p}^{(r)\dagger}\bm{\alpha}v_\mathbf{p}^{(s)})=2(E_\mathbf{p},\mathbf{p})\delta^{rs}$$</p>
+<h3 id="203-泡利定理">20.3 泡利定理</h3>
+<p>我们已经介绍了狄拉克矩阵的两种不同表示，任意$4\times 4$的可逆矩阵都可以将一个表示变为另一个。但是，无论哪种表示都遵循狄拉克代数，我们对此有:</p>
+<p><strong>Theorem</strong> 20.1. Any set of $4\times 4$ matrices with unit squares obeying the Dirac algebra is equivalent to the Weyl representation.</p>
+<p>实际上整个理论的结构被嵌入在这些代数方程中，任何等价的$4\times4$矩阵定义了同一个狄拉克方程。这隐含着重要意义：所有宇称守恒的只包含$\frac{1}{2}$自旋粒子的不可约洛伦兹表示等价。实际上我们只有一个这样的表示，其他的都是通过相似变换得到的。</p>
+<blockquote>
+<p>证明略过。</p>
+</blockquote>
+<h3 id="204-gamma矩阵">20.4 $\gamma$矩阵</h3>
+<p>首先我们定义一个$\psi$的特殊伴随：$$\overline{\psi}\equiv\psi^\dagger\beta$$</p>
+<p>这被称为狄拉克伴随，这个定义的动机是因为拉格朗日项中的$m\psi^\dagger\beta\psi$，我们有：$$m\psi^\dagger\beta\psi=m\overline{\psi}\psi$$</p>
+<p>这样看起来比较自然，在狄拉克基下，令：$$(u_++u_-)=\begin{pmatrix}
+\zeta\\eta
+\end{pmatrix}\ \ \ {\rm and}\ \ \ (u_+-u_-)=\begin{pmatrix}
+\xi\\chi
+\end{pmatrix}$$</p>
+<p>我们有：$$\overline{\psi}\psi=u^\dagger_+u_-+u_-^\dagger U_+=\frac{1}{2}[(|\zeta|^2+|\eta|^2)-(|\xi|^2+|\chi|^2)]$$</p>
+<p>由场的伴随可以得到矩阵的伴随，因为我们知道$\overline{(A\psi)}=\overline{\psi}\ \overline{A}$，所以答案很明显：$$\overline{A}\equiv\beta A^\dagger\beta$$</p>
+<p>洛伦兹变换由洛伦兹矩阵表示：$$\Lambda:\psi\rightarrow D(\Lambda)\psi$$</p>
+<p>而对于洛伦兹矩阵我们也可以取狄拉克伴随，其中$D(\Lambda)\sim D^{(\frac{1}{2},0)}(\Lambda)\oplus D^{(0,\frac{1}{2})}(\Lambda)$，我们有：$$\overline{(D(\Lambda)\psi)}=\overline{\psi}\ \overline{D}(\Lambda)$$</p>
+<p>因为$\overline{\psi}\psi$是一个洛伦兹标量，所以：$$\Lambda:\overline{\psi}\psi\rightarrow\overline{\psi}\overline{D}(\Lambda)D(\Lambda)\psi=\overline{\psi}\psi$$</p>
+<p>于是我们得到：$$\overline{D}(\Lambda)D(\Lambda)=1$$</p>
+<p>我们先前知道，我们可以从双线性形式构建两个4向量：$$\begin{aligned}
+V^\mu&amp;=(u^\dagger_+u_+,u^\dagger_+\sigma u_+)\
+W^\mu&amp;=(u^\dagger_-u_-,-u^\dagger_-\sigma u_-)
+\end{aligned}$$</p>
+<p>把它们加起来我们得到：$$V^\mu+W^\mu=U^\mu=(\psi^\dagger\psi,\psi^\dagger\alpha\psi)$$</p>
+<p>通过插入$\beta^2=1$，我们得到：$$(\psi^\dagger\beta\beta\psi,\psi^\dagger\beta\beta\alpha\psi)=(\overline{\psi}\beta\psi,\overline{\psi}\beta\alpha\psi)\equiv(\overline{\psi}\gamma^0\psi,\overline{\psi}\bm\gamma\psi)$$</p>
+<p>这里我们定义了狄拉克矩阵：$$\gamma^\mu=(\gamma^0,\gamma^i)\equiv(\beta,\beta\alpha^i)$$</p>
+<p>在狄拉克基中：$$\gamma^0=\begin{pmatrix}
+\mathbf{1}&amp;\mathbf{0}\
+\mathbf{0}&amp;\mathbf{1}
+\end{pmatrix}\ \ \ \gamma^i=\begin{pmatrix}
+\mathbf{0}&amp;\bm\sigma^i\-\bm\sigma^i&amp;\mathbf{0}
+\end{pmatrix}$$</p>
+<p>在洛伦兹变换下：$$\Lambda:\overline{\psi}\gamma^\mu\psi\rightarrow\overline{\psi}\overline{D}(\Lambda)\gamma^\mu D(\Lambda)\psi$$</p>
+<p>由于向量在洛伦兹变换下有：$$\Lambda:U^\mu\rightarrow\Lambda^\mu_\nu U^\nu$$</p>
+<p>所以我们有：$$\overline{D}(\Lambda)\gamma^\mu D(\Lambda)=\Lambda^\mu_\nu\gamma^\nu$$</p>
+<p>稍微滥用一下语言，我们说$\gamma$矩阵像向量一样变换。而实际上矩阵本身根本不变换，变换的是$\overline{\psi}\gamma^\mu\psi$。通过定义我们可以得到$\gamma$矩阵的反对易关系：$${\gamma^\mu,\gamma^\nu}=2g^{\mu\nu}\mathbf{1}$$</p>
+<p>另外，我们有：$$(\gamma^0)^\dagger=\gamma^0;\ \ \ (\gamma^i)^\dagger=-\gamma^i;\ \ \ \overline{\gamma}^\mu=\gamma^\mu;\ \ \ (\gamma^\mu)^\dagger=\gamma_\mu$$</p>
+<p>于是，我们可以把拉格朗日量写成$\gamma$矩阵的形式：$$\mathscr{L}=\pm\overline{\psi}(i\gamma^\mu\partial_\mu-m)\psi$$</p>
+<blockquote>
+<p>费曼引入了一个有用的简写：<!-- raw HTML omitted -->
+<img src="114.png" alt="intergrate">{width=100% height=auto}</p>
+</blockquote>
+<!-- raw HTML omitted -->
+<h3 id="205-双线性旋量积">20.5 双线性旋量积</h3>
+<p>我们已经知道，$\overline{\psi}\psi$是洛伦兹标量，$\overline{\psi}\gamma^\mu\psi$是洛伦兹矢量，现在我们想要知道其他双线性组合的变换性质。我们将会得到16种独立的双线性形式：标量、向量、反对称张量、轴矢量和赝标量。首先，考虑宇称变换。先前我们知道，对狄拉克旋量有：$$P:\psi(\mathbf{x},t)\rightarrow\gamma^0\psi(-\mathbf{x},t)$$</p>
+<p>取伴随得到：$$\overline{\gamma^0\psi}(-\mathbf{x},t)=\overline{\psi}(-\mathbf{x},t)\overline{\gamma^0}=\overline{\psi}(-\mathbf{x},t)\gamma^0$$</p>
+<p>于是我们有：$$P:\overline{\psi}(\mathbf{x},t)\rightarrow\overline{\psi}(-\mathbf{x},t)\gamma^0$$</p>
+<p>结果我们得到：$$P:\overline{\psi}\psi(\mathbf{x},t)\rightarrow\overline{\psi}\psi(-\mathbf{x},t)$$</p>
+<p>类似地我们得到：$$P:\overline{\psi}\gamma^\mu\psi(\mathbf{x},t)\rightarrow\begin{cases}
+\overline{\psi}\gamma^0\psi(-\mathbf{x},t),\ \ \ {\rm if}\ \mu=0\
+-\overline{\psi}\gamma^i\psi(-\mathbf{x},t),\ \ \ {\rm if}\ \mu\neq0\
+\end{cases}$$</p>
+<p>最复杂的表达式是：$$\overline{\psi}\gamma^\mu\gamma^\nu\psi=\frac{1}{2}\overline{\psi}{\gamma^\mu,\gamma^\nu}\psi+\frac{1}{2}\overline{\psi}[\gamma^\mu,\gamma^\nu]\psi=g^{\mu\nu}\overline{\psi}\psi+\frac{1}{2}\overline{\psi}[\gamma^\mu,\gamma^\nu]\psi$$</p>
+<p>这个表达式的对称部分没有什么新奇的，但是反对称部分值得关注。定义：$$\sigma^{\mu\nu}=\frac{i}{2}[\gamma^\mu,\gamma^\nu]$$</p>
+<p>容易验证$\overline{\psi}\sigma^{\mu\nu}\psi$是一个张量，这是两个$\gamma$的情况。那么3个$\gamma$呢？我们知道$\gamma$矩阵的平方等于1，所以只有当三个矩阵都不同时才不等价于单矩阵情况。三个矩阵乘积只能产生四种独立矩阵。我们定义：$$\gamma^0\gamma^1\gamma^2\gamma^3\gamma^\mu=-i\gamma_5\gamma^\mu$$</p>
+<p>也就是说：$$\gamma_5\equiv i\gamma^0\gamma^1\gamma^2\gamma^3=\frac{1}{4!}i\epsilon_{\mu\nu\alpha\beta}\gamma^\mu\gamma^\nu\gamma^\alpha\gamma^\beta=\begin{pmatrix}
+\mathbf{0}&amp;\mathbf{1}\
+\mathbf{1}&amp;\mathbf{0}\
+\end{pmatrix}({\rm Dirac\ basis})$$</p>
+<p>我们有性质：$$(\gamma_5)^2=1;\ \ \ (\gamma_5)^\dagger=\gamma_5=-\overline{\gamma_5};\ \ \ {\gamma_5,\gamma^\mu}=0$$</p>
+<p>量$i\overline{\psi}\gamma_5\psi$在洛伦兹变换下表现得像个标量，但在宇称变换下我们有：$$P:i\overline{\psi}\gamma_5\psi(\mathbf{x},t)\rightarrow i\overline{\psi}\gamma^0\gamma_5\gamma^0\psi(-\mathbf{x},t)=-i\overline{\psi}\gamma_5\psi(-\mathbf{x},t)$$</p>
+<p>也就是说，$i\overline{\psi}\gamma_5\psi$是个赝标量。另外，我们有量$\overline{\psi}\gamma^\mu\gamma_5\psi$，在洛伦兹变换下它表现得像个矢量，但在宇称变换下：$$P:\overline{\psi}\gamma^\mu\gamma_5\psi(\mathbf{x},t)\rightarrow\begin{cases}
+-\overline{\psi}\gamma^0\gamma_5\psi(-\mathbf{x},t)\ \ \ {\rm if}\ \mu=0\
+\overline{\psi}\gamma^i\gamma_5\psi(-\mathbf{x},t)\ \ \ {\rm if}\ \mu\neq0
+\end{cases}$$</p>
+<p>量$\overline{\psi}\gamma^\mu\gamma_5\psi$被称为轴矢量。于是我们有下表。<!-- raw HTML omitted --></p>
+<p><img src="115.png" alt="intergrate">{width=90% height=auto}</p>
+<!-- raw HTML omitted -->
+<h3 id="206-正交性和完备性">20.6 正交性和完备性</h3>
+<p>略。</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

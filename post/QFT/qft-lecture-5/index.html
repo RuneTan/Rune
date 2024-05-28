@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-5-对称性与守恒律时空对称性">Lecture 5. 对称性与守恒律Ⅰ：时空对称性</h2>
+<h3 id="51-经典力学中的对称性和守恒律">5.1 经典力学中的对称性和守恒律</h3>
+<p>像之前一样，我们有：$$L(q^1,\cdot\cdot\cdot,q^n,\dot{q}^1,\cdot\cdot\cdot,\dot{q}^n,t)$$</p>
+<p>考虑一个具有单参数$\lambda$的连续变换：$$\lambda:q^a(t)\rightarrow q^a(t;\lambda)$$</p>
+<p>并且我们假定：$q^a(t,0)=q^a(t)$。</p>
+<blockquote>
+<p>考虑一个点粒子体系，其拉格朗日量：$$L=\cfrac{1}{2}\sum_r m_r\dot{\mathbf{x}}^r\cdot\dot{\mathbf{x}}^r+\sum_{r&gt;s}V^{(r,s)}(|\mathbf{x}^r-\mathbf{x}^s|)$$
+那么存在这样一个单参数连续变换：$$\mathbf{x}^r\rightarrow\mathbf{x}^r+\mathbf{e}\lambda$$</p>
+</blockquote>
+<p>现在对于这个连续变换，我们对其进行微分，得到：$$q^a\rightarrow q^a+(Dq^a)d\lambda$$</p>
+<p>其中$Dq^a\equiv \cfrac{\partial q^a}{\partial\lambda}\bigg|_{\lambda=0}$，类似我们可以定义$D\dot{q}^a$，那么我们就有：$$DL=\cfrac{\partial L}{\partial q^a}Dq^a+\cfrac{\partial L}{\partial \dot{q}^a}D\dot{q}^a=\cfrac{\partial L}{\partial q^a}Dq^a+p_a\cfrac{dDq^a}{dt}$$</p>
+<p>其中$p_a$是规范动量(canonical momentum)。
+现在我们给出对称性的定义：我们称一个变换是对称的当且仅当：$$DL=\cfrac{dF}{dt}$$</p>
+<p>这里$F=F(q^a,\dot{q}^a,t)$</p>
+<p>这个定义是这样得出的，我们知道在拉式量中加入$\frac{dF}{dt}$可以被分部积分化为作用量中的常量，在变分时消去而不影响运动方程。也就是说，变换不改变运动方程的形式。对每一个无穷小对称性，都具有一个守恒量，这就是所谓的<strong>诺特定理</strong>。</p>
+<p>由该对称性生成的守恒量具有以下一般表达式：$$Q=p_aDq^a-F$$</p>
+<blockquote>
+<p>证明如下：$$\cfrac{dQ}{dt}=\dot{p}_aDq^a+p_a\cfrac{dDq^a}{dt}-\cfrac{dF}{dt}$$
+由欧拉-拉格朗日方程：$\dot{p}_a=\cfrac{\partial L}{\partial q^a}$，上式变为：$$\begin{aligned}
+\cfrac{dQ}{dt}&amp;=\cfrac{\partial L}{\partial q^a}Dq^a+p_a\cfrac{dDq^a}{dt}-\cfrac{dF}{dt}\
+&amp;=DL-\cfrac{dF}{dt}=0
+\end{aligned}$$</p>
+</blockquote>
+<blockquote>
+<p>空间平移对称性对应的$F=0$，守恒量为总动量；
+时间平移对称性对应的$F=L$，守恒量为能量；
+旋转对称性对应的$F=0$，守恒量为角动量；</p>
+</blockquote>
+<h3 id="52-量子力学扩展">5.2 量子力学扩展</h3>
+<p>在量子力学中，由对易关系，我们有：$$[q^a,Q]=[q^a,p_bDq^b-F]=[q^a,p_b]Dq^b=i\delta^a_bDq^b=iDq^a$$</p>
+<p>这也就是说，守恒量$Q$是无限小变换的生成元。特别地，对于时间平移对称性，我们有：$$[q^a,H]=i\dot{q}^a$$</p>
+<h3 id="53-经典场论拓展">5.3 经典场论拓展</h3>
+<p>现在让我们来看看场论，我们有一组场$\phi^a(x)$和变换：$$\phi^a(x)\rightarrow\phi^a(x,\lambda)$$
+然后我们定义：$$D\phi^a=\cfrac{\partial\phi^a}{\partial\lambda}\bigg|_{\lambda=0}$$</p>
+<p>这里同样给出变换是对称的定义：$$D\mathscr{L}=\partial_\mu F^\mu$$</p>
+<p>有拉格朗日密度和拉格朗日量之间的关系，我们有：$$DL=D\int d^3\mathbf{x}\ \mathscr{L}=\int d^3\mathbf{x}\  \partial_\mu F^\mu=\cfrac{d}{dt}\int d^3\mathbf{x}\ F^0$$</p>
+<p>上面第三个等号是因为我们假设场在无穷远处能够以足够快速度趋于0。容易验证该变换不改变运动方程。</p>
+<p>由于$F^\mu$有四个分量，可以类比地给出守恒量的定义：$$J^\mu\equiv\pi^\mu_aD\phi^a-F^\mu$$</p>
+<p>可以验证$$\partial_\mu J^\mu=0$$</p>
+<p>我们发现，上式可以写成：$$\partial_0 J^0+\nabla\cdot\mathbf{J}=0$$</p>
+<p>这和连续性方程具有一样的形式。对其积分可以得到：$$\partial_0\int_V d^3\mathbf{x}\ J^0=-\int_V d^3\mathbf{x}\ \nabla\cdot\mathbf{J}=-\int_S d^2S\ \hat{\mathbf{n}}\cdot\mathbf{J}$$</p>
+<p>取边界无穷远，有：$$\partial_0\int d^3\mathbf{x}\ J^0=\partial_0 Q=0$$</p>
+<p>可见，$Q$就是全局守恒量，可以写出其表达式：$$Q=\int d^3\mathbf{x}\ \pi^0_aD\phi^a-F$$</p>
+<h3 id="54-守恒流并非唯一定义">5.4 守恒流并非唯一定义</h3>
+<p>让我们总结先前的结论：$$\begin{aligned}
+J^\mu&amp;=\pi^\mu_aD\phi^a-F^\mu\
+D\mathscr{L}&amp;=\partial_\mu F^\mu\
+\partial_\mu J^\mu&amp;=0
+\end{aligned}$$</p>
+<p>让我们看看，如果对$F^\mu$做变换：$$F^\mu\rightarrow F^\mu+\partial_\nu A^{\mu\nu}$$</p>
+<p>其中$A^{\mu\nu}=-A^{\nu\mu}$。那么：
+$$\partial_\mu F^\mu+\partial_\mu\partial_\nu A^{\mu\nu}=\partial_\mu F^\mu$$</p>
+<p>由$F^\mu$的变换可知$J^\mu$的变换：$$J^\mu\rightarrow J^\mu-\partial_\nu A^{\mu\nu}$$</p>
+<p>显然变换后$\partial_\mu J^\mu=0$，且：$$Q=\int d^3\mathbf{x}\ J^0\rightarrow\int d^3\mathbf{x}\ (J^0+\partial_iA^{0i})$$</p>
+<p>其中第二项对全空间积分结果为0，也许我们有无限多局域流表达式，但总量是守恒的。</p>
+<blockquote>
+<p>依照作者的观点，尽管我们有无穷表达式，但我们不必讨论哪个更好，事实上，我们可以自由选择表达式这一点才是好的，解决问题因地制宜即可。</p>
+</blockquote>
+<h3 id="55-时空变换的守恒流">5.5 时空变换的守恒流</h3>
+<p>考虑四维时空变换：$$D\phi^a=\cfrac{d\phi^a}{d\lambda}\bigg|<em>{\lambda=0}=e</em>\rho\partial^\rho\phi^a(x)$$</p>
+<p>其中在第二个等号我们将其进行了展开，$e_\rho$是系数。另一方面，我们可以认为：$$J^\mu=e_\rho T^{\rho\mu}$$</p>
+<p>这样，我们由$\partial_\mu J^\mu=0$有：$$\partial_\mu T^{\rho\mu}=0$$</p>
+<p>这实际上预示着有4个守恒量。其中$T^{\rho\mu}$称为规范能动量张量。同样，它的表达式并非唯一，当我们做变换：$$\theta^{\rho\mu}=T^{\rho\mu}+\partial_\lambda(A^{\rho\mu\lambda}),\ \ \ A^{\rho\mu\lambda}=-A^{\rho\lambda\mu}$$</p>
+<p>那么守恒量就为：$$P^\rho=\int d^3\mathbf{x}\ T^{\rho 0}$$</p>
+<p>类似地，我们有：$$D\mathscr{L}=e_\rho\partial^\rho\mathscr{L}=\partial_\mu(g^{\mu\rho}e_\rho\mathscr{L})$$</p>
+<p>由于$e_\rho$是常矢量，度规$g^{\mu\rho}$是常张量，我们可以将其移入括号中。那么有：$$F^\mu=g^{\mu\rho}e_\rho\mathscr{L}$$</p>
+<p>于是我们得到规范能动量张量的一般表达式：$$T^{\rho\mu}=\pi^\mu_a\partial^\rho\phi^a-g^{\mu\rho}\mathscr{L}$$</p>
+<p>一般来说$T^{\rho\mu}$不是对称的，但是对于我们的自由场例子，$\pi^\mu_a=\partial^\mu\phi^a$，所以能动量张量对称。</p>
+<p>现在来看看能动量张量的分量，$T^{00}$，应该是能量密度，表达式为：$$T^{00}=\pi_a\dot{\phi}^a-\mathscr{L}$$</p>
+<p>动量密度$$T^{0i}=(\partial^0\phi)(\partial^i\phi)$$</p>
+<p>积分得到动量：$$\mathbf{P}=-\int d^3\mathbf{x}\ (\partial^0\phi)(\nabla\phi)$$</p>
+<p>我们再次搬出先前推导的量子场表达式：$$\phi(x)=\int\cfrac{d^3\mathbf{p}}{(2\pi)^{3/2}\sqrt{2\omega_\mathbf{p}}}\Big(a_\mathbf{p}e^{-ip\cdot x}+b_\mathbf{p}e^{ip\cdot x}\Big)$$</p>
+<p>代入进去，我们得到：$$\begin{aligned}
+\mathbf{P}&amp;=\int d^3\mathbf{p}\ (a_\mathbf{p}a_\mathbf{p}^\dagger+a^\dagger_\mathbf{p}a_\mathbf{p})\mathbf{p}\
+&amp;=\int d^3\mathbf{p}\ (a^\dagger_\mathbf{p}a_\mathbf{p})\mathbf{p}+\cfrac{1}{2}\int d^3\mathbf{p}\ \delta^{(3)}(0)\mathbf{p}\end{aligned}$$</p>
+<p>这就又回到了第四节的问题。</p>
+<h3 id="56-洛伦兹变换角动量和其他">5.6 洛伦兹变换，角动量和其他</h3>
+<p>考虑无穷小旋转：$$\lambda:x^\mu\rightarrow x^\mu+\epsilon^{\mu\nu}x_\nu d\lambda$$</p>
+<p>同样旋转的还有：$y^\mu\rightarrow y^\mu+\epsilon^{\mu\nu}y_\nu d\lambda$。洛伦兹变换要求：$$\begin{aligned}
+x^\mu y_\mu&amp;\rightarrow x^\mu y_\mu+\epsilon^{\mu\nu}x_\nu y_\mu d\lambda+\epsilon_{\mu\nu}y^\nu x^\mu d\lambda\
+&amp;=x^{\mu}y_\mu+(\epsilon_{\mu\nu}+\epsilon_{\nu\mu})x^\mu y^\nu d\lambda
+\&amp;=x^\mu y_\mu\end{aligned}$$</p>
+<p>所有我们有：$\epsilon_{\mu\nu}+\epsilon_{\nu\mu}=0$，也就是说，$\epsilon_{\mu\nu}$是反对称的，只有6个独立分量。我们不妨设：$$J^\mu=\cfrac{1}{2}\epsilon_{\lambda\rho}M^{\lambda\rho\mu}$$</p>
+<p>那么就有：$$\partial_\mu M^{\lambda\rho\mu}=0$$</p>
+<p>可以定义守恒量：$$J^{\lambda\rho}=\int d^3\mathbf{x}\ M^{\lambda\rho 0}$$</p>
+<p>只考虑标量场，那么变换：$$\Lambda:\phi^a(x)\rightarrow \phi^a(\Lambda^{-1}x)$$</p>
+<p>那么：$$D\phi^a=\epsilon^{\sigma\rho}x_\sigma\partial_\rho\phi^a
+=\epsilon_{\sigma\rho}x^\sigma\partial^\rho\phi^a
+$$</p>
+<p>和之前一样，我们得到：$$D\mathscr{L}=\epsilon_{\sigma\rho}x^\sigma\partial^\rho\mathscr{L}=\partial^\rho(\epsilon_{\sigma\rho}x^\sigma\mathscr{L})=\partial_\mu(g^{\mu\rho}\epsilon_{\sigma\rho}x^\sigma\mathscr{L})=\partial_\mu F^\mu$$</p>
+<p>那么：$$J^\mu=\pi^\mu_aD\phi^a-F^\mu=\epsilon_{\sigma\rho}x^\sigma[\pi^\mu_a\partial^\rho\phi^a-g^{\mu\rho}\mathscr{L}]=\epsilon_{\sigma\rho}x^\sigma T^{\rho\mu}$$</p>
+<p>到这里还没有结束，让我们把上式改写为：$$J^\mu=\cfrac{1}{2}\epsilon_{\sigma\rho}(x^\sigma T^{\rho\mu}-x^\rho T^{\sigma\mu})$$</p>
+<p>于是我们就有：$$M^{\sigma\rho\mu}=x^\sigma T^{\rho\mu}-x^\rho T^{\sigma\mu}$$</p>
+<p>现在来看看6个守恒量：$$J^{12}=\int d^3\mathbf{x}[x^1T^{20}-x^2T^{10}]$$</p>
+<p>显然，这是$z$轴角动量的表达式，类似的还有：$J^{23},J^{13}$。另外我们有：$$\begin{aligned}J^{10}&amp;=\int d^3\mathbf{x}\ [x^1T^{00}-x^0T^{10}]\&amp;=\int d^3\mathbf{x}\ [x^1T^{00}]-t\int d^3\mathbf{x}\ T^{10}\&amp;=\int d^3\mathbf{x}\ [x^1T^{00}]-tP^1\end{aligned}$$</p>
+<p>看上去它的物理意义好像并不直观，让我们将其对时间求导：$$\cfrac{dJ^{10}}{dt}=0=\cfrac{d}{dt}\int d^3\mathbf{x}\ [x^1T^{00}]-P^1$$</p>
+<p>看，我们得到了动量的定义。</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

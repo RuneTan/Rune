@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-18-洛伦兹群表示">Lecture 18 洛伦兹群表示</h2>
+<p>现在我们把前面的格林函数什么的都放到一边，让我们从经典场论出发，考虑一个有1/2自旋的粒子，然后通过把经典场论量子化得到狄拉克方程。</p>
+<h3 id="181-定义问题一般的洛伦兹变换">18.1 定义问题：一般的洛伦兹变换</h3>
+<p>首先让我们问一下什么是洛伦兹群下有限个场的变换性质，假设它们是线性的。让$\Lambda$作为洛伦兹群的群元，也就是${\rm SO}(3,1)$群.我有一组场$\phi_a(x)$，那么洛伦兹群下的变换满足规则：$$U(\Lambda)^\dagger\phi_a(x)U(\Lambda)=D_{ab}(\Lambda)\phi_b(\Lambda^{-1}x)$$</p>
+<p>现在要问，矩阵$D_{ab}$会是什么样子？如果$\phi_a$是洛伦兹标量，那么显然$D_{ab}$会是单位矩阵。对于作为某个标量场导数的向量场，矩阵$D_{ab}$是$4\times 4$的洛伦兹矩阵$\Lambda^\mu_\nu$。对于张量场，$D_{ab}$是这些洛伦兹矩阵的积。现在，让我们看看施加在$D_{ab}$上的限制。我们不妨把所有场合并为矢量$\phi$，这样就可以省去下标：$$U(\Lambda)^\dagger\phi(x)U(\Lambda)=D(\Lambda)\phi(\Lambda^{-1}x)$$</p>
+<p>我们已知矩阵$U(\Lambda)$的性质，我们有：$$U(\Lambda_1)U(\Lambda_2)=U(\Lambda_1\Lambda_2)$$</p>
+<p>这不完全正确，我们有更一般的情况:$$U(\Lambda_1)U(\Lambda_2)=U(\Lambda_1\Lambda_2)e^{i\phi(\Lambda_1,\Lambda_2)}$$</p>
+<p>即使只考虑旋转，这也不完全正确。对于三维旋转群${\rm SO}(3)$和洛伦兹群，相位因子应该被去除，但在<strong>自旋表示</strong>中，它不应该被去除，因为对任意轴做一个$\pi$旋转，我们将会得到一个负号。回到正题，我们由先前的两式得到：$$\begin{aligned}
+U(\Lambda_1\Lambda_2)^\dagger\phi(x)U(\Lambda_1\Lambda_2)&amp;=D(\Lambda_1\Lambda_2)\phi(\Lambda_1^{-1}\Lambda_2^{-1}x)\&amp;=U(\Lambda_2)^\dagger U(\Lambda_1)^\dagger\phi(x)U(\Lambda_1)U(\Lambda_2)\&amp;=U(\Lambda_2)^\dagger D(\Lambda_1)\phi(\Lambda_1^{-1}x)U(\Lambda_2)\&amp;=D(\Lambda_1) U(\Lambda_2)^\dagger\phi(\Lambda_1^{-1}x)U(\Lambda_2)\&amp;=D(\Lambda_1) D(\Lambda_2)\phi(\Lambda_2^{-2}\Lambda_1^{-1}x)
+\end{aligned}$$</p>
+<p>于是我们有：$$D(\Lambda_1\Lambda_2)=D(\Lambda_1)D(\Lambda_2)$$</p>
+<p>我们让$\Lambda_1$和$\Lambda_2$都为单位阵，得到：$$D(1)=1$$</p>
+<p>一个<strong>表示</strong>是一组矩阵，每一个联系着一个群成员，且遵循和群元一样的代数结构。一一对应的表示被称为<strong>忠实表示</strong>。我们的问题是要找到所有对于有限洛伦兹不变场的线性场变换法则，而这就等价于找到${\rm SO}(3,1)$的有限维矩阵表示。注意到，$D$不一定非得是酉矩阵。</p>
+<p>要找到所有这样的矩阵是一个大工程，好在我们可以将其化简，因为我们有两种平凡的方法把旧表示变成新表示，首先，如果$D(\Lambda)$是一种表示，那么：$$D(\Lambda)&rsquo;=TD(\Lambda)T^{-1}$$也是一种表示，记为：$$D(\Lambda)\sim D(\Lambda)&rsquo;$$</p>
+<p>我们称它们彼此等价。所以我们的问题可以简化为寻找${\rm SO}(3,1)$的所有有限维的不等价表示。然后是第二种方法，对于两种表示$D^{(1)}(\Lambda)$和$D^{(2)}(\Lambda)$，我们可以构造一个大矩阵：$$D(\Lambda)=\begin{bmatrix}
+D^{(1)}(\Lambda)&amp;0\0&amp;D^{(2)}(\Lambda)
+\end{bmatrix}\equiv D^{(1)}(\Lambda)\oplus D^{(2)}(\Lambda)$$</p>
+<p>这被称为$D^{(1)}$和$D^{(2)}$的直和，我们有：$${\rm dim}\ D(\Lambda)={\rm dim}\ D^{(1)}(\Lambda)+{\rm dim}\ D^{(2)}(\Lambda)=n_1+n_2$$</p>
+<p>如果表示$D$可以被化为更小表示的直和，那么就称其为<strong>可约的</strong>。反之，则称其为<strong>不可约的</strong>。于是，现在我们的任务变成寻找${\rm SO}(3,1)$群的不等价不可约的表示。</p>
+<p>对于${\rm SO}(3)$，这个问题很多年以前就被解决了，我们则会在量子力学教材中关于角动量的那一章学到它。实际上，我们可以从它的表示得到${\rm SO}(3,1)$群的表示。</p>
+<h3 id="182-旋转群的不可约表示">18.2 旋转群的不可约表示</h3>
+<p>现在我们首先考虑寻找${\rm SO}(3)$的不等价不可约表示。每一个属于旋转群的群元可以被轴$\hat{\mathbf{n}}$和旋转角$\theta$来表示：$$R\in{\rm SO}(3):\ R=R(\hat{\mathbf{n}}\theta)\ \ \ 0\leq\theta\leq\pi$$</p>
+<p>对于两个同轴的旋转，我们有：$$R(\hat{\mathbf{n}}\theta&rsquo;)R(\hat{\mathbf{n}}\theta)=R(\hat{\mathbf{n}}(\theta&rsquo;+\theta))$$</p>
+<p>对于任何表示（不必是不可约的），我们必须有：$$D(R(\hat{\mathbf{n}}\theta&rsquo;))D(R(\hat{\mathbf{n}}\theta))=D(R(\hat{\mathbf{n}}(\theta&rsquo;+\theta)))$$</p>
+<p>让我们对其做微分（作为一个数学懒鬼，我们认为所有东西都是可微的），并定义：$$i\frac{\partial}{\partial\theta}D(R(\hat{\mathbf{n}}\theta))\bigg|_{\theta=0}\equiv\hat{\mathbf{n}}\cdot\mathbf{L}$$</p>
+<p>这里我们定义了对应“角动量”的向量$\mathbf{L}$，也被称为无穷小旋转的生成元。如果对前式做微分并令$\theta&rsquo;=0$，那么我们有：$$\frac{\partial}{\partial\theta}D(R(\hat{\mathbf{n}}\theta))=-i\hat{\mathbf{n}}\cdot\mathbf{L}D(R(\hat{\mathbf{n}}\theta))$$</p>
+<p>这个微分方程很好解，我们有初始条件$D(R(0))=1$：$$D(R(\hat{\mathbf{n}}\theta))=e^{-i\hat{\mathbf{n}}\cdot\mathbf{L}\theta}$$</p>
+<p>我们已经极大地简化了我们的问题，我们不用考虑所有的轴$\hat{\mathbf{n}}$，而只需要把三个生成元放在一块：${L^i},\ i=1,2,3$。同时，我们可以证明：$$\begin{aligned}
+D\sim D&rsquo;&amp;\Longleftrightarrow\mathbf{L}\sim\mathbf{L}&rsquo;\
+D(R)=D^{(1)}(R)\oplus D^{(2)}(R)&amp;\Longleftrightarrow\mathbf{L}=\mathbf{L}^{(1)}\oplus\mathbf{L}^{(2)}
+\end{aligned}$$</p>
+<p>现在让我们考虑${L^i}$的代数，向量$\mathbf{v}$在无穷小旋转下的变换有下式给出：$$\mathbf{v}\rightarrow\mathbf{v}+\theta\hat{\mathbf{n}}\times\mathbf{v}+\mathcal{O}(\theta^2)$$</p>
+<p>更进一步，我们知道算符$\mathbf{L}$就像一个矢量一样变换，我们有：$$D(R^{-1})\mathbf{L}D(R)=R\mathbf{L}$$</p>
+<p>那么对于无穷小变换，我们有：$$(1+i\hat{\mathbf{n}}\cdot\mathbf{L}\theta)\mathbf{L}(1-i\hat{\mathbf{n}}\cdot\mathbf{L}\theta)=\mathbf{L}+\theta\hat{\mathbf{n}}\cdot\mathbf{L}+\mathcal{O}(\theta^2)$$</p>
+<p>化简可以得到：$$i[\hat{\mathbf{n}}\cdot\mathbf{L},\mathbf{L}]=\hat{\mathbf{n}}\times\mathbf{L}$$</p>
+<p>我们让$\hat{\mathbf{n}}$为$\hat{\mathbf{x}}$、$\hat{\mathbf{y}}$、$\hat{\mathbf{z}}$，那么我们就得到角动量对易关系：$$[L_i,L_j]=i\epsilon_{ijk}L_k$$</p>
+<p>生成元$\mathbf{L}$被称为旋转群的李代数表示。任何无穷维表示都可以化为满足角动量对易规则的有限维表示。这个问题是由泡利解决的，不可约表示$D^{(s)}(R)$由$s$标记，代表自旋：$$D^{(s)}(R)=e^{-i\mathbf{L}^{(s)}\cdot\hat{\mathbf{n}}\theta}$$</p>
+<p>其中指标$s$对应${0,\frac{1}{2},1,&hellip;}$，其对应的表示$D^{(s)}(R)$的维数是$2s+1$。对应的三维向量$\mathbf{L}^{(s)}$的平方满足：$$\mathbf{L}^{(s)}\cdot\mathbf{L}^{(s)}=s(s+1)I$$</p>
+<p>用$L^3$的本征值标记本征态很方便，现在切换到狄拉克符号，我们有：$$L_z\ket{m}=m\ket{m};\ \ \ m=-s,-s+1,-s+2,&hellip;,s-1,s$$</p>
+<p>$m$的可取值数量和表示的维度相同，对于前面的几个$\mathbf{L}^{(s)}$，我们有：$$\begin{aligned}
+s=0:&amp;\ \mathbf{L}^{(0)}=0\
+s=\frac{1}{2}:&amp;\ \mathbf{L}^{(\frac{1}{2})}=\frac{1}{2}\mathbf{\sigma}=\frac{1}{2}(\mathbf{\sigma}_x,\mathbf{\sigma}<em>y,\mathbf{\sigma}<em>z)\ \ \ ({\rm the\ Pauli\ }\sigma\ {\rm matrices})\
+s=1:&amp;\ (L_i^{(1)})</em>{jk}=-i\epsilon</em>{ijk}
+\end{aligned}$$</p>
+<p>注意到，$\mathbf{\sigma}$不仅作为$\mathbb{L}^{(\frac{1}{2})}$的元素，其本身也是一个$2\times 2$矩阵。对于更高的维数，我们可以在一般量子力学教材中找到，我们总是可以通过恰当地选取我们的基使得：$$\mathbf{L}^{(s)}=\mathbf{L}^{{(s)}\dagger}$$</p>
+<p>这并不奇怪，本征值应该是可观测的，所以表示矩阵$D^{(s)}$是酉的。这是旋转群的一个特殊的性质，更一般地说，实际上这是所有紧致群(compact group)的性质。洛伦兹群没有这个性质。对于整数的$s$，$D(\Lambda_1\Lambda_2)=D(\Lambda_1)D(\Lambda_2)$成立，但对半整数的$s$，它只在一个相位内成立，因为它是双值的。对于任意旋转：$$R(\theta_1\hat{\mathbf{n}})R(\theta_2\hat{\mathbf{n}})=R((\theta_1+\theta_2)\hat{\mathbf{n}})=I,\ {\rm if}\ \theta_1+\theta_2=2\pi$$</p>
+<p>我们应该期望$D^{(s)}(R(2\pi\hat{\mathbf{n}}))=D^{(s)}(R(0))=1$，但是实际上：$$D^{(s)}(R(2\pi\hat{\mathbf{n}}))=(-1)^{2s}$$</p>
+<p>对于半整数的自旋，该表示只在-1因子以内有效，但是这不会阻止我们将它用于物理目的。</p>
+<h3 id="183-洛伦兹群的不可约表示">18.3 洛伦兹群的不可约表示</h3>
+<p>现在我们考虑洛伦兹群，也许你会觉得这会花费大量时间和努力，但实际上不用。首先我们知道旋转群是一个洛伦兹群的子群，只是$R$不再是一个$3\times 3$矩阵，而是$4\times 4$，其中对时间做平凡变换。而洛伦兹群的另一个子群则只考虑布施(boosts)。一个对于给定轴$\hat{\mathbf{a}}$和快度(rapidity)$\phi$的布施$A(\hat{\mathbf{a}}\phi)$，比如，一个对$z$轴的布施变换可以表为：$$A(\hat{\mathbf{z}}\phi):\begin{cases}
+x^0\rightarrow x&rsquo;^0=x^0\cosh{\phi}-x^3\sinh{\phi}\
+x^3\rightarrow x&rsquo;^3=x^3\cosh{\phi}-x^0\sinh{\phi}
+\end{cases}$$</p>
+<p>由于$x^1$和$x^2$不变，新的速度由快度定义：$$\tanh{\phi}=v,\ \ \ 0\leq\phi&lt;\infty$$</p>
+<blockquote>
+<p>这很好证明，考虑$x&rsquo;^3$作为原点我们有：$$x&rsquo;^3=0=x^3\cosh{\phi}-x^0\sinh{\phi}\Rightarrow\tanh{\phi}=\frac{x^3}{x^0}=\frac{z}{t}=v$$</p>
+</blockquote>
+<p>狭义相对论告诉我们，每一个洛伦兹变换都可以写为一个旋转和一个布施的乘积，如果我们知道旋转和布施的表示矩阵，我们就可以得到一切。首先我们有：$$A(\hat{\mathbf{a}}\phi)A(\hat{\mathbf{a}}\phi&rsquo;)=A(\hat{\mathbf{a}}(\phi+\phi&rsquo;))$$</p>
+<p>然后我们可以做我们先前对旋转做的那样，定义：$$\hat{\mathbf{a}}\cdot\mathbf{M}=i\frac{\partial}{\partial\theta}D(A(\hat{\mathbf{a}}\phi))\bigg|_{\phi=0}$$</p>
+<p>我们可以通过${M_i}$生成布施群，类似地我们得到：$$D(A(\hat{\mathbf{a}}\phi))=e^{-i\hat{\mathbf{a}}\cdot\mathbf{M}\phi}$$</p>
+<p>下一步则是寻找对易关系，我们可以得到：$$\begin{aligned}
+[L_i,L_j]&amp;=i\epsilon_{ijk}L_k\
+[L_i,M_j]&amp;=i\epsilon_{ijk}M_K\
+[M_i,M_j]&amp;=-i\epsilon_{ijk}L_k
+\end{aligned}$$</p>
+<blockquote>
+<p>注意到最后一项在$i$前面有一个负号，如果是${\rm SO}(4)$这里就会是个正号。</p>
+</blockquote>
+<p>而在$P$宇称变换下，我们有：$$P:\begin{cases}
+\mathbf{L}\rightarrow\mathbf{L}\
+\mathbf{M}\rightarrow-\mathbf{M}
+\end{cases}$$</p>
+<p>可以看到，其改变了$\mathbf{M}$的方向，但是却没有改变上面的对易关系。现在，我们将在很少的几行中找到洛伦兹代数的所有不可约表示，这基于一个特殊的技巧，如果我们不幸生活在5维空间中，那这个技巧就行不通了。但幸好我们的时空是四维的，让我们定义：$$\begin{aligned}
+\mathbf{J}^{(\pm)}&amp;=\frac{1}{2}(\mathbf{L}\pm i\mathbf{M})\ \ \ {\rm so}\
+\mathbf{L}&amp;=\mathbf{J}^{(+)}+\mathbf{J}^{(-)}\
+\mathbf{M}&amp;=-i(\mathbf{J}^{(+)}-\mathbf{J}^{(-)})
+\end{aligned}$$</p>
+<p>在这样的定义下，我们有对易关系：$$\begin{aligned}
+[\mathbf{J}_i^{(+)},\mathbf{J}<em>j^{(+)}]&amp;=i\epsilon</em>{ijk}\mathbf{J}_k^{(+)}\
+[\mathbf{J}_i^{(-)},\mathbf{J}<em>j^{(-)}]&amp;=i\epsilon</em>{ijk}\mathbf{J}_k^{(-)}\
+[\mathbf{J}_i^{(+)},\mathbf{J}_j^{(-)}]&amp;=0\
+\end{aligned}$$</p>
+<p>现在，写下洛伦兹群的一组完备的不可约不等价表示变得很容易，它们的特征是两个独立的自旋量子数：$s_+$和$s_-$，我们可以把表示记为：$D^{(s_+,s_-)}(\Lambda),\ \ \ s_{\pm}=0,\frac{1}{2},1,&hellip;$。我们有：$$\begin{aligned}
+\mathbf{J}^{(+)}\cdot\mathbf{J}^{(+)}&amp;=s_+(s_++1)\
+\mathbf{J}^{(-)}\cdot\mathbf{J}^{(-)}&amp;=s_-(s_-+1)
+\end{aligned}$$</p>
+<p>一组完备基由$m_+$和$m_-$表示，我们有：$$J_z^{(\pm)}\ket{m_+,m_-}=m_\pm\ket{m_+,m_-}$$</p>
+<p>态矢$\ket{m_+,m_-}$是$J^{(+)}<em>z$和$J^{(-)}<em>z$的共同本征态。我们有：$$\dim{D^{(s</em>+,s</em>-)}}(\Lambda)=(2s_++1)(2s_-+1)$$</p>
+<p>表示的维度也是基向量的数量。为了让事情更加明确，考虑矩阵元：$$\braket{m&rsquo;<em>+,m&rsquo;</em>-|\mathbf{J}^{(+)}|m_+,m_-}=\delta_{m_-,m&rsquo;<em>-}\braket{m&rsquo;</em>+|\mathbf{J}^{(+)}|m_+}$$</p>
+<p>通过合理的选择我们可以使$\mathbf{J}^{(+)}$和$\mathbf{J}^{(-)}$变成厄米矩阵。那么，由于$\mathbf{L}$是厄米的，那么我们知道其表示$D(R(\hat{\mathbf{n}}\theta))$是酉的。而由于$\mathbf{M}$是反厄米的，那么表示$D(A(\hat{\mathbf{a}}\phi))$是非酉的。</p>
+<h3 id="184-rm-so3群表示ds的性质">18.4 ${\rm SO}(3)$群表示$D^{(s)}$的性质</h3>
+<p>现在我们得到了${\rm SO}(3,1)$的所有表示，那么我们想要知道其性质。为了达成这个目的，我们首先分析${\rm SO}(3)$的表示的性质，然后从中得到${\rm SO}(3,1)$的表示性质。</p>
+<h5 id="复共轭">复共轭</h5>
+<p>如果我对一个${\rm SO}(3)$的表示取复共轭，那么我就会得到${\rm SO}(3)$的另一个表示，这是因为两个复共轭的乘积就是乘积的复共轭。由于给定维数只有一个不可约表示，所以复共轭表示必须等价于原表示：$$D^{(s)}(R)\sim D^{(s)}(R)^*$$</p>
+<p>也就是说，对于某个矩阵$T$满足：$$\begin{aligned}
+[e^{-i\mathbf{J}^{(s)}\cdot\hat{\mathbf{n}}\theta}]^<em>&amp;=T[e^{-i\mathbf{J}^{(s)}\cdot\hat{\mathbf{n}}\theta}]T^{-1}\
+e^{i\mathbf{J}^{(s)</em>}\cdot\hat{\mathbf{n}}\theta}&amp;=e^{-iT\mathbf{J}^{(s)}T^{-1}\cdot\hat{\mathbf{n}}\theta}
+\end{aligned}$$</p>
+<p>于是我们必须有：$$\mathbf{J}^{(s)}\sim-\mathbf{J}^{(s)*}$$</p>
+<p>这并不意味着$\mathbf{J}$是虚矩阵，但是这意味着存在某些变换$T$使：$$T\mathbf{J}^{(s)}T^{-1}=-\mathbf{J}^{(s)*}$$</p>
+<h5 id="直积">直积</h5>
+<p>如果我们有一组场作为旋转的不可约表示，对应$D^{(s_1)}(R)$，比如向量、自旋等等，然后我们有另一组场，对应$D^{(s_2)}(R)$。我们可以考虑两个场分量的所有乘积，这形成了一个新表示，称为直积，记为：$$D^{(s_1)}(R)\otimes D^{(s_2)}(R)$$</p>
+<p>直积的维度是两个表示维度相乘，我们有：$$\dim{[D^{(s_1)}(R)\otimes D^{(s_2)}(R)]}=(2s_1+1)(2s_2+1)$$</p>
+<p>直积当然是一种表示，但它通常不是不可约表示，它通常可以被写成不可约表示直和的方式：$$D^{(s_1)}(R)\otimes D^{(s_2)}(R)\sim \oplus\sum^{s_1+s_2}_{s=|s_1-s_2|}D^{(s)}(R)$$</p>
+<p>例如说，我们让一个$D^{(\frac{1}{2})}$和它自身做直积，那么我们可以得到$D^{(0)}\oplus D^{(1)}$。</p>
+<h5 id="交换对称性">交换对称性</h5>
+<p>如果$s_1=s_2$，那么在直积中交换两者并写成直和形式，最高项$D^{(2s_1)}$显然是对称的，并且$D^{(2s_1-1)}$是反对称的，以此类推。</p>
+<h3 id="185-rm-so31群表示ds_s_-的性质">18.5 ${\rm SO}(3,1)$群表示$D^{(s_+,s_-)}$的性质</h3>
+<h5 id="复共轭-1">复共轭</h5>
+<p>首先就像在${\rm SO}(3)$中一样，我们的$\mathbf{J}^{(\pm)}$就像普通旋转群一样满足共轭为负的关系，对所有$s$都成立，那么考虑到由$\mathbf{L}$是两者之和，那么其复共轭性质和$\mathbf{J}^{(\pm)}$应该一样：$$\mathbf{L}\sim-\mathbf{L}^*$$</p>
+<p>但是$\mathbf{M}$是两者之差，对其取复共轭则有：$$\mathbf{M}^<em>=[-i(\mathbf{J}^{(+)}-\mathbf{J}^{(-)})]^</em>=i(\mathbf{J}^{(+)<em>}-\mathbf{J}^{(-)</em>})\sim i(-\mathbf{J}^{(+)}+\mathbf{J}^{(-)})\sim \mathbf{M}$$</p>
+<p>我们知道$D^{(s)}$等价于其复共轭，但是现在这个恶心的$\mathbf{M}$使得$D^{(s_+,s_-)}$不等价于其复共轭，但是我们却发现，如果交换$\mathbf{J}^{(+)}$和$\mathbf{J}^{(-)}$，那么$\mathbf{L}$不会改变，而$\mathbf{M}$却改变了正负号，于是我们有：$$[D^{(s_+,s_-)}(\Lambda)]^*\sim D^{(s_-,s_+)}(\Lambda)$$</p>
+<p>有一些有趣的事情正在发生，如果我们有一组场以某种方式变换，它们的复共轭不会以同样方式变换，除非$s_+=s_-$。</p>
+<h5 id="宇称">宇称</h5>
+<p>回想一下，我们知道宇称变换使$\mathbf{L}$变成$\mathbf{L}$而使$\mathbf{M}$变成$-\mathbf{M}$，于是我们可以耍相同的把戏：$$P:D^{(s_+,s_-)}(\Lambda)\rightarrow D^{(s_-,s_+)}(\Lambda)$$</p>
+<p>注意到，对表示同时取复共轭和宇称变换使一个场回到它本身，稍后我们会看到这个性质使我们易于构建一个CP不变的理论，它对于C和P分别不守恒，也就是，弱相互作用。</p>
+<h5 id="直积-1">直积</h5>
+<p>我们已经得到了两个独立角动量，我们可以将它们独立相加，这不是问题：$$D^{(s_+^1,s_-^1)}(\Lambda)\otimes D^{(s_+^2,s_-^2)}(\Lambda)\sim\oplus\sum_{s_+}\sum_{s_-}D^{(s_+,s_-)}(\Lambda)$$</p>
+<h5 id="交换对称性-1">交换对称性</h5>
+<p>像之前一样考虑$s^1_\pm=s^2_\pm$，如果其中任意一个是对称的，我们会得到：$$\begin{aligned}
+s_+&amp;=2s_+^1,\ s_-=2s_-^1\ \ \ {\rm is\ symmetric}\
+s_+&amp;=2s_+^1-1,\ s_-=2s_-^1\ \ \ {\rm is\ antisymmetric}\
+\end{aligned}$$</p>
+<p>但是，两个反对称会变成一个对称：$$ s_+=2s_+^1-1,\ s_-=2s_-^1-1\ \ \ {\rm is\ symmetric}$$</p>
+<h5 id="洛伦兹群的旋转子群">洛伦兹群的旋转子群</h5>
+<p>如果我们有${\rm SO}(3,1)$，却只做${\rm SO}(3)$里的旋转会怎么样？我们知道，母群的任何表示都是子群的表示，但母群的不可约表示不一定是子群的不可约表示。我们有：$$D(R(\hat{\mathbf{n}}\theta))=e^{-i(\mathbf{L}\cdot\hat{\mathbf{n}}\theta)}=e^{-i(\mathbf{J}^{(+)}+\mathbf{J}^{(-)})\cdot\hat{\mathbf{n}}\theta}$$。如果只考虑旋转，那么可以想象$\mathbf{J}^{(+)}$和$\mathbf{J}^{(-)}$作为轨道角动量和自旋角动量然后相互耦合，从而我们只需要考虑它们的联合旋转，我们有：$$D^{(s_+,s_-)}(R)\sim\oplus\sum^{s_++s_-}<em>{s=|s</em>+-s_-|}D^{(s)}(R)$$</p>
+<p>我们很快会看到相应的例子。</p>
+<h5 id="向量如何表示">向量如何表示？</h5>
+<p>由我们的表示可以定义向量场，其可以由洛伦兹群的某些表示进行变换，显然这个表示是不可约的，那么从我们已有的表示中我们能得到什么？首先，向量是四维的，所以表示也是四维的：$$(2s_++1)(2s_-+1)=4$$</p>
+<p>由于两个因子都是整数或半整数，我们得到3个可能：$s_+=\frac{3}{2},\ s_-=0$给出一个$4\times 1$的积，但是它并不好，因为我们希望向量的表示取复共轭与其自身是等价的，而它是不等价的。所以我们需要有$s_+=s_-$，这个条件不仅满足复共轭等价，也满足宇称守恒，所以$s_+=0,\ s_-=\frac{3}{2}$的可能也被排除了。我们只有$s_+=s_-=\frac{1}{2}$唯一一种可能，对应表示$D^{(\frac{1}{2},\frac{1}{2})}$，运用上面的等式，我们得到：$$D^{(s_+,s_-)}(R)\sim D^{(1)}(R)\oplus D^{(0)}(R)$$</p>
+<p>其中，$D^{(1)}(R)$是空间矢量，而第二个则是一个标量，这实际上就是我们把自己限制到对四维矢量进行三维旋转的情形。</p>
+<h5 id="张量如何表示">张量如何表示？</h5>
+<p>一旦我们有向量，我们就可以得到张量，因为后者（此处指2阶张量）就是矢量的直积。考虑张量$T_{\mu\nu}$对应洛伦兹群的16维表示：$D(\Lambda)$，我们将其分解为不可约表示如下：$$\begin{aligned}
+D(\Lambda)&amp;\sim D^{(\frac{1}{2},\frac{1}{2})}(\Lambda)\otimes D^{(\frac{1}{2},\frac{1}{2})}(\Lambda)\
+&amp;\sim D^{(1,1)}(\Lambda)\oplus D^{(1,0)}(\Lambda)\oplus D^{(0,1)}(\Lambda)\oplus D^{(0,0)}(\Lambda)
+\end{aligned}$$</p>
+<p>我们有：$$\begin{aligned}
+\dim{D^{(1,1)}(\Lambda)}&amp;=9\
+\dim{D^{(1,0)}(\Lambda)}&amp;=3\
+\dim{D^{(0,1)}(\Lambda)}&amp;=3\
+\dim{D^{(0,0)}(\Lambda)}&amp;=1\
+\end{aligned}$$</p>
+<p>由于我们知道这些表示的$s_\pm$，我们得到其交换对称性：$D^{(1,1)}(\Lambda)$是对称的，$D^{(1,0)}(\Lambda)$和$D^{(0,1)}(\Lambda)$是反对称的，D^{(0,0)}(\Lambda)是对称的。现在，我们把16维空间分解成了一个9维空间，两个3维空间和一个1维空间，当我们进行洛伦兹变换，各个子空间彼此独立变换，这就是直和的意思。</p>
+<p>现在，让我们看看这种分解在传统张量语言中意味着什么，我们知道，所有张量都可以分解为对称部分和反对称部分：$$T_{\mu\nu}=S_{\mu\nu}+A_{\mu\nu}$$</p>
+<p>其中：$$\begin{aligned}
+S_{\mu\nu}&amp;=\frac{1}{2}(T_{\mu\nu}+T_{\nu\mu})\
+A_{\mu\nu}&amp;=\frac{1}{2}(T_{\mu\nu}-T_{\nu\mu})
+\end{aligned}$$</p>
+<p>对称张量和反对称张量在洛伦兹变换下不会改变性质，所以这是一个洛伦兹不变的分解。这样，我可以把表示写为一种直和，洛伦兹变换写成块对角矩阵分别作用于对称和反对称部分，我们有：<!-- raw HTML omitted --></p>
+<p><img src="111.png" alt="intergrate">{width=70% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>进一步考虑对称张量$S_{\mu\nu}$，如果我们将其看作一个矩阵，那么我们可以将其分解为一个无迹的部分和一个和度规张量成比例的部分：$$S_{\mu\nu}-\frac{1}{4}g_{\mu\nu}S^\lambda_\lambda+\frac{1}{4}g_{\mu\nu}S^\lambda_\lambda=\hat{S}<em>{\mu\nu}+\frac{1}{4}g</em>{\mu\nu}S^\lambda_\lambda$$</p>
+<p>其中$\hat{S}<em>{\mu\nu}=S</em>{\mu\nu}-\frac{1}{4}g_{\mu\nu}S^\lambda_\lambda$，容易证明：$$\hat{S}^\mu_{\mu}=0$$</p>
+<p>这样我们就把对称张量的10维子空间分解为无迹对称张量的9维子空间和与度规张量成正比的1维子空间。由于它们两者在洛伦兹变换下都不改变性质，于是我们成功的对角化了表示矩阵。</p>
+<p>而对反对称张量问题有点棘手，首先，对任意反对称张量$A_{\mu\nu}$，我们定义其对偶(dual)$\star A_{\mu\nu}$：$$\star A^{\mu\nu}=\frac{1}{2}\epsilon^{\mu\nu\lambda\sigma}A_{\lambda\sigma}\ \ \ (\epsilon^{0123}=+1)$$</p>
+<p>举个例子：$$\star A^{01}=\frac{1}{2}\epsilon^{01\lambda\sigma}A_{\lambda\sigma}=\epsilon^{0123}A_{23}=A_{23}$$</p>
+<p>让我们下降指标，有：$$\star A_{01}=-A_{23}$$</p>
+<p>再次做对偶，我们得到：$$\star\star A^{23}=\epsilon^{2301}\star A_{01}=\star A_{01}=-A_{23}=-A^{23}$$</p>
+<p>一般化我们得到：$$\star\star A^{\mu\nu}=-A^{\mu\nu}$$</p>
+<p>因为$\epsilon^{\mu\nu\lambda\sigma}$洛伦兹不变，我们可以定义：$$A^{(\pm)}<em>{\mu\nu}=\frac{1}{2}(A</em>{\mu\nu}\pm i\star A_{\mu\nu})$$</p>
+<p>于是我们有：$$\star A^{(\pm)}<em>{\mu\nu}=\mp iA^{(\pm)}</em>{\mu\nu}$$</p>
+<p>于是我们得到$A^{(+)}<em>{\mu\nu}$和$A^{(-)}</em>{\mu\nu}$。它们中每一个都形成了反对称2张量的6维空间的3维子空间，现在每个子空间的对应都明确了。</p>
+<p>下一节，我们会使用这里的某些表示来构建场论，尤其是对于$D^{(\frac{1}{2},0)}$和$D^{(0，\frac{1}{2})}$，然后我们会需要狄拉克方程。</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

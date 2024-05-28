@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-8-扰动理论wick图">Lecture 8. 扰动理论Ⅰ：Wick图</h2>
+<p>我们上一节从戴森公式得到了$S$矩阵的表达式：$$S=U_I(\infty,-\infty)=T\exp{\bigg(-i\int^{\infty}_{-\infty}dt\ H_I(t)\bigg)}$$</p>
+<h3 id="81-三个场论模型">8.1 三个场论模型</h3>
+<p>我们给出三个模型：</p>
+<p>模型一：$$\mathscr{L}=\frac{1}{2}(\partial^\mu\phi)(\partial_\mu\phi)-\frac{1}{2}\mu^2\phi^2-g\rho(x)\phi(x)$$</p>
+<p>这包含一个标量场$\phi(x)$和其于时空依赖的c数函数$\rho(x)$相互作用，我们称$g$为耦合常数。运动方程为：$$(\Box^2+\mu^2)\phi(x)=-g\rho(x)$$</p>
+<p>这和电动力学中的方程很像，其中的c数函数变成了电磁流$J^\mu$的分量。显然，模型一可以用来描述处于外部流中的电磁场，也可以描述一个外部流下的介子标量场。这是我们最简单的模型，所以不需要引入开关函数$f$。</p>
+<p>模型二：$$\mathscr{L}=\frac{1}{2}(\partial^\mu\phi)(\partial_\mu\phi)-\frac{1}{2}\mu^2\phi^2-g\rho(\mathbf{x})\phi(x)$$</p>
+<p>这个模型和模型一唯一的区别是$\rho$现在只依赖于空间分量。这个模型和静电学很像：给定电荷分布，然后计算其激发的电磁场。在这个模型中，我们确实要放一个开关函数$f$。</p>
+<p>模型三：$$\mathscr{L}=\frac{1}{2}(\partial^\mu\phi)(\partial_\mu\phi)-\frac{1}{2}\mu^2\phi^2-\partial^\mu\psi^<em>\partial_\mu\psi-m^2\psi^</em>\psi-g\phi(x)\psi^*\psi$$</p>
+<p>这个模型包含中性场$\phi$和带电场$\psi$。当耦合常数$g\rightarrow0$，我们得到三个自由粒子，分别是来自$\psi^*\psi$的正反粒子和来自$\phi^2$的一个中性粒子。</p>
+<p>其中，两个场的运动方程为：$$\begin{aligned}
+\phi:&amp;(\Box^2+\mu^2)\phi=-g\psi^*\psi\
+\psi:&amp;(\Box^2+m^2)\psi=-g\psi\phi
+\end{aligned}$$</p>
+<p>这个模型和汤川的介子和核子相互作用模型很相似，但这个模型只是为了演示用，实际上我们应该注意到，哈密顿量中$g\phi\psi^*\psi$这一项无论取正号还是负号都会(unbounded below)无下界。</p>
+<p>现在让我们尝试对$U_I$矩阵做相对论性推广，我们有：$$S=U_I(\infty,-\infty)=T\exp{\bigg(-i\int^{\infty}_{-\infty}d^4x\ \mathscr{H}_I(x)\bigg)}$$</p>
+<p>分别计算这三个模型的哈密顿密度，我们有：$$\begin{aligned}
+{\rm Model\ 1:\ }&amp;\mathscr{H}^{(1)}_I=g\rho(x)\phi(x)\
+{\rm Model\ 2:\ }&amp;\mathscr{H}^{(2)}_I=gf(t)\rho(\mathbf{x})\phi(x)\
+{\rm Model\ 3:\ }&amp;\mathscr{H}^{(3)}_I=gf(t)\psi^*\psi\phi
+\end{aligned}$$</p>
+<p>为了保证哈密顿和厄米性，我们需要$\rho$是实的，我们通过相互作用图景下的微扰论来求解这三个模型。</p>
+<h3 id="82-wick定理">8.2 Wick定理</h3>
+<p>我们的一般思路是利用把时间排序积作用到正规排序积的代数。时间排序积只对含时场算符有定义，而正规排序算符只对自由场有定义，幸好在戴森公式中，我们既有带时标的算符，也有自由场算符，所以我们可以随意地把这些乘积写成正规排序或时间排序的形式，这很重要，因为有了它们我们计算矩阵元会更加方便。</p>
+<p>考虑模型一，在指数的$n$阶展开式中，我们会得到一串$\phi$，如果我们把它们的正规排序夹在两粒子态之间，我们得到$$\braket{p&rsquo;_1,p&rsquo;_2|:\phi(x_1)\phi(x_2)&hellip;\phi(x_n):|p_1,p_2}$$</p>
+<p>当$n&gt;4$，表达式等于0。我们要么有太多的湮灭算符，把右矢消除；要么有太多产生算符把左矢消除。</p>
+<p>当$n=4$，两个场算符中的湮灭算符会把初态变成真空，然后另外两个算符产生两个终态粒子，于是态就变成了终态，这正是我们想要的，所以，问题就是，我们能不能找到一种代数，把时序乘积转换为正规乘积，再加上一些c数，这会使我们的计算得到简化。</p>
+<p>幸运的是Wick帮我们做到了这一点。为了解释Wick定理，我们首先考虑两个自由场算符$A(x)$和$B(y)$，然后我们定义它们的缩并为：$$\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{A(x)B(y)}=T(A(x)B(y))-:A(x)B(y):$$</p>
+<p>对自由场，可以证明缩并是一个c数。</p>
+<blockquote>
+<p>证明如下：设$x_0&gt;y_0$，有：$$T(A(x)B(y))=A(x)B(y)$$
+我们把$A$和$B$分解为：$$\begin{aligned}
+A(x)&amp;=A^{(+)}(x)+A^{(-)}(x)\
+B(x)&amp;=B^{(+)}(x)+B^{(-)}(x)
+\end{aligned}$$
+得到：$$\begin{aligned}
+T(A(x)B(y))&amp;=\ :A(x)B(y):+[A^{(+)}(x),B^{(-)}(y)]\
+&amp;=\ :A(x)B(y):+\begin{cases}
+\Delta_+(x-y),\ \ \ {\rm if}\ A=B\
+0\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ,\ \ \ {\rm if}\ A\neq B
+\end{cases}
+\end{aligned}$$
+考虑$x_0&lt;y_0$，我们得到：$$\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{A(x)B(y)}=\theta(x_0-y_0)\Delta_+(x-y)+\theta(y_0-x_0)\Delta_+(y-x)$$
+这告诉我们缩并就是一个c数</p>
+</blockquote>
+<p>另外，我们可以写出缩并的另外一个表达式：$$\begin{aligned}
+\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{A(x)B(y)}&amp;=\braket{0|\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{A(x)B(y)}|0}=\braket{0|T(A(x)B(y))|0}-\braket{0|:A(x)B(y):|0}\
+&amp;=\braket{0|T(A(x)B(y))|0}
+\end{aligned}$$</p>
+<p>回到我们的例子，计算得到：$$\begin{aligned}
+\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{\phi(x)\phi(y)}&amp;=\lim_{\epsilon \rightarrow 0^+}\int\frac{d^4p}{(2\pi)^4}e^{-ip\cdot(x-y)}\frac{i}{p^2-\mu^2+i\epsilon}\
+\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{\psi^<em>(x)\psi(y)}&amp;=\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{\psi(x)\psi^</em>(y)}=\lim_{\epsilon \rightarrow 0^+}\int\frac{d^4p}{(2\pi)^4}e^{-ip\cdot(x-y)}\frac{i}{p^2-m^2+i\epsilon}
+\end{aligned} $$</p>
+<p>其他的缩并都为0。对于多个场中的缩并，Wick告诉我们：$$:A(x)\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{B(y)C(z)D(w)}:\ \equiv\ :A(x)C(z):\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ }{B(y)D(w)}$$</p>
+<p>我们约定：$$\phi^{a_1}(x_1)\phi^{a_2}(x_2)&hellip;\phi^{a_n}(x_n)\equiv\phi_1\phi_2&hellip;\phi_n$$</p>
+<p>那么Wick定理为：$$\begin{aligned}
+T(\phi_1\phi_2&hellip;\phi_n)=&amp;:\phi_1\phi_2&hellip;\phi_n:\
+&amp;+\ :\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \  \ \ }}\mkern-2mu\normalsize |\ \ }{\phi_1\phi_2}&hellip;\phi_n:+\ ({\rm all\ other\ terms\ with\ one\ contraction})\
+&amp;+\ :\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \  \ \ }}\mkern-2mu\normalsize |\ \ }{\phi_1\phi_2}\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \  \ \ }}\mkern-2mu\normalsize |\ \ }{\phi_3\phi_4}&hellip;\phi_n:+\ ({\rm all\ other\ terms\ with\ two\ contractions})\
+&amp;+\ :&hellip;:+\ ({\rm all\ terms\ with\ }{{\frac{1}{2}n}\ }{\rm or\ }{\frac{1}{2}(n-1)\ {\rm contractions}})
+\end{aligned}$$</p>
+<blockquote>
+<p>令$W(\phi_1\phi_2&hellip;\phi_n)=$上式的右侧，我们通过归纳法来证明Wick定理。
+首先，显然：$$T(\phi_1\phi_2)=:\phi_1\phi_2:+:\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \  \ \ }}\mkern-2mu\normalsize |\ \ }{\phi_1\phi_2}:=W(\phi_1\phi_2)$$
+然后我们证明，当$T(\phi_2\phi_3&hellip;\phi_n)=W(\phi_2\phi_3&hellip;\phi_n)$，我们可以推出：$T(\phi_1\phi_2&hellip;\phi_n)=W(\phi_1\phi_2&hellip;\phi_n)$，首先，我们标记$x_n^0\leq &hellip;\leq x_2 ^0\leq x_1^0$，那么有：$$\begin{aligned}
+\phi_1T(\phi_2\phi_3&hellip;\phi_n)&amp;=\phi_1W(\phi_2\phi_3&hellip;\phi_n)\
+&amp;=(\phi^{(+)}_1+\phi^{(-)}_1)W(\phi_2\phi_3&hellip;\phi_n)\
+&amp;=\phi^{(-)}_1W+W\phi^{(+)}_1+[\phi^{(+)}_1,W]
+\end{aligned}$$
+上式中所有项都是正规排序过的，前面两项包括了所有不包括$\phi_1$的缩并，在对易子内部，所有纯粹的c数都与$\phi_1^{(+)}$，而从其他项则会得到所有包含$\phi_1$的缩并，所以，右边刚好就等于$W(\phi_1\phi_2&hellip;\phi_n)\ \ \ {Q.E.D}$。</p>
+</blockquote>
+<h3 id="83-用wick图表示戴森公式">8.3 用Wick图表示戴森公式</h3>
+<p>戴森公式的展开很复杂，所有不如我们用简单的Wick图来表示展开的项。需要注意，这不是费曼图。拿模型三为例子，按照戴森公式，我们要计算：$$T\exp{\bigg(-i\int d^4x\ \mathscr{H}_I\bigg)}$$</p>
+<p>考虑二阶展开项：$$\frac{(-ig)^2}{2!}\int d^4x_1d^4x_2f(t_1)f(t_2)T(\psi^<em>_1\psi_1\phi_1\psi^</em>_2\psi_2\phi_2)$$</p>
+<p>现在我们开始画图，对于二阶展开项，我们得到两个点：</p>
+<!-- raw HTML omitted -->
+<p><img src="13.png" alt="intergrate">{width=70% height=auto}</p>
+<p>两个点，对应戴森公式的二阶展开项</p>
+<!-- raw HTML omitted -->
+<p>现在从点延伸出去线，如下图。</p>
+<!-- raw HTML omitted -->
+<p><img src="14.png" alt="intergrate">{width=70% height=auto}</p>
+<p>三条线，对应不同场算符</p>
+<!-- raw HTML omitted -->
+<p>缩并的意义是什么？只要两个场缩并且不为0，那我们就会把它们连起来，实际上，从先前的计算结果来看，只有$\phi-\phi$和$\psi^<em>-\psi$两种情况。例如，对于二阶展开项：$$\frac{(-ig)^2}{2!}\int d^4x_1d^4x_2f(t_1)f(t_2):\psi^</em>_1\psi_1\overset {\normalsize|\Large \mkern-2mu{}^{\overline{ \ \ \ \ \ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ }{\phi_1\psi^*_2\psi_2\phi_2}:$$</p>
+<p>其对应的Wick图如下。</p>
+<!-- raw HTML omitted -->
+<p><img src="15.png" alt="intergrate">{width=70% height=auto}</p>
+<p>具有$\phi-\phi$缩并的二阶图</p>
+<!-- raw HTML omitted -->
+<p>这一项可以对应多个物理过程，算符：$$:\psi^<em>_1\psi_1\psi^</em>_2\psi_2:$$</p>
+<p>包含了多种操作，对于$\psi$场，你可以湮灭核子$N$，产生反核子$\bar{N}$；$\psi^<em>$场则对应，产生$N$和湮灭$\bar{N}$。于是我们有非零振幅：$$\braket{{\rm final\ two\ nucleon\ state|:\psi^</em>_1\psi_1\psi^*_2\psi_2:|{\rm initial\ two\ nucleon\ state}}}$$</p>
+<p>于是，这个二阶项可以对应如下几种反应：$$\begin{aligned}
+N+N&amp;\rightarrow N+N\
+N+\bar{N}&amp;\rightarrow N+\bar{N}\
+\bar{N}+\bar{N}&amp;\rightarrow \bar{N}+\bar{N}
+\end{aligned}$$</p>
+<p>然而，不会有$N+N\rightarrow\bar{N}+\bar{N}$出现，因为这打破了$U(1)$对称性，违反了荷守恒。同时也不会有${\rm vacuum}\rightarrow N+N+\bar{N}+\bar{N}$，因为这不符合能动量守恒。</p>
+<p>现在考虑另一个例子，同样是Wick定理的二次展开项：$$\frac{(-ig)^2}{2!}\int d^4x_1d^4x_2f(t_1)f(t_2):\overset {\normalsize|\Large \mkern-2mu{}^{\overline{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ }{\psi^<em>_1\psi_1\phi_1\psi^</em>_2\psi_2}\phi_2:$$</p>
+<p>其对应的Wick图如下。</p>
+<!-- raw HTML omitted -->
+<p><img src="16.png" alt="intergrate">{width=70% height=auto}</p>
+<p>具有$\psi^*-\psi$缩并的二阶图</p>
+<!-- raw HTML omitted -->
+<p>其对应的几种反应为：$$\begin{aligned}
+N+\phi&amp;\rightarrow N+\phi\
+\bar{N}+\phi&amp;\rightarrow \bar{N}+\phi\
+\bar{N}+N&amp;\rightarrow \phi+\phi
+\end{aligned}$$</p>
+<p>不会有：$N\rightarrow N+\phi+\phi$，因为不符合能动量守恒。</p>
+<p>现在我们知道，可以通过展开项写出Wick图。实际上，反过来，我们也可以由Wick图写出对应的展开项。实际上，它们是<strong>一一对应</strong>的。</p>
+<p>整个Wick展开式都可以用一系列图表示，它们可以是任何可能的图，尽管可能为0。比如，对于模型三的一阶微扰展开，我们得到：$$W(\psi,\psi^<em>,\phi)=:\psi^</em>\psi\phi:+\overset {\normalsize|\Large \mkern-2mu{}^{\overline{\ \  \ \ }}\mkern-2mu\normalsize |}{\psi^*\psi}\phi$$</p>
+<p>这里我们可以写出两个图，但它们都为0，因为违反了能动量守恒。对于第一项，我们不会愚蠢到选择一个质量如此大的粒子以至于它可以衰变为核子和反核子；对于第二项，我们不能凭空生成一个和真空态有相同能量和动量的介子。</p>
+<p>还有一些情况，Wick展开项归为0，那就是当缩并发生在我们指定的两种情况以外，此时，其Wick图不合规范。需要注意的是，Wick图的拓扑结构很重要，但不管怎样，它们仍然是一一对应的。比如下图。</p>
+<!-- raw HTML omitted -->
+<p><img src="17.png" alt="intergrate">{width=70% height=auto}</p>
+<p>都具有$\psi^*-\psi$缩并，但下标不同</p>
+<!-- raw HTML omitted -->
+<p>另外，我们可以有多重缩并，如下图。实际上，Wick定理告诉我们，要遍历所有的缩并。</p>
+<!-- raw HTML omitted -->
+<p><img src="18.png" alt="intergrate">{width=70% height=auto}</p>
+<!-- raw HTML omitted -->
+<h3 id="84-连接connected和不连接disconnected的wick图">8.4 连接(connected)和不连接(disconnected)的Wick图</h3>
+<p>处理Wick图表示可能已经让人头疼，但操作这些图会让人更头疼。在之前，我们知道，比如对二阶展开交换12下标，那么对应的Wick图不一样。但是如果我们做双重积分，实际上它们得到的数值都是一样的。</p>
+<p>鉴于此，我现在要介绍一种更加&quot;combinatorics&quot;的表示。给定一个图$D$，设其顶点数为$n(D)$，给定两个图$D_1$和$D_2$，如果两图之间的差异只在于顶点标的排列，那么我们称$D_1$和$D_2$是同一个图案。那么，定义算符$O(D)$，来表征同一个图，通过引入下面的算符来复原Wick展开式中的项：$$\frac{:O(D):}{n(D)!}$$</p>
+<p>你可能会想，对于给定的$n(D)$，通过交换顶点，我们一共可以得到$n(D)!$种排列，它们刚好都。如果是的话那非常好，可惜不是，因为有时候我们交换顶点，得到的是相同的Wick图。所以我们引入对称数$S(D)$，它等于不改变图的指标转换的数量。例如，对于下图，如果按顺序排列1234顶点，那么图并没有被改变，所以下图的$S(D)=4$</p>
+<!-- raw HTML omitted -->
+<p><img src="19.png" alt="intergrate">{width=70% height=auto}</p>
+<p>模型三的四阶图</p>
+<!-- raw HTML omitted -->
+<p>当然，我们还有更复杂的例子，比如下图。</p>
+<!-- raw HTML omitted -->
+<p><img src="20.png" alt="intergrate">{width=70% height=auto}</p>
+<p>模型三的六阶图</p>
+<!-- raw HTML omitted -->
+<p>这个例子的$S(D)=2$，对应当我们上下翻转顶点时的两种情况。</p>
+<p>所以，对每一个图，我们到底有多少种不同的项，简单推导可知，一共有：$n(D)!/S(D)$个项。现在让我们计算一个图对应的项的总和，我们得到：$$\bigg(\begin{aligned}
+{\rm sum\ of\ all\ diagrams}\
+{\rm in\ a\ given\ pattern\ }
+\end{aligned}\bigg)=\frac{n(D)!}{S(D)}\frac{:O(D):}{n(D)!}=\frac{:O(D):}{S(D)}$$</p>
+<p>至此，我们讨论的所有图都是连接的，也就是所有顶点相互连通，注意，下图虽然不闭合，但按照连通定义也是连通的。</p>
+<!-- raw HTML omitted -->
+<p><img src="21.png" alt="intergrate">{width=70% height=auto}</p>
+<p>模型一的一阶图</p>
+<!-- raw HTML omitted -->
+<p>现在我们举一个不连通的例子，见下图。</p>
+<!-- raw HTML omitted -->
+<p><img src="22.png" alt="intergrate">{width=70% height=auto}</p>
+<p>模型一的四阶图</p>
+<!-- raw HTML omitted -->
+<p>当然，我们有更复杂的例子，比如下图。</p>
+<!-- raw HTML omitted -->
+<p><img src="23.png" alt="intergrate">{width=70% height=auto}</p>
+<p>模型三的六阶图</p>
+<!-- raw HTML omitted -->
+<p>接下来我们将介绍一个神奇的定理：$$\sum{\rm all\ Wick\ diagrams}=:\exp{\Big(\sum{\rm connected\ Wick\ diagrams}\Big)}:$$</p>
+<blockquote>
+<p>证明如下：首先，引入一组连通图（不特意指定顶点）的完备基$D^{(c)}<em>r,\ r=1,2,3,&hellip;,\infty $，而一个图$D$可以被这组完备基线性表示，系数为$n_r$。实际上，对于非连通图，我们有：$$:O(D^{(d)}):=:\prod^{\infty}</em>{r=1}\Big[O(D^{(c)}_r)\Big]^{n_r}:$$
+实际上，这个表达式适用于所有的$D$。那么，$S(D)$发挥了什么作用呢？实际上，它告诉我们，给定连通图$D^{(c)}<em>r$，我们可以进行$S(D^{(c)}<em>r)!$次排列而不改变图。通过将其作用到每个连通图上，我们得到：$$\frac{:O(D):}{S(D)}=:\prod^{\infty}</em>{r=1}\frac{1}{n_r!}\Big[\frac{O(D^{(c)}<em>r)}{S(D^{(c)}<em>r)}\Big]^{n_r}:$$
+那么：$$\begin{aligned}
+U_I(\infty,-\infty)&amp;=\sum{\rm all\ Wick\ diagrams}=\sum^\infty</em>{n_1=0}\sum^\infty</em>{n_2=0}&hellip;:\prod^{\infty}</em>{r=1}\frac{1}{n_r!}\Big[\frac{O(D^{(c)}<em>r)}{S(D^{(c)}<em>r)}\Big]^{n_r}:\
+&amp;=:\prod^{\infty}</em>{r=1}\sum^\infty</em>{n_r=0}\frac{1}{n_r!}\Big[\frac{O(D^{(c)}_r)}{S(D^{(c)}<em>r)}\Big]^{n_r}:=:\prod^{\infty}</em>{r=1}\exp{\Big(\frac{O(D^{(c)}_r)}{S(D^{(c)}<em>r)}\Big)}:\
+&amp;=:\exp{\sum^\infty</em>{r=1}\Big(\frac{O(D^{(c)}_r)}{S(D^{(c)}_r)}\Big)}:\ \ \ \ {\rm Q.E.D}
+\end{aligned}$$</p>
+</blockquote>
+<h3 id="85-模型一的精确解">8.5 模型一的精确解</h3>
+<p>现在来求解模型一，我们有：$$\mathscr{H}_I=g\rho(x)\phi(x)$$</p>
+<p>我们假定$\rho(x)$随$x\rightarrow\infty$而足够快地衰减为0。对其我们可以做任意阶展开，不过只有两种连通图如下，我们称其为$D_1$和$D_2$。</p>
+<!-- raw HTML omitted -->
+<p><img src="24.png" alt="intergrate">{width=40% height=auto}<img src="25.png" alt="intergrate">{width=40% height=auto}
+$D_1$和$D_2$</p>
+<!-- raw HTML omitted -->
+<p>现在进行计算，$S(D_1)=1$，其对应的算符为：$$O_1-ig\int d^4x_1 \rho(x_1)\phi(x_1)$$</p>
+<p>$S(D_2)=2$，其对应算符为：$$O_2=(-ig)^2\int d^4x_1 d^4x_2 \ \overset {\normalsize|\Large \mkern-2mu{}^{\overline{ \ \ \ \ \ \ \ \ \ \ }}\mkern-2mu\normalsize |\ \ \ \ \ \ \ \ }{\phi(x_1)\phi(x_2)}\rho(x_1)\rho(x_2)$$</p>
+<p>实际上，$O_2$并不是一个算符，而只是一个复数$O_2=-\alpha+i\beta\ \ ({\rm where}\ \alpha&gt;0)$。现在，有了这些，我们可以应用先前得到的公式了：$$U_I(\infty,-\infty)=:\exp{\Big(\frac{O_1}{1!}+\frac{O_2}{2!}\Big)}:=:\exp{(\frac{1}{2}O_2)}\exp{(O_1)}:=e^{\frac{1}{2}(-\alpha+i\beta)}:\exp{(O_1)}:$$</p>
+<p>这就是$S$矩阵的表达式，其中第一个因子是一个复数，我们称之为$A$，为一个整体归一化常数（我们并不关系它的相位）：$$A=e^{\frac{1}{2}(-\alpha+i\beta)}$$</p>
+<p>现在计算“$:\exp{(O_1)}:$”，不管怎样，$\phi$是自由粒子场，所以我们再再又次次搬出：$$\phi(x)=\int\cfrac{d^3\mathbf{p}}{(2\pi)^{3/2}\sqrt{2\omega_\mathbf{p}}}\Big(a_\mathbf{p}e^{-ip\cdot x}+a^\dagger_\mathbf{p}e^{ip\cdot x}\Big)$$</p>
+<p>定义$\rho(x)$的傅里叶变换$\tilde{\rho}(p)$：$$\tilde{\rho}(p)=\int d^4x e^{ip\cdot x}\rho(x)$$</p>
+<p>注意到：$\tilde{\rho}(-p)=\tilde{\rho}(p)^<em>$，于是我们有：$$\begin{aligned}
+O_1&amp;=\int d^4x\rho(x)\phi(x)=-ig\int\frac{d^3\mathbf{p}}{(2\pi)^{3/2}\sqrt{2\omega_{\mathbf{p}}}}[a_{\mathbf{p}}\tilde{\rho}(\mathbf{p},\omega_\mathbf{p})^</em>+a_\mathbf{p}^\dagger\tilde{\rho}(\mathbf{p},\omega_\mathbf{p})]\
+&amp;=\int d^3\mathbf{p} [-h(\mathbf{p})^*a_\mathbf{p}+h(\mathbf{p})a_\mathbf{p}^\dagger]
+\end{aligned}$$</p>
+<p>这里使用$h$是为了表达方便。容易看出的是，虽然$\rho(x)$非零，但$\tilde{\rho}(p)$在质壳（$p^\mu p_\mu=\mu^2$）上为0。这只是简单的能动量守恒，Wick显示这涉及一个凭空生成介子的反应，由于能动量守恒的限制，即使$\tilde{\rho}(p)$在其他地方有非零量，我们也不能在质壳上生成一个介子。</p>
+<p>让我们把上面的分析作用到最简单的例子上，我们从真空场开始，然后发生振荡，产生介子，那么有多少介子呢？为了得到答案，我们将$U_I(\infty,-\infty)$作用到真空态上，于是有：$$\begin{aligned}
+\ket{\psi}&amp;=U_I(\infty,-\infty )\ket{0}=A:\exp{\Big[\int d^3\mathbf{p}h(\mathbf{p})a^\dagger_\mathbf{p}\Big]}\exp{\Big[-\int d^3\mathbf{p}h(\mathbf{p})^*a_\mathbf{p}\Big]}:\ket{0}\
+&amp;=A:\exp{\Big[\int d^3\mathbf{p}h(\mathbf{p})a^\dagger_\mathbf{p}\Big]}\sum^\infty_{n=0}\frac{1}{n!}\Big(-\int d^3\mathbf{p}h(\mathbf{p})^*a_\mathbf{p}\Big):\ket{0}\
+&amp;=A\exp{\Big[\int d^3\mathbf{p}h(\mathbf{p})a^\dagger_\mathbf{p}\Big]}\ket{0}
+\end{aligned}$$</p>
+<p>由于正规排序，右边级数中的湮灭算符作用到真空态上得0，只有第一项保留下来。另一方面，我们把$\psi$展开如下：$$\ket{\psi}=\sum^\infty_{n=0}\frac{1}{n!}\int d^3\mathbf{p}_1d^3\mathbf{p}_2&hellip;d^3\mathbf{p}_n\psi^{(n)}(\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n)\ket{\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n}$$</p>
+<p>其中$\psi^{(n)}(\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n)\equiv\braket{\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n|\psi}=\braket{\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n|S|0}$。比对上两式，我们得到：$$\begin{aligned}
+\psi^{(0)}&amp;=A\
+\psi^{(1)}&amp;=Ah(\mathbf{p})\
+\psi^{(2)}&amp;=Ah(\mathbf{p}_1)h(\mathbf{p}_2)\
+&hellip;\
+\psi^{(n)}&amp;=Ah(\mathbf{p}_1)h(\mathbf{p}_2)&hellip;h(\mathbf{p}_n)
+\end{aligned}$$</p>
+<p>那么，我们找到$n$个介子的概率就为：$$\begin{aligned}
+P(n)&amp;=\frac{1}{n!}\int d^3\mathbf{p}_1d^3\mathbf{p}_2&hellip;d^3\mathbf{p}_n|\psi^{(n)}(\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n)|^2\
+&amp;=|A|^2\frac{1}{n!}\Big[\int d^3\mathbf{p}|h(\mathbf{p})|^2\Big]^n
+\end{aligned}$$</p>
+<p>通过概率归一化，我们有：$$\begin{aligned}
+1&amp;=\sum^\infty_{n=0}P(n)=|A|^2\sum^\infty_{n=1}\frac{1}{n!}\Big[\int d^3\mathbf{p}|h(\mathbf{p})|^2\Big]^n=|A|^2\exp{\Big(\int d^3\mathbf{p}|h(\mathbf{p})|^2\Big)}\
+&amp;\Leftrightarrow|A|^2=\exp{\Big(-\int d^3\mathbf{p}|h(\mathbf{p})|^2\Big)}
+\end{aligned}$$</p>
+<p>由于先前定义了$A=e^{\frac{1}{2}(-\alpha+i\beta)}$，所以有：$$\alpha=\int d^3\mathbf{p}|h(\mathbf{p})|^2$$</p>
+<p>回代得到：$$P(n)=e^{-\alpha}\frac{\alpha^n}{n!}$$</p>
+<p>哇哦，这是个泊松分布。也就是说，在这个辐射过程中，找到$n$个介子的概率满足泊松分布。如果我们做一亿次实验，那么最终每次实验我们发现的平均介子数为：$$\braket{N}=\sum^\infty_{n=0}nP(n)=\sum^\infty_{n=1}nP(n)=e^{-\alpha}\sum^\infty_{n=1}\frac{\alpha^n}{(n-1)!}=\alpha$$</p>
+<p>$\alpha=\int d^3\mathbf{p}|h(\mathbf{p})|^2$，就是平均粒子数(mean multiplicity)，由于$\alpha\propto g^2$，所以虽然$P(n)$随$g$增大而减小，但$\braket{N}$却随$g$增大而增大。</p>
+<blockquote>
+<p>我们得到的$n$粒子态非常简单，理论也很简单。所有多粒子态都是由单粒子态决定的，它们只是单粒子态的简单乘积。它非常接近非相关态，满足玻色统计。这种情况发生在量子光学中。在相应的光学模型中，我们有一大块带电物质上下移动（激光）。这就是光子态，人们称之为相干态。这不仅是经典源的特征，而且是所有由使光子和介子可以被视为经典的源的特征（？）。比如，我们有一个带电粒子穿过物质造成原子电离，释放出大量光子，在极端情况下形成切伦科夫辐射。高能光子会给粒子一个反冲力，从而使得带电粒子不是经典的源。但是对于没那么高能的光子，我们称之为“软光子(soft photons)”，带电粒子质量非常大，可以近似为经典源。所以带电粒子穿过物质时发出的光子光谱中的软部分是相干态图案。带电粒子在磁场中的弯曲也被称为相干态图案。</p>
+</blockquote>
+<p>谐振子的相干态如下：$$\ket{\lambda}\equiv e^{\lambda a^\dagger}\ket{0}$$</p>
+<p>我们可以用这些态对角化$a$：$$a\ket{\lambda}=ae^{\lambda a^\dagger}\ket{0}=[a,e^{\lambda a^\dagger}]\ket{0}=\lambda e^{\lambda a^\dagger}\ket{0}=\lambda\ket{\lambda}$$</p>
+<p>模型一的相干态为：$$\ket{\lambda}\equiv:e^{\lambda O_1}:\ket{0}=\exp{\Big(\lambda\int d^3\mathbf{p}h(\mathbf{p}a^\dagger_\mathbf{p})\Big)}\ket{0}$$</p>
+<p>这些态也是$\phi^{(+)}$的本征态，具有本征值：$$\lambda_\phi=\lambda\int\frac{d^3\mathbf{p}}{(2\pi)^{3/2}\sqrt{2\omega_\mathbf{p}}}e^{-ip\cdot x}h(\mathbf{p})$$</p>
+<p>$\ket{\lambda}$中的多粒子态部分只是单粒子态的乘积，所以其期望值$\braket{\lambda|x|\lambda}$和$\braket{\lambda|p|\lambda}$和经典变量一致。现在计算平均能量，有：$$\begin{aligned}
+\braket{E}&amp;=\braket{\psi|H|\psi}=\sum^\infty_{n=0}\frac{1}{n!}\int d^3\mathbf{p}_1&hellip;d^3\mathbf{p}_n\braket{\psi|H|\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}_n}\braket{\mathbf{p}_1,\mathbf{p}_2,&hellip;,\mathbf{p}<em>n|\psi}\
+&amp;=\sum^\infty</em>{n=0}\frac{1}{n!}\int d^3\mathbf{p}_1&hellip;d^3\mathbf{p}<em>n|\psi^{(n)}|^2(\omega</em>{\mathbf{p}<em>1}+\omega</em>{\mathbf{p}<em>2}+&hellip;+\omega</em>{\mathbf{p}<em>n})\
+&amp;=\sum^\infty</em>{n=0}\frac{1}{n!}\int d^3\mathbf{p}_1 d^3\mathbf{p}_2&hellip;d^3\mathbf{p}<em>ne^{-\alpha}|h(\mathbf{p}<em>1)|^2&hellip;|h(\mathbf{p}<em>n)|^2n\omega</em>{\mathbf{p}<em>1}\
+&amp;=\sum^\infty</em>{n=1}\frac{\alpha^{n-1}}{(n-1)!}e^{-\alpha}\int d^3\mathbf{p}|h(\mathbf{p})|^2\omega</em>\mathbf{p}=\int d^3\mathbf{p}|h(\mathbf{p})|^2\omega</em>\mathbf{p}
+\end{aligned}$$</p>
+<p>类似地，我们有：$$\braket{\mathbf{p}}=\int d^3\mathbf{p}|h(\mathbf{p})|^2\mathbf{p}$$</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

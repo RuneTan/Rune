@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-2最简单的多体理论">Lecture 2.最简单的多体理论</h2>
+<h3 id="21-表述多粒子态的第一步">2.1 表述多粒子态的第一步</h3>
+<h4 id="引言">引言</h4>
+<p>我们的讨论聚焦于<strong>Fock空间</strong>，也就是希尔伯特空间。这个态空间描述了我们将要讨论的系统。我们会发现，当我们写下Fock空间中的一个态形式时，它是非常丑陋的，我们通过产生与湮灭算符解决这个问题。</p>
+<p>在多体理论和统计力学中，经常有粒子数不固定的系统。在统计物理中我们经常考虑巨正则系综，其将各种具有不同粒子数的态进行统计平均，而粒子数波动由化学势决定。在固体物理中，晶体具有非常多电子，但我们通常只关注那些一头扎进费米海的传导电子。电子数可通过进出费米海而改变。</p>
+<p>为了使表述清晰，我们先介绍非相对论的归一化和符号，再在结尾将其接入相对论。</p>
+<h4 id="构造基矢">构造基矢</h4>
+<p>首先，让我们回想非相对论单粒子的希尔伯特空间：动量矢由动量$\mathbf{p}$标记，具有归一化关系：$$\braket{\mathbf{p}|\mathbf{p&rsquo;}}=\delta^{(3)}(\mathbf{P}-\mathbf{p&rsquo;})$$</p>
+<p>它们还同时是哈密顿算符和动量算符的本征值，有：$$H\ket{\mathbf{p}}=\omega_{\mathbf{p}}\ket{\mathbf{p}},\ \mathbf{P}\ket{\mathbf{p}}=\mathbf{p}\ket{\mathbf{p}}$$</p>
+<p>它们的洛伦兹变换性质被良好定义，构成希尔伯特空间的一组基，空间中的一般态是这些基的线性组合。</p>
+<p>现在我们需要一个更大的希尔伯特空间，使得$\ket{\mathbf{p}}$只是基矢的一个子集。我们能在系统中发现一个粒子，由$\ket{\mathbf{p}}$表述，那也能发现两个、三个，然后一般态就是全部基矢的线性组合。所以，我们需要更多基矢，先讨论两个粒子的情况。两粒子态描述了两个独立粒子，我们用$\mathbf{p_1}$和$\mathbf{p_2}$来标记之。假设这两个粒子都是玻色子，那么态$\ket{\mathbf{p_1},\mathbf{p_2}}=\ket{\mathbf{p_2},\mathbf{p_1}}$，先后顺序不重要。我们有归一化：$$\braket{\mathbf{p_1},\mathbf{p_2}|\mathbf{p_1&rsquo;},\mathbf{p_2&rsquo;}}=\delta^{(3)}(\mathbf{p_1}-\mathbf{p_1&rsquo;})\delta^{(3)}(\mathbf{p_2}-\mathbf{p_2&rsquo;})+\delta^{(3)}(\mathbf{p_1}-\mathbf{p_2&rsquo;})\delta^{(3)}(\mathbf{p_2}-\mathbf{p_1&rsquo;})$$</p>
+<p>这些态是正交的，它们同时是哈密顿算符和动量算符的本征矢：$$H\ket{\mathbf{p_1},\mathbf{p_2}}=(\omega_\mathbf{p_1}+\omega_\mathbf{p_2})\ket{\mathbf{p_1},\mathbf{p_2}},\ \mathbf{P}\ket{\mathbf{p_1},\mathbf{p_2}}=(\mathbf{p_1}+\mathbf{p_2})\ket{\mathbf{p_1},\mathbf{p_2}}$$</p>
+<p>类似地我们可以构造更多粒子的态，但首先我们还需要规定一个特殊态，就是<strong>真空态</strong>。我们将其标记为$\ket{0}$。我们假设真空态是特殊的，其关于哈密顿算符和动量算符的本征值都为0：$$H\ket{0}=0,\ \mathbf{P}\ket{0}=0$$</p>
+<p>真空态是洛伦兹不变的，$U(\Lambda)\ket{0}=\ket{0}$，有归一化关系：$\braket{0|0}=1$。</p>
+<blockquote>
+<p>需要注意的是，不能将其与希尔伯特空间中的零向量$\mathbf{0}$和代表0动量的本征矢$\ket{\mathbf{0}}$混淆。</p>
+</blockquote>
+<h4 id="量子数统计">量子数统计</h4>
+<p>现在我们得到了Fock空间的全部本征矢，一个一般态矢$\ket{\Psi}$可以写成：$$\ket{\Psi}=\psi_0\ket{0}+\int\psi_1(\mathbf{p})\ket{\mathbf{p}}d^3\mathbf{p}+\cfrac{1}{2!}\int\psi_2(\mathbf{p_1},\mathbf{p_2})\ket{\mathbf{p_1},\mathbf{p_2}}d^3\mathbf{p_1}d^3\mathbf{p_2}+&hellip;$$</p>
+<p>由<strong>粒子全同性</strong>我们有：$\psi_2(\mathbf{p_1},\mathbf{p_2})=\psi_2(\mathbf{p_2},\mathbf{p_1})$，故在相空间积分的时候，对$n$粒子态我们会重复积分$n!$次，所以需要在前面乘上$\frac{1}{n!}$的系数。</p>
+<p>概率幅平方$|\Psi|^2$为：$$|\Psi|^2=\braket{\Psi|\Psi}=|\psi_0|^2+\int d^3\mathbf{p}|\psi_1(\mathbf{p})|^2+\cfrac{1}{2!}\int d^3\mathbf{p_1}d^3\mathbf{p_2}|\psi_2(\mathbf{p_1},\mathbf{p_2})|^2+&hellip;$$</p>
+<p>$\ket{\Psi}$存在且可归一只要$|\Psi|^2&lt;\infty$，所以我们就可以乘上一个系数使$|\Psi|^2=1$，使其可以指代概率。</p>
+<p>现在我们已经写出了多粒子系统态的表达式，但是，这个表达式是一个无穷级数，它很丑也不好计算，所以我们需要寻找一种更简单的方法来描述之。</p>
+<h3 id="22-占有数表象">2.2 占有数表象</h3>
+<h4 id="二次量子化">二次量子化</h4>
+<p>我们通过将系统置于一个盒子来简化问题，虽然这残忍的破坏了物理系统的洛伦兹不变性，甚至旋转不变性。这样我们就只有离散的动量值，从而我们可以把积分化为求和。在盒子中，我们可以标记动量为：$$\mathbf{p}=\bigg( \cfrac{2\pi n_x}{L},\cfrac{2\pi n_y}{L},\cfrac{2\pi n_z}{L}\bigg)$$</p>
+<p>其中$L$是盒子的长度。$n_\mu$是整数，$\mathbf{p}$的取值占据一个立方格子。</p>
+<p>这样，我们可以通过另一种方法来定义我们的基态。在之前的分析中，我们没有考虑玻色子的统计分布。现在，我们考虑倒空间中的一个点$(n_x,n_y,n_z)$（系数省略），我们就这一点统计处在这个状态上的粒子数，并定义占有数$N(\mathbf{p})$。也就是说，原来我们对每个粒子数统计动量，现在我们对每个动量统计粒子数，这两种定义完全等价，只要：$$\sum_\mathbf{p}N(\mathbf{p})&lt;\infty$$</p>
+<p>这样表述的优势是，我们可以自然地使用玻色统计，并且自然包含全同性概念。在占有数表象下，哈密顿量有非常简单的形式：$$H=\sum_\mathbf{p}\omega_\mathbf{p}N(\mathbf{p})$$</p>
+<p>多粒子能量是单粒子能量和，动量同样可以写为：$$\mathbf{P}=\sum_\mathbf{p}\mathbf{p}N(\mathbf{p})$$</p>
+<blockquote>
+<p>只要右乘动量本征矢即可验证上式</p>
+</blockquote>
+<p>注意到，对于固定的$\mathbf{p}$，能量是分立的，具有能级间隔$\omega_\mathbf{p}$，这与谐振子的行为一致。<strong>考虑到$\mathbf{p}$的分布，我们可以把这个多粒子系统看作是所有动量对应谐振子的非耦合叠加，除了不具有零点能$\frac{1}{2}\omega_\mathbf{p}$。</strong> 但是这两个系统完全不同。在谐振子中，$N(\mathbf{p})$表示用$\mathbf{p}$标记的谐振子的激发能级，而在占有数表象下，$N(\mathbf{p})$代表占据该动量的粒子数。</p>
+<h3 id="23-算符形式和谐振子">2.3 算符形式和谐振子</h3>
+<h4 id="对易关系计算">对易关系计算</h4>
+<p>考虑一个谐振子具有约化动量$p$和约化位置$q$，它们并非数值而是量子算符，满足：$[q,p]=i$。</p>
+<p>哈密顿量为：$$H=\cfrac{1}{2}\omega(p^2+q^2-1)$$</p>
+<p>其中的$-1$是为了在形式上消去零点能。</p>
+<p>引入算符$a$和其厄米算符$a^\dagger$：$$a=\cfrac{1}{\sqrt{2}}(q+ip),\ a^\dagger=\cfrac{1}{\sqrt{2}}(q-ip)$$</p>
+<p>其对易关系很好计算：$$[a,a^\dagger]=\cfrac{1}{2}[q+ip,q-ip]=[q,-ip]=1$$</p>
+<p>用$a$和$a^\dagger$重写哈密顿量，得到：$$q=\cfrac{1}{\sqrt{2}}(a+a^\dagger),\ p=\cfrac{1}{i\sqrt{2}}(a-a^\dagger)$$</p>
+<p>那么哈密顿量就可写为：$$H=\cfrac{1}{2}\omega[p^2+q^2-1]=\cfrac{1}{2}\omega[aa^\dagger+a^\dagger a-1]=\omega a^\dagger a=\omega N$$</p>
+<p>这个表达式的形式和之前我们给出的形式非常相似，接下来只需要验证：$N(\mathbf{p})=a^\dagger a$</p>
+<blockquote>
+<p>需要注意的是，我们需要假设基态唯一，否则我们将不会知道粒子是否是无自旋的。</p>
+</blockquote>
+<p>现在计算$H$和$a/a^\dagger$的对易关系：$$\begin{aligned}[H,a]&amp;=\omega[a^\dagger a,a]=\omega[a^\dagger,a]a=-\omega a\ [H,a^\dagger]&amp;=\omega[a^\dagger a,a^\dagger]=\omega a^\dagger[a,a^\dagger]=\omega a^\dagger\end{aligned}$$</p>
+<h4 id="升降算符表达式">升降算符表达式</h4>
+<p>现在考虑能量的本征矢量，满足：$$H\ket{E}=E\ket{E}$$</p>
+<p>那么若哈密顿算符作用于$a^\dagger\ket{E}$上，我们有：$$Ha^\dagger\ket{E}=[H,a^\dagger]\ket{E}+a^\dagger H\ket{E}=\omega a^\dagger\ket{E}+a^\dagger E\ket{E}=(E+\omega)a^\dagger \ket{E}$$</p>
+<p>这样，通过将算符$a^\dagger$作用在本征态$\ket{E}$上，我们成功将其本征值上升了一个$\omega$，可以依次画出能级图：</p>
+<!-- raw HTML omitted -->
+<p><img src="5.png" alt="能级图">{width=50% height=auto}</p>
+<p>能级图</p>
+<!-- raw HTML omitted -->
+<p>类似地，有$H(a\ket{E})=(E-\omega)a\ket{E}$。</p>
+<p>我们可以把$a^\dagger$和$a$称为升降算符。由于哈密顿算符有非负的期望值和特征值，我们很快意识到我们不能将算符$a$一直作用下去，一定存在一个最低本征态，我们记作$\ket{E_0}$，那么有：$$Ha\ket{E_0}=(E-\omega)a\ket{E}$$</p>
+<p>因为我们规定不能有更低的能量本征值，故只能有：$a\ket{E_0}=0$，那么：$$H\ket{E_0}=\omega a^\dagger a\ket{E_0}=0=E_0\ket{E_0}\Rightarrow E_0=0$$</p>
+<p>可见，这个本征态的本质值也为0，我们干脆记之为$\ket{E_0}\equiv\ket{0}$。那么能级就为$\omega$的$n$倍，故我们可以用$n$来标记能量本征态，有：$$H\ket{n}=\omega N\ket{n}=n\omega\ket{n}\Leftrightarrow N\ket{n}=n\ket{n}$$</p>
+<p>可以对基态反复作用算符$a^\dagger$，我们有：$$\ket{n}\propto (a^\dagger)^n\ket{n}$$</p>
+<p>设$a^\dagger\ket{n}=C_n\ket{n+1}$，通过归一化关系$\braket{n|m}=\delta_{nm}$，有：$$\begin{aligned}\braket{n|aa^\dagger|n}&amp;=C_n^2\braket{n+1|n+1}=|C_n|^2\&amp;=\braket{n|a^\dagger a+1|n}=\braket{n|(H/\omega+1|n)}=(n+1)\braket{n|n}=n+1\end{aligned}$$</p>
+<p>我们可以选择$C_n$的相位使其为实数：$C_n=\sqrt{n+1}$，于是我们得到：$$\begin{aligned}a^\dagger\ket{n}&amp;=\sqrt{n+1}\ket{n+1}\a\ket{n}&amp;=\sqrt{n}\ket{n-1}\end{aligned}$$</p>
+<p>最后还存在一个问题，也就是我们如何保证能量本征矢构成完备的能量状态空间。</p>
+<blockquote>
+<p>首先有引理：若存在算符$A$与$p$和$q$都对易，那么$A$只能是单位矩阵的倍数:$A=\lambda I$。
+那么，我们假设存在一个不在阶梯上的态函数$\ket{\psi}$，考虑投影算符$\mathcal{P}$将这个态映到阶梯上$$\mathcal{P}\ket{\psi}=\lambda\ket{n}$$
+自然有$[\mathcal{P},a]=[\mathcal{P},a^\dagger]=0$，于是：$$\mathcal{P}=\lambda I$$也就是说，不存在不在阶梯上的态</p>
+</blockquote>
+<p>对于$n$个非耦合的谐振子，具有$2n$个对应的升降阶算符，它们都共享基态$\ket{0}$。</p>
+<h3 id="24-将算符形式作用于fock空间">2.4 将算符形式作用于Fock空间</h3>
+<h4 id="产生和湮灭算符">产生和湮灭算符</h4>
+<p>现在回到我们的系统：<strong>一个无限谐振子的集合</strong>。对每一个动量，我们都有对应的升降阶算符$a^\dagger_\mathbf{p}$和$a_\mathbf{p}$，由于谐振子非耦合，我们有：$$\begin{aligned}[a_\mathbf{p},a_\mathbf{p&rsquo;}]&amp;=0\\end{aligned}$$$$\begin{aligned}[a^\dagger_\mathbf{p},a^\dagger_\mathbf{p&rsquo;}]&amp;=0\\end{aligned}$$$$\begin{aligned}[a_\mathbf{p},a^\dagger_\mathbf{p&rsquo;}]&amp;=\delta_{\mathbf{p}\mathbf{p&rsquo;}}\\end{aligned}$$</p>
+<p>那么哈密顿量：$$H=\sum_\mathbf{p}\omega_\mathbf{p}a^\dagger_\mathbf{p}a_\mathbf{p}$$</p>
+<p>对每个$\mathbf{p}$，能级差为$\omega_\mathbf{p}$。动量的表达式：$$\mathbf{P}=\sum_\mathbf{p}\mathbf{p}a^\dagger_\mathbf{p}a_\mathbf{p}$$</p>
+<p><strong>在我们的系统中，由于$N(\mathbf{p})$表示占有数，那么我们也就可以把$a$和$a^\dagger$称为产生和湮灭算符。</strong> 同样，我们定义所有动量对应的基态$\ket{0}$：$$a_\mathbf{p}\ket{0}=0$$</p>
+<p>这样的表达式比原来的简化很多。</p>
+<h4 id="连续化">连续化</h4>
+<p>现在我们把盒子变成无限大，这样动量就取值连续了。在无穷维的Fock空间中，我们有：$$\begin{aligned}[a_\mathbf{p},a_\mathbf{p&rsquo;}]&amp;=0\\end{aligned}$$$$\begin{aligned}[a^\dagger_\mathbf{p},a^\dagger_\mathbf{p&rsquo;}]&amp;=0\\end{aligned}$$$$\begin{aligned}[a_\mathbf{p},a^\dagger_\mathbf{p&rsquo;}]&amp;=\delta^{(3)}({\mathbf{p}-\mathbf{p&rsquo;}})\\end{aligned}$$</p>
+<p>哈密顿量为：$$H=\int d^3\mathbf{p}\omega <em>\mathbf{p}a^\dagger</em>\mathbf{p}a_\mathbf{p}=\int d^3\mathbf{p}\omega _\mathbf{p}N(\mathbf{p})$$</p>
+<p>动量为：$$\mathbf{P}=\int d^3\mathbf{p}\mathbf{p}a^\dagger_\mathbf{p}a_\mathbf{p}=\int d^3\mathbf{p}\mathbf{p}N(\mathbf{p})$$</p>
+<p>其中$N(\mathbf{p})=a^\dagger_\mathbf{p}a_\mathbf{p}$是量子数算符。连续Fock空间中的基态被定义为：$$a_\mathbf{p}\ket{0}=0$$</p>
+<p>这对所有$\mathbf{p}$成立。其关于能量和动量的本征值为0，但代数结构没有告诉我们如何归一化本征矢，故我们规定：$$\braket{0|0}=1$$</p>
+<p>我们对基态作用算符$a^\dagger_\mathbf{p}$，就得到了动量为$\mathbf{p}$的单粒子基态：$$a^\dagger_\mathbf{p}\ket{0}=C_1\ket{\mathbf{p}}=\sqrt{0+1}\ket{\mathbf{p}}=\ket{\mathbf{p}}$$</p>
+<p>我们计算一般矢的归一化：$$\begin{aligned}\braket{\mathbf{p&rsquo;}|\mathbf{p}}&amp;=\braket{0|a_\mathbf{p&rsquo;}a^\dagger_\mathbf{p}|0}\&amp;=\braket{0|[a_\mathbf{p&rsquo;},a^\dagger_\mathbf{p}]|0}+\braket{0|a^\dagger_\mathbf{p}a_\mathbf{p&rsquo;}}\&amp;=\braket{0|\delta^{(3)}(\mathbf{p}-\mathbf{p&rsquo;})|0}+0\&amp;=\delta^{(3)}(\mathbf{p}-\mathbf{p&rsquo;})\end{aligned}$$</p>
+<p>这看起来还不错，那么单粒子态的能量值呢？$$\begin{aligned}Ha^\dagger_\mathbf{p}\ket{0}&amp;=\int d^3\mathbf{p&rsquo;}\omega_\mathbf{p&rsquo;}a^\dagger_\mathbf{p&rsquo;}a_\mathbf{p&rsquo;}a^\dagger_\mathbf{p}\ket{0}\&amp;=\int d^3 \mathbf{p&rsquo;}(\omega_\mathbf{p&rsquo;}[a^\dagger_\mathbf{p&rsquo;}a_\mathbf{p&rsquo;},a^\dagger_\mathbf{p}]\ket{0}+a^\dagger_\mathbf{p}H\ket{0})\&amp;=\int d^3\mathbf{p&rsquo;}\omega_\mathbf{p&rsquo;}a^\dagger_\mathbf{p&rsquo;}\delta^{(3)}(\mathbf{p}-\mathbf{p&rsquo;})\ket{0}\&amp;=\omega_\mathbf{p}a^\dagger_\mathbf{p}\ket{0}\end{aligned}$$</p>
+<p>看上去也挺不错。类似地，对于双粒子态，我们只需要写下：$$\ket{\mathbf{p_1},\mathbf{p_2}}=a^\dagger_\mathbf{p_1}a^\dagger_\mathbf{p_2}\ket{0}$$</p>
+<p>由于$a^\dagger_\mathbf{p_1}$和$a^\dagger_\mathbf{p_2}$，我们得到：$$\ket{\mathbf{p_1},\mathbf{p_2}}=\ket{\mathbf{p_2},\mathbf{p_1}}$$</p>
+<p>可以类似地验证其归一化和能量本征值。</p>
+<blockquote>
+<p>对数学纯粹主义者，需要说明，我们引入的$a^\dagger_\mathbf{p}$和$a_\mathbf{p}$不是算符，因为当其作用到任意状态时，它们可以给出不可归一化的结果。比如说$a^\dagger_\mathbf{p}\ket{0}=\ket{\mathbf{p}}$，而$\ket{\mathbf{p}}$是平面波，是不可归一的。
+数学的说法是，$a^\dagger_\mathbf{p}$和$a_\mathbf{p}$是“算符值分布(operator valued distributions)”，也就是说，它们本身不是一个函数，但是其却作为一个函数与一个光滑函数相乘并积分，例如：$\int d^3\mathbf{p} f(\mathbf{p})a^\dagger_\mathbf{p}$</p>
+</blockquote>
+<h4 id="无限维空间中的洛伦兹变换">无限维空间中的洛伦兹变换</h4>
+<p>现在，既然我们回到了无限维空间，我们就又可以谈论洛伦兹变换了。</p>
+<p>首先我们讨论相对论下产生湮灭算符的形式，现在动量算符是4-向量，但第一项是$p^0=\omega_\mathbf{p}$，产生算符有定义：$$\alpha^\dagger(p)=(2\pi)^{3/2}\sqrt{2\omega_\mathbf{p}}a^\dagger_\mathbf{p}$$</p>
+<p>将其作用到基态上，我们有：$$\alpha^\dagger(p)\ket{0}=(2\pi)^{3/2}\sqrt{2\omega_\mathbf{p}}a^\dagger_\mathbf{p}\ket{0}=(2\pi)^{3/2}\sqrt{2\omega_\mathbf{p}}\ket{\bf{p}}=\ket{p}$$</p>
+<p>那么我们可以说服自己，这些算符在洛伦兹变换下有简单的形式。先考虑对态矢的变换，对真空态：$$U(\Lambda)\ket{0}=\ket{0}$$</p>
+<p>对一般态$\ket{p}$，我们假设$U(\Lambda)\ket{p}=\ket{\Lambda p}$。对多粒子态：$$U(\Lambda)\ket{p_1,p_2,&hellip;,p_n}=\ket{\Lambda p_1,\Lambda p_2,&hellip;,\Lambda p_n}$$</p>
+<p>现在回到算符如何变换的问题上来，我们有：$$\begin{aligned}\ket{\Lambda p}=U(\Lambda)\ket{p}=U(\Lambda)\alpha^\dagger(p)\ket{0}&amp;=U(\Lambda)\alpha^\dagger(p)(U^\dagger(\Lambda)U(\Lambda))\ket{0}\&amp;=U(\Lambda)\alpha^\dagger(p)U^\dagger(\Lambda)\ket{0}\&amp;=\alpha^\dagger(\Lambda p)\ket{0}\end{aligned}$$</p>
+<p>那么我们就得到：$$\alpha^\dagger(\Lambda p)=U(\Lambda)\alpha^\dagger(p)U^\dagger(\Lambda)$$</p>
+<p>类似地我们有：$$\alpha(\Lambda p)=U(\Lambda)\alpha(p)U^\dagger(\Lambda)$$</p>
+<p>考虑对多粒子态的洛伦兹变换，有：$$\begin{aligned}U(\Lambda)\ket{p,p_1,p_2,&hellip;,p_n}&amp;=U(\Lambda)\alpha^\dagger(p)\ket{p_1,p_2,&hellip;,p_n}=U(\Lambda)\alpha^\dagger(p)U^\dagger(\Lambda)U(\Lambda)\ket{p_1,p_2,&hellip;,p_n}\&amp;=U(\Lambda)\alpha^\dagger(p)U^\dagger(\Lambda)\ket{\Lambda p_1,\Lambda p_2,&hellip;,\Lambda p_n}\&amp;=\alpha^\dagger(\Lambda p)\ket{\Lambda p_1,\Lambda p_2,&hellip;,\Lambda p_n}\&amp;=\ket{\Lambda p,\Lambda p_1,\Lambda p_2,&hellip;,\Lambda p_n}\end{aligned}$$</p>
+<p>同样地，对于平移算符$U(a)=e^{iP\cdot a}$，由：$$P^\mu\ket{0}=0$$$$P^\mu\ket{p_1,p_2,&hellip;,p_n}=(p^\mu_1+p^\mu_2+&hellip;+p^\mu_n)\ket{p_1,p_2,&hellip;,p_n}=(\sum p^\mu_i)\ket{p_1,p_2,&hellip;,p_n}$$</p>
+<p>我们有：$$U(a)\ket{0}=\ket{0}$$$$U(a)\ket{p_1,p_2,&hellip;,p_n}=e^{ia\cdot\sum p_i}\ket{p_1,p_2,&hellip;,p_n}$$</p>
+<p>类似于洛伦兹变换的推导导致了$\alpha^\dagger(p)$和$\alpha(p)$的平移性质：$$\begin{aligned}e^{iP\cdot  x}\alpha^\dagger(p)e^{-iP\cdot x}&amp;=e^{ip\cdot x}\alpha^\dagger(p)\e^{iP\cdot x}\alpha(p)e^{-iP\cdot x}&amp;=e^{-ip\cdot x}\alpha(p)\end{aligned}$$</p>
+<blockquote>
+<p>在此证明上式：$$\begin{aligned}U(x)\ket{p}&amp;=U(x)\alpha^\dagger(p)\ket{0}\&amp;=U(x)\alpha^\dagger(p)U^\dagger(x)U(x)\ket{0}\&amp;=U(x)\alpha^\dagger(p)U^\dagger(p)\ket{0}\&amp;=e^{iap}\alpha^\dagger(p)\ket{0}\end{aligned}$$
+对比最后两行即可得到上式。</p>
+</blockquote>
+<p>下一节我们将回到启发我们的问题，定位问题，这启发我们考虑无限大希尔伯特空间。<strong>我们将从另一个角度讨论定位，不是定位粒子，而是定位观测。</strong></p>
+<blockquote>
+<p>顺便一提，我们使用海森堡表示，其中状态恒定而算子随时。</p>
+</blockquote>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

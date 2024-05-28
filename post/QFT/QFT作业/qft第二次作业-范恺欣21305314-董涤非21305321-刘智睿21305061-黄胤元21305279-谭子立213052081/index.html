@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h4 id="1-实标量场phi及其共轭动量密度pi可以写成a-adagger的组合phix-int-fracd3-k2pi3-frac1sqrt2e_vec-ka_vec-ke--i-k-cdot-x-adagger_vec-ke-i-k-cdot-x--pix--int-fracd3-k2pi3frac-ik_0sqrt2e_vec-ka_vec-ke-i-k-cdot-x--a_vec-kdagger-ei-k-cdot-x--用phi-pi表达生成湮灭算符a_vec-k-adagger_vec-k">1. 实标量场$\phi$及其共轭动量密度$\pi$可以写成$a, a^\dagger$的组合，$$\phi(x)= \int \frac{d^3 k}{(2\pi)^3} \frac{1}{\sqrt{2E_{\vec k}}}(a_{\vec k}e^{- i k \cdot x}+ a^\dagger_{\vec k}e^{+ i k \cdot x}) \ ,$$$$\pi(x) = \int \frac{d^3 k}{(2\pi)^3}\frac{-ik_0}{\sqrt{2E_{\vec k}}}(a_{\vec k}e^{-i k \cdot x}- a_{\vec k}^\dagger e^{i k \cdot x}) \ .$$用$\phi, \pi$表达生成湮灭算符$a_{\vec k}, a^\dagger_{\vec k}$。</h4>
+<p>对$\phi$和$\pi$进行Frieren变换，有<br>
+$$\int e^{iq\cdot x}\phi d^3x=\int d^3x\int \frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_p}}(a_pe^{-i(q-p)\cdot x}+a^\dagger_pe^{i(p+q)\cdot x})$$<br>
+$$\int e^{iq\cdot x}\pi d^3x=\int d^3x\int \frac{d^3p}{(2\pi)^3}\frac{-ik_0}{\sqrt{2E_p}}(a_pe^{-i(q-p)\cdot x}-a^\dagger_pe^{i(p+q)\cdot x})$$<br>
+(这里比普通的Fourier变换多乘了一个$e^{iq_0t}$以使分母整齐)<br>
+由于$\int d^3xe^{\pm ip\cdot x}=(2\pi)^3e^{ip_0t}\delta(p)$,上面两式变为:<br>
+$$\int e^{iq\cdot x}\phi d^3x=\frac{1}{\sqrt{E_p}}(e^{i(q_0-p_0)t}a_p\delta(p-q)+e^{i(p_0+q_0)t}a_p^\dagger\delta(p+q))=\frac{1}{\sqrt{E_p}}(a_p+e^{2p_0t}a_p^\dagger)$$<br>
+$$\int e^{iq\cdot x}\pi d^3x=\frac{-ip_0}{\sqrt{E_p}}(e^{i(q_0-p_0)t}a_p\delta(p-q)-e^{i(p_0+q_0)t}a_p^\dagger\delta(p+q))=\frac{-ip_0}{\sqrt{E_p}}(a_p-e^{2p_0t}a_p^\dagger)$$<br>
+将两式线性组合，得到$a$和$a^\dagger$:</p>
+<p>$$\begin{aligned}
+a_{\vec{k}}&amp;=\frac{i}{\sqrt{2E_{\vec{k}}}}\int d^3x e^{ik\cdot x}[\pi(x)-ik_0\phi(x)]\a_{\vec{k}}^\dagger&amp;=\frac{-i}{\sqrt{2E_{\vec{k}}}}\int d^3x e^{-ik\cdot x}[\pi(x)+ik_0\phi(x)]
+\end{aligned}$$</p>
+<p>考虑到$\pi(x)=\partial_0\phi(x)$，我们可以把上式写成更方便的形式：
+$$\begin{aligned}
+a_{\vec{k}}&amp;=\frac{i}{\sqrt{2E_{\vec{k}}}}\int d^3x e^{ik\cdot x}\overset{\leftrightarrow}{\partial_0}\phi(x)\a_{\vec{k}}^\dagger&amp;=\frac{-i}{\sqrt{2E_{\vec{k}}}}\int d^3x e^{-ik\cdot x}\overset{\leftrightarrow}{\partial_0}\phi(x)
+\end{aligned}$$</p>
+<p>其中$f\overset{\leftrightarrow}{\partial_0}g=f\partial_0g-g\partial_0f$。</p>
+<h4 id="2-考虑自由实标量场理论能动张量为tmu-nu">2. 考虑自由实标量场理论，能动张量为$T^{\mu \nu}$。</h4>
+<h5 id="i-洛伦兹对称性的守恒流与能动张量有什么关系">i. 洛伦兹对称性的守恒流与能动张量有什么关系？</h5>
+<p>考虑无限小四维时空变换：$$D\phi^a=\frac{d\phi^a}{d\lambda}\bigg|<em>{\lambda=0}=e</em>\rho\partial^\rho\phi^a(x)$$
+那么守恒流和能动张量的关系就是：$$J^\mu=e_\rho T^{\rho\mu}$$</p>
+<h5 id="ii-结合守恒律partial_mu-tmu-nu--0论证洛伦兹对称性的守恒流也的确是守恒的">ii. 结合守恒律$\partial_\mu T^{\mu \nu} = 0$，论证洛伦兹对称性的守恒流也的确是守恒的。</h5>
+<p>$$\partial_\mu J^\mu=\partial_\mu(e_\rho T^{\rho\mu})$$</p>
+<p>由于无限小时空变换$e_\rho$是个常量，所以可以将其提出括号外，有：$$\partial_\mu J^\mu=e_{\rho}\partial_\mu T^{\rho\mu}=0$$故洛伦兹的守恒流也是守恒的。</p>
+<h4 id="3-考虑张量x_mu-nuymu-nu">3. 考虑张量$X_{\mu \nu}$，$Y^{\mu \nu}$。</h4>
+<h5 id="i-倘若x_mu-nu---x_nu-mu论证x_mu-nuymu-nu--frac12x_mu-nuymu-nu--ynu-mu">i. 倘若$X_{\mu \nu} = + X_{\nu \mu}$，论证$X_{\mu \nu}Y^{\mu \nu} = \frac{1}{2}X_{\mu \nu}(Y^{\mu \nu} + Y^{\nu \mu})$</h5>
+<h5 id="ii-倘若x_mu-nu----x_nu-mu论证x_mu-nuymu-nu--frac12x_mu-nuymu-nu---ynu-mu">ii. 倘若$X_{\mu \nu} = - X_{\nu \mu}$，论证$X_{\mu \nu}Y^{\mu \nu} = \frac{1}{2}X_{\mu \nu}(Y^{\mu \nu} - Y^{\nu \mu})$</h5>
+<p>对于求和我们可以分开定义指标，也就是说，不管表达式第一项是什么，我们都可以改写第二项的指标，有：
+$$X_{\mu\nu}Y^{\nu\mu}=X_{\nu\mu}Y^{\mu\nu}=\begin{cases}
+X_{\mu\nu}Y^{\mu\nu}\ &amp;{\rm if}\ X_{\mu \nu} = + X_{\nu \mu}\
+-X_{\mu\nu}Y^{\mu\nu}\ &amp;{\rm if}\ X_{\mu \nu} = - X_{\nu \mu}
+\end{cases}$$</p>
+<p>把上式代入原式即可得证。</p>
+<h4 id="4-考虑自由复标量场理论我们知道该理论具有整体u1对称性brphi-to-ei-q-theta-phiphidagger-to-e--i-q-thetaphidagger其中theta是常数">4. 考虑自由复标量场理论。我们知道该理论具有整体$U(1)$对称性，<!-- raw HTML omitted -->$\phi \to e^{i q \theta} \phi,\phi^\dagger \to e^{- i q \theta}\phi^\dagger$,其中$\theta$是常数。</h4>
+<h5 id="i-写下该对称性的守恒流jmu">i. 写下该对称性的守恒流$j^\mu$</h5>
+<p>守恒流$j^\mu=iq(\phi\partial^\mu\phi^\dagger-\phi^\dagger\partial^\mu\phi)$。</p>
+<h5 id="ii-倘若考虑新的变换thetax-phix-to-ei-q-thetax-phix-qquadphidaggerx-to-e--i-q-thetaxphidaggerx---分析mathcall会发生什么变化mathcall的变化量与jmu有什么关系">ii. 倘若考虑新的变换$\theta(x)$ $$\phi(x) \to e^{i q \theta(x)} \phi(x), \qquad\phi^\dagger(x) \to e^{- i q \theta(x)}\phi^\dagger(x)  \ ,$$分析$\mathcal{L}$会发生什么变化？$\mathcal{L}$的变化量与$j^\mu$有什么关系？</h5>
+<p>在新的变换下，我们有拉氏量的变换：
+$$\mathcal{L}&rsquo;=iq\partial^\mu\theta(\phi\partial^\mu\phi^\dagger-\phi^\dagger\partial^\mu\phi)-q^2(\partial_\mu\theta)^2\phi^\dagger\phi+\mathcal{L}$$
+其中第一项是标量场$\theta$的动能项，第二项是沿标量场$\theta$负梯度的Noether流，它由标量场的不均匀性产生(即$\partial_\mu\theta\neq0$)。</p>
+<h4 id="5-思考题-当一个量子态psirangle在一个守恒荷q的作用下保持不变则称psirangle保持-preserveq对应的对称性或者说psirangle具有q-所对应的对称性试论证自由复标量场的真空0rangle保持平移洛伦兹对称性以及u1整体对称性">5. <strong>[思考题]</strong> 当一个量子态$|\psi\rangle$在一个守恒荷$Q$的作用下保持不变，则称$|\psi\rangle$保持 (preserve)$Q$对应的对称性，或者说$|\psi\rangle$具有$Q$ 所对应的对称性。试论证自由复标量场的真空$|0\rangle$保持平移、洛伦兹对称性以及$U(1)$整体对称性。</h4>
+<p>真空态$|0\rangle$满足$aa^\dagger|0\rangle=bb^\dagger|0\rangle=|0\rangle$,
+$a^\dagger a |0\rangle=b^\dagger b|0\rangle=0$，因此对时间平移不变性的守恒荷$H$，有
+$$H|0\rangle=\int\frac{d^3k}{(2\pi)^3}E_k(a_k^\dagger a_k+b^\dagger_kb_k)|0\rangle+(2\pi)^3\delta(0)\int\frac{d^3k}{(2\pi)^3}E_p|0\rangle=E_{vac}|0\rangle$$<br>
+对空间平移不变性的守恒荷$P$，有
+$$P^i|0\rangle=\int\frac{d^3k}{(2\pi)^3}k^i(a_k^\dagger a_k+b^\dagger_kb_k)|0\rangle=0|0\rangle$$
+对Lorentz变换不变性的守恒荷$J^{\lambda\nu}=\int d^3xx^\lambda T^{0\nu}-x^\nu T^{0\lambda}$，有
+$$j^{ij}=x^i T^{0j}-x^j T^{0i}=x^ip^j-x^jp^i$$
+由之前对$P|0\rangle$的计算，上式为$0|0\rangle$。</p>
+<p>对$U(1)$整体对称性的守恒荷$Q=\int\frac{d^3k}{(2\pi)^3}(qa_k^\dagger a_k-qb_{k}^\dagger b_k)+(2\pi)^3\delta(0)\int\frac{d^3k}{(2\pi)^3}q$，仿照对$H|0\rangle$的计算，有
+$$Q|0\rangle=Q_{vac}|0\rangle$$</p>
+<h4 id="6-思考题-考虑实标量场拉氏量密度mathcall-frac12partial_mu-phi-partialmu-phi---frac12-m2-phi2---fraclambda4phi4--">6. <strong>[思考题]</strong> 考虑实标量场拉氏量密度$$\mathcal{L}= \frac{1}{2}\partial_\mu \phi \partial^\mu \phi - \frac{1}{2} m^2 \phi^2 - \frac{\lambda}{4!}\phi^4 \ .$$</h4>
+<h5 id="i-推导该理论的运动方程">i. 推导该理论的运动方程。</h5>
+<p>由于拉氏量$\mathcal{L}=\frac{1}{2}\partial_\mu\phi\partial^\mu\phi-\frac{1}{2}m^2\phi^2-\frac{\lambda}{4}\phi^4$，有
+$$\frac{\partial \mathcal{{L}}}{\partial\phi}=-m^2\phi-\lambda\phi^3$$$$\frac{\partial \mathcal{{L}}}{\partial(\partial\phi)}=\partial_\mu\phi$$
+因此运动方程为
+$$-m^2\phi-\frac{\lambda}{3!}\phi-\partial_\mu\partial^\mu\phi=0$$</p>
+<h5 id="ii-推导哈密顿量密度mathcalh">ii. 推导哈密顿量密度$\mathcal{H}$。</h5>
+<h5 id="iii-假设phi是时空常数phi取什么值时mathcalh达到局部极值有多少个局部极值">iii. 假设$\phi$是时空常数。$\phi$取什么值时$\mathcal{H}$达到局部极值？有多少个局部极值？</h5>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

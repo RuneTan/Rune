@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-14-lsz约化公式">Lecture 14 LSZ约化公式</h2>
+<p>让我总结一下上一节末尾的一些事情，我们有联系着函数$F(\mathbf{k})$正规单粒子态$\ket{f}$：$$\ket{f}=\int\frac{d^3\mathbf{k}}{(2\pi)^3(2\omega_\mathbf{k})}F(\mathbf{k})\ket{k}$$</p>
+<p>类似地：$$f(x)=\int\frac{d^3\mathbf{k}}{(2\pi)^3(2\omega_\mathbf{k})}F(\mathbf{k})e^{ik\cdot x}$$</p>
+<p>是K-G方程的正能解。定义时间函数：$$\phi&rsquo;^f(t)=i\int d^3\mathbf{x}[\phi&rsquo;(x)\partial_0f(x)-f(x)\partial_0\phi&rsquo;(x)]$$</p>
+<p>我们发现，对任何正规的(fixed, normalizable)本征态$\ket{\psi}$：$$\lim_{t\rightarrow\pm\infty}\braket{\psi|\phi&rsquo;^f(t)|0}=\braket{\psi|f}$$</p>
+<p>同时：$$\ket{f}\rightarrow\ket{k}\ {\rm as\ }f(x)\rightarrow e^{-ik\cdot x}$$</p>
+<p>也就是说，随着$f(x)$变成一个平面波，态$\ket{f}$趋近于正规化动量本征态$\ket{k}$，算符$\phi&rsquo;^f(t)$随着时间趋于无穷趋近于一个单粒子产生算符。但对于中间态，它绝不会是单粒子产生算符，而是要考虑单粒子态、双粒子态、三粒子态，等等等等。</p>
+<h3 id="141-双粒子态">14.1 双粒子态</h3>
+<p>我们可以从先前的结果推出一些相关公式，比如：$$\lim_{t\rightarrow\pm\infty}\braket{0|\phi&rsquo;^f(t)|\psi}=0$$</p>
+<p>从中我们可以看出，即使对于单粒子态我们也有相位的不匹配。这个行为和产生算符很像，它作用于右侧湮灭了真空态。于是，我们有：$$\begin{aligned}
+\lim_{t\rightarrow\pm\infty}\braket{0|\phi&rsquo;^{f\dagger}(t)|\psi}&amp;=\braket{f|\psi}\
+\lim_{t\rightarrow\pm\infty}\braket{\psi|\phi&rsquo;^{f\dagger}(t)|0}&amp;=0
+\end{aligned}$$</p>
+<p>现在，我们假设我们有两个函数$F_1(\mathbf{k})$和$F_2(\mathbf{k})$，对应着非常好的，正规化，非相互作用的波包态$\ket{f_1}$和$\ket{f_2}$。我们要求上面两个函数在动量空间每一点正交：$$F_1(\mathbf{k})F_2(\mathbf{k})=0\ {\rm for\ each\ }\mathbf{k}$$</p>
+<p>当我们最终让$\ket{f_1}$和$\ket{k_2}$趋于平面波态时，这个限制会排除掉相同动量的情况。现在我们看看取如下极限会发生什么：$$\lim_{t\rightarrow\infty}\braket{\psi|\phi&rsquo;^{f_2}(t)|f_1}$$</p>
+<p>现在，$f_2$场作用于$f_1$态上，我们得到一个矩阵元。让我们从薛定谔图景的角度来考虑这个过程：我们有一个态$\ket{f_1}$，比如一个波包向某个方向运动，过了非常非常久的时间；另一方面，现在我走进屋子，得到一个作用于真空可以得到态$\ket{f_2}$的算符，然后我带着这个算符沿相反方向走出十亿光年，并将其作用于这里的真空，然后我得到一个粒子，这就是这里面的物理。</p>
+<p>所以问题是，如果我把这个算符作用到第一个粒子态上，而那个粒子在200万光年外的仙女座星系，会发生什么？事实上，有一个在仙女座的粒子对我根本没有影响，因为在我的时空中，我不知道其实我没有作用于真空态上，而实际上在很远的地方有一个隐秘的粒子，它不能够对我做的实验产生任何影响。所以，实际上我会得到一个双粒子态，也就是说：$$\lim_{t\rightarrow+\infty}\braket{\psi|\phi&rsquo;^{f_2}(t)|f_1}=\braket{\psi|f_1,f_2}^{\rm out}$$</p>
+<p>这是一个思想实验，不是严谨证明。要想得到数学上的严谨证明我们得读Klaus Hepp的一篇长长的论文。以上的分析也可以被拓展到共线(collinear)动量。</p>
+<p>当然，类似地讨论对于遥远的过去也成立：$$\lim_{t\rightarrow-\infty}\braket{\psi|\phi&rsquo;^{f_2}(t)|f_1}=\braket{\psi|f_1,f_2}^{\rm in}$$</p>
+<p>现在我们得到了我们要的初态和末态，类似地，我们可以通过这种渐近的方法得到三粒子态、四粒子态、……、十八粒子态，等等等等。</p>
+<h3 id="142-lsz公式的证明">14.2 LSZ公式的证明</h3>
+<p>我们现在来回答问题二。我以及说过，问题二的答案是“almost Yes”。问题二中的关系需要通过把$\phi$替换成重整化场$\phi&rsquo;$来规范。类似先前对格林函数的定义，我们现在定义：$$G&rsquo;^{(n)}(x_1,&hellip;,x_n)=\int\frac{d^4 k_1}{(2\pi)^4}&hellip;\frac{d^4 k_n}{(2\pi)^4}e^{ik_1\cdot x_1+&hellip;+ik_n\cdot x_n}\tilde{G}&rsquo;^{(n)}(k_1,&hellip;,k_n)$$</p>
+<p>其中$$G&rsquo;^{(n)}(x_1,&hellip;,x_n)=\braket{0|T(\phi&rsquo;(x_1)&hellip;\phi&rsquo;(x_n))|0}$$</p>
+<p>让我们考虑一个特殊的例子，四点函数$\tilde{G}&rsquo;^{(4)}(k_1,&hellip;,k_4)$：
+$$\begin{aligned}\tilde{G}&rsquo;^{(4)}(k_1,&hellip;k_4)&amp;=\int d^4x_1&hellip;d^4x_4e^{-(ik_1\cdot x_1+&hellip;+ik_4\cdot x_4)}G&rsquo;^{(4)}(x_1,&hellip;,x_4)\G&rsquo;^{(4)}(x_1,&hellip;,x_4)&amp;=\braket{0|T(\phi&rsquo;(x_1)&hellip;\phi&rsquo;(x_4))|0}=Z_3^{-2}G^{(4)}(x_1,&hellip;,x_4)\end{aligned}$$</p>
+<p>这就是重整化格林函数，一串重整化海森堡场的真空期望值，现在我们的问题变成了：$$\braket{k_3,k_4|{\rm S}-1|k_1,k_2}\overset{?}{=}(-i)^4\prod^4_{r=1}(k^2_r-\mu^2)\tilde{G}&rsquo;^{(4)}(-k_3,-k_4,k_1,k_2)$$</p>
+<p>我们想要证明这个等式，最初证明它的是Lehmann, Symanzik和Zimmerman，所以这个公式也叫做LSZ约化(reduction)公式。</p>
+<p>实际上我会实际证明的是由先前的初态和末态的波包函数对上式的近似。散射在实际上只对波包态有意义；而平面波则会一直受到相互作用，因为其存在于全空间。我们让末态变成两个非重叠的波包$\ket{g_1}$和$\ket{g_2}$，我要证明的是：$$\begin{aligned}
+\braket{g_1,g_2|{\rm S}-1|f_1,f_2}\overset{?}{=}&amp;(i)^4\int d^4x_1&hellip;d^4x_4g_1^<em>(x_1)g_2^</em>(x_2)f_1(x_3)f_2(x_4)\
+&amp;\times\prod^4_{r=1}(\Box^2_r+\mu^2)\braket{0|T(\phi&rsquo;(x_1)&hellip;\phi&rsquo;(x_4))|0}
+\end{aligned}$$</p>
+<p>当我们让$f$和$g$变成平面波时上式就回到LSZ约化公式。在这个过程中，我们要给出一个引理，让我们考虑$A(x)$，然后有定义：$$A^f(t)\equiv i\int d^3\mathbf{x}[A(\partial_0f)-f(\partial_0A)]$$</p>
+<p>引理告诉我们：$$i\int d^4x\ f(x)(\Box^2+\mu^2)A(x)=\Big(\lim_{t\rightarrow-\infty}-\lim_{t\rightarrow\infty}\Big)A^f(t)$$</p>
+<blockquote>
+<p>证明过程如下：$$\begin{aligned}
+i\int d^4x\ f(x)(\Box^2+\mu^2)A(x)&amp;=i\int d^4x\ f(x)(\partial_0^2-\nabla^2+\mu^2)A(x)\&amp;=i\int d^4x\ [f(\partial^2_0A)+A(-\nabla^2f+\mu^2f)]\
+&amp;=i\int d^4x[f(\partial^2_0A)-A(\partial^2_0f)]=i\int d^4 x\partial_0[f(\partial_0A)-A(\partial_0f)]\&amp;=i\int dt\ \partial_0\int d^3\mathbf{x}[f(\partial_0A)-A(\partial_0f)]=-\int dt\ \partial_0A^f(t)
+\end{aligned}$$</p>
+</blockquote>
+<p>现在我们设$A(x)$是厄米算符，有：$$A^{f\dagger}(t)=-i\int d^3\mathbf{x}[A(\partial_0f^<em>)-f^</em>(\partial_0A)]$$</p>
+<p>同样我们有：$$i\int d^4x\ f^*(x)(\Box^2+\mu^2)A(x)=\Big(\lim_{t\rightarrow-\infty}-\lim_{t\rightarrow\infty}\Big)A^{f\dagger}(t)$$</p>
+<p>通过把引理作用到之前的表达式，我们有：$$\begin{aligned}
+\braket{g_1,g_2|{\rm S}-1|f_1,f_2}\overset{?}{=}&amp;\Big(\lim_{t_4\rightarrow-\infty}-\lim_{t_4\rightarrow\infty}\Big)(i)^3\int d^4x_1&hellip;d^4x_3g_1^<em>(x_1)g_2^</em>(x_2)f_1(x_3)\
+&amp;\times\prod^4_{r=1}(\Box^2_r+\mu^2)\braket{0|T(\phi&rsquo;(x_1)&hellip;\phi&rsquo;(x_4))|0}\
+=&amp;&hellip;=\prod^2_{r=1}\Big[\lim_{t_r\rightarrow-\infty}-\lim_{t_r\rightarrow\infty}\Big]\prod^4_{s=3}\Big[\lim_{t_s\rightarrow-\infty}-\lim_{t_s\rightarrow\infty}\Big]\
+&amp;\times\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2)\phi&rsquo;^{f_1}(t_3)\phi&rsquo;^{f_2}(t_4))|0}
+\end{aligned}$$</p>
+<p>我们如何排序并不重要。让我们从$t_4$开始，得到：$$\begin{aligned}
+\lim_{t_4\rightarrow-\infty}&amp;\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2)\phi&rsquo;^{f_1}(t_3)\phi&rsquo;^{f_2}(t_4))|0}\&amp;=\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2)\phi&rsquo;^{f_1}(t_3))\phi&rsquo;^{f_2}(-\infty)|0}\&amp;=\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2)\phi&rsquo;^{f_1}(t_3))|f_2}
+\end{aligned}$$</p>
+<p>而$$\begin{aligned}
+\lim_{t_4\rightarrow\infty}&amp;\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2)\phi&rsquo;^{f_1}(t_3)\phi&rsquo;^{f_2}(t_4))|0}\&amp;=\braket{0|\phi&rsquo;^{f_2}(\infty)T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2)\phi&rsquo;^{f_1}(t_3))|0}=0
+\end{aligned}$$</p>
+<p>再考虑$t_3$的极限，我们得到：$$\braket{g_1,g_2|{\rm S}-1|f_1,f_2}\overset{?}{=}\prod^2_{r=1}\Big[\lim_{t_r\rightarrow-\infty}-\lim_{t_r\rightarrow\infty}\Big]\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2))|f_1,f_2}^{\rm in}$$</p>
+<p>考虑$t_2$极限，上式变成：$$\braket{g_1|\phi&rsquo;^{g_1\dagger}(t_1)|f_1,f_2}^{\rm in}-\lim_{t_2\rightarrow-\infty}\braket{0|T(\phi&rsquo;^{g_1\dagger}(t_1)\phi&rsquo;^{g_2\dagger}(t_2))|f_1,f_2}^{\rm in}$$</p>
+<p>我们标记$$\ket{\psi}=\lim_{t_2\rightarrow-\infty}\phi&rsquo;^{g_2\dagger}(t_2)\ket{f_1,f_2}^{\rm in}$$</p>
+<p>最后我们到$t_1$，有：$$\begin{aligned}
+\Big[\lim_{t_1\rightarrow\infty}-\lim_{t_1\rightarrow-\infty}\Big]&amp;\Big(\braket{g_1|\phi&rsquo;^{g_1\dagger}(t_1)|f_1,f_2}^{\rm in}-\lim_{t_2\rightarrow-\infty}\braket{0|\phi&rsquo;^{g_1\dagger}(t_1)|\psi}\Big)\
+&amp;=^{\rm out}\braket{g_2,g_1|f_1,f_2}^{\rm in}-\braket{g_1|\psi}-^{\rm in}\braket{g_1,g_2|f_1,f_2}^{\rm in}+\braket{g_1|\psi}\
+&amp;=\braket{g_2,g_1|{\rm S}|f_1,f_2}-\braket{g_1,g_2|f_1,f_2}\
+&amp;\overset{\surd}{=}\braket{g_1,g_2|{\rm S}-1|f_2,f_2}\ \ \ \mathbf{QED}
+\end{aligned}$$</p>
+<p>这样，我们就得到了一个无需简化的计算${\rm S}$矩阵元的公式。这个式子在平面波变成波包时也成立，只有在后者的情况下我们能够得到物理上可测得量。这实际上是对第九节中关于点电荷讨论的一种近似；我们不能创造一个点电荷，所以也不能测量库伦势。唯一能做的就是测量每一点的电场，如果我们抽象两个点电荷之间相互作用的概念，那会得到类似公式：$$\braket{g_1,g_2|{\rm S}-1|f_1,f_2}=\int\prod^4_{i=1}\frac{d^3\mathbf{k}<em>i}{(2\pi)^32\omega</em>{\mathbf{k}_i}}G^<em>_1(\mathbf{k}_3)G_2^</em>(\mathbf{k}_4)F_1(\mathbf{k}_1)F_2(\mathbf{k}_2)\braket{k_3,k_4|{\rm S}-1|k_1,k_2}$$</p>
+<p>综上，我们得到了描述散射的一般公式，我们不会在理论上遇到问题，但会在应用上遇到许多问题。在简单理论中，我们只需要引入真空-真空反项，但在之后的理论中，我们还是会为了方便而引入反项。</p>
+<h3 id="143-回到模型三">14.3 回到模型三</h3>
+<p>让我们回到我们假想的模型三。我们有：$$\mathscr{L}=\frac{1}{2}(\partial_\mu\phi)^2-\frac{1}{2}\mu^2_0\phi^2+\partial_\mu\psi^<em>\partial^\mu\psi-m^2_0\psi^</em>\psi-g_0\psi^*\psi\phi+{\rm const}$$</p>
+<p>其中$\mu_0$是介子裸质量，$\mu$是实际质量。类似我们有$m_0$和$m$。常数$g_0$是裸耦合常数，而同样我们会定义$g$作为耦合常数。现在，让我们首先给出重整化介子场：$$\phi&rsquo;=Z_3^{-1/2}[\phi-\braket{0|\phi|0}]$$</p>
+<p>这里的$\ket{0}$是实际真空，也是我们唯一讨论的真空。重整化场满足：$$\begin{aligned}
+\braket{0|\phi&rsquo;|0}&amp;=0\
+\braket{k|\phi&rsquo;(0)|0}&amp;=1
+\end{aligned}$$</p>
+<p>现在我们重整化核子场，我们有：$$\psi&rsquo;=Z_2^{-1/2}\psi$$</p>
+<p>类似地：$$\begin{aligned}
+\braket{0|\psi&rsquo;|0}=0\
+\braket{p|\psi&rsquo;(0)|0}=1
+\end{aligned}$$</p>
+<p>这里$\bra{p}$是单反核子态。通常，$g$不会等于$g_0$。在自由场下，$g_0=0$，那么$Z_2$和$Z_3$就趋于1。而在相互作用场中，它们的修正项在$g_0^2$量级。</p>
+<p>现在我们理论上可以按照以下步骤求解理论，首先，我们做扰动得到非重整化场的格林函数，展开到有限阶，使用参数$g_0$、$\mu_0$、$m_0$。然后，我们调整这些常数并计算散射矩阵元。但是这会带来极大的痛苦：我们在使用错误的耦合常数和质量计算错误的格林函数。</p>
+<p>为了避免错误的展开，我们把拉式量重写为：$$\mathscr{L}=\frac{1}{2}(\partial_\mu\phi&rsquo;)^2-\frac{1}{2}\mu^2\phi&rsquo;^2+\partial_\mu\psi&rsquo;^<em>\partial^\mu\psi&rsquo;-m^2\psi&rsquo;^</em>\psi&rsquo;-g_0\psi&rsquo;^*\psi&rsquo;\phi&rsquo;+{\rm leftover\ stuff}$$</p>
+<p>后面这一项描述了理论和实际的误差，我们把它们举起来作为反项：$$({\rm leftover\ stuff})=\mathscr{L}_{CT}$$</p>
+<p>它的表达式看上去很可怕：$$\mathscr{L}<em>{CT}=A\phi&rsquo;+\frac{1}{2}B(\partial</em>\mu\phi&rsquo;)^2-\frac{1}{2}C\phi&rsquo;^2+D\partial_\mu\psi&rsquo;^<em>\partial^\mu\psi&rsquo;-E\psi&rsquo;^</em>\psi&rsquo;-F\psi&rsquo;^*\psi&rsquo;\phi&rsquo;+{\rm const}&rsquo;$$</p>
+<p>对于这些参数，我们可以用我们的重整化条件给出限制。</p>
+<!-- raw HTML omitted -->
+<p><img src="67.png" alt="intergrate">{width=50% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>所以我们为微扰理论的每一阶都设定了这一组自由参数。现在我们把错误的格林函数变成了正确的格林函数的微扰展开。现在还存在几个问题，首先，$\mathscr{L}_{CT}$作为相互作用项，存在导数项，而我们之前从没有讨论过导数项相互作用的情形。所以，我们要考虑，它会对我们费曼规则造成什么影响。第二个问题是，重整化条件并没有很好的建立起来，它们没有按照格林函数表达。</p>
+<h3 id="144-考虑含有导数相互作用的费曼规则">14.4 考虑含有导数相互作用的费曼规则</h3>
+<p>导数的进入会让事情变得很糟糕，耦合常数进入了广义动量：$$\pi_\mu=\frac{\partial\mathscr{L}}{\partial(\partial^\mu\phi)}\neq\partial_\mu\phi\ \ \ {\rm if}\ \mathscr{H}_I=\mathscr{H}<em>I(\partial</em>\mu\phi)$$</p>
+<p>相互作用哈密顿包含了广义动量，因此我们在处理时间排序算符时会出现问题，它们在等时情况下并不对易：$$T(\partial_\mu\phi(x)&hellip;)\neq\partial_\mu T(\phi(x)&hellip;)$$</p>
+<p>另外，等式$\mathscr{H}_I=-\mathscr{L}_I$不再成立。这个问题非常复杂，我们先放在一边，我们现在要做的是，猜测适用于这个理论的费曼规则。</p>
+<p>首先考虑一个最简单的例子，自由标量场：$$\mathscr{L}=\frac{1}{2}(\partial_\mu\phi)^2-\frac{1}{2}\mu^2\phi^2$$</p>
+<p>实际上它并没有相互作用项，但我们可以假装它有，于是我们设：$$\phi=\sqrt{Z_3}\phi&rsquo;$$</p>
+<p>现在让我们继续，重写哈密顿量为：$$\mathscr{L}=\frac{1}{2}(\partial_\mu\phi&rsquo;)^2-\frac{1}{2}\mu^2\phi&rsquo;^2+(Z_3-1)\Big[\frac{1}{2}(\partial_\mu\phi&rsquo;)^2-\frac{1}{2}\mu^2\phi&rsquo;^2\Big]$$</p>
+<p>我们可以设$(Z_3-1)=g^2$，现在考虑费曼规则。我们有一个反项$\frac{1}{2}b\phi^2$，在模型三中，其对应的费曼图如下。</p>
+<!-- raw HTML omitted -->
+<p><img src="68.png" alt="intergrate">{width=70% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>现在我们有相互作用：$$\mathscr{L}<em>I=\frac{1}{2}(Z_3-1)\Big[(\partial</em>\mu\phi&rsquo;)^2-\mu^2\phi&rsquo;^2\Big]$$</p>
+<p>那么我们可以用下图表示。</p>
+<!-- raw HTML omitted -->
+<p><img src="69.png" alt="intergrate">{width=70% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>类似地，我们有：$$\frac{1}{2}(Z_3-1)\Big[(\partial_\mu\phi&rsquo;)^2-\mu^2\phi&rsquo;^2\Big]:\ \ \ i(Z_3-1)(2\pi)^4\delta^{(4)}(q&rsquo;+q)\Big[(&hellip;)-\mu^2\Big]$$</p>
+<p>问题是，省略号里面是什么？谁知道呢？但我们可以猜，由于$\mu^2$的存在，我猜里面有个$q^2$：$$\frac{1}{2}(Z_3-1)\Big[(\partial_\mu\phi&rsquo;)^2-\mu^2\phi&rsquo;^2\Big]\overset{?}{=}i(Z_3-1)(2\pi)^4\delta^{(4)}(q&rsquo;+q)\Big[q^2-\mu^2\Big]$$</p>
+<p>进而，我们猜测：</p>
+<!-- raw HTML omitted -->
+<p><img src="70.png" alt="intergrate">{width=55% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>我们通过$\tilde{G}&rsquo;^{(2)}$来验证这一点，根据原始定义有：$$\tilde{G}&rsquo;^{(2)}(q,q&rsquo;)=Z_3^{-1}\tilde{G}^{(2)}(q,q&rsquo;)=Z_3^{-1}(2\pi)^4\delta^{(4)}(q+q&rsquo;)\bigg(\frac{i}{q^2-\mu^2}\bigg)$$</p>
+<p>通过把图相加，我们也可以得到格林函数：</p>
+<!-- raw HTML omitted -->
+<p><img src="71.png" alt="intergrate">{width=90% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>有：$$\begin{aligned}
+\tilde{G}&rsquo;^{(2)}(q,q&rsquo;)=&amp;(2\pi)^4\delta^{(4)}(q+q&rsquo;)\frac{i}{q^2-\mu^2}\
+&amp;\times \bigg[1+\int\frac{d^4q_1}{(2\pi)^4}i(2\pi)^4\delta^4(q_1-q)(Z_3-1)(q_1^2-\mu^2)\frac{i}{q_1^2-\mu^2}+&hellip;\bigg]
+\end{aligned}$$</p>
+<p>我们注意到，括号内的上下项都相消了，于是得到：$$\begin{aligned}
+\tilde{G}&rsquo;^{(2)}(q,q&rsquo;)&amp;=(2\pi)^4\delta^{(4)}(q+q&rsquo;)\frac{i}{q^2-\mu^2}\Big[1+(1-Z_3)+(1-Z-3)^2+&hellip;\Big]\&amp;=(2\pi)^4\delta^{(4)}(q+q&rsquo;)\frac{i}{q^2-\mu^2}(1-(1-Z_3))^{-1}\
+&amp;=Z^{-1}_3\tilde{G}^{(2)}(q,q&rsquo;)
+\end{aligned}$$</p>
+<p>这让我们相信我们的猜想是正确的。这个猜测对下面的模型也成立：$$\begin{aligned}
+\mathcal{L}&amp;=\frac{1}{2}(\partial_\mu\phi)^2-\frac{1}{2}\mu^2_0\phi^2-\frac{1}{4!}g_0\phi^4\&amp;=\frac{1}{2}(\partial_\mu\phi&rsquo;)^2-\frac{1}{2}\mu^2_0\phi&rsquo;^2-\frac{1}{4!}g_0Z^2_3\phi&rsquo;^4+\frac{1}{2}(Z_3-1)\Big[(\partial_\mu\phi&rsquo;)^2-\mu^2_0\phi&rsquo;^2\Big]
+\end{aligned}$$</p>
+<p>假设我们知道这个理论的$\tilde{G}^{(n)}$的图，比如$\tilde{G}^{(4)}$如下，这是一个两顶点图。</p>
+<!-- raw HTML omitted -->
+<p><img src="72.png" alt="intergrate">{width=50% height=auto}</p>
+<p>$\frac{1}{4!}g\phi^4$理论中的$\tilde{G}^{(4)}$图</p>
+<!-- raw HTML omitted -->
+<p>这里我们引入一点拓扑学术语。对这样一个有$n$条外线、$I$条内线和$V$个顶点的图，它们满足：$$n+2I=4V$$</p>
+<p>现在考虑改写后的拉格朗日量形式，我们可以在上面加入任意数量的相互作用顶点，比如下图。</p>
+<!-- raw HTML omitted -->
+<p><img src="73.png" alt="intergrate">{width=50% height=auto}</p>
+<p>$\frac{1}{4!}g\phi^4$理论中的$\tilde{G}&rsquo;^{(4)}$图</p>
+<!-- raw HTML omitted -->
+<p>$\tilde{G}&rsquo;^{(n)}$对应的图和$\tilde{G}^{(n)}$对应的图有两点不同。首先，它们的顶点系数不同，对$\tilde{G}^{(n)}$，每个顶点要乘上系数$g_0$；对$\tilde{G}&rsquo;^{(n)}$，则要乘上$Z^2_3g_0$。于是我们从顶点中得到系数$Z_3^{2V}$。第二个，我们在图上加入的叉号，就好像站在电线上的乌鸦。单独考虑每一个内线和外线，我们就回到了先前的情况，然后得到一个系数$Z_3^{-1}$，那么所有的内线和外线贡献出系数$Z_3^{-(n+I)}$，把他们都乘起来，我们得到：$$\tilde{G}^{(n)}=\tilde{G}&rsquo;^{(n)}Z^{2V}_3Z_3^{-(n+I)}=\tilde{G}&rsquo;^{(n)}Z_3^{2V-I-n}=\tilde{G}&rsquo;^{(n)}Z_3^{-n/2}$$</p>
+<p>于是，我们得到一个很一般的结论。</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>

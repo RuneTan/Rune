@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>RuneTan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="" />
+
+    
+    
+    
+    <link rel="stylesheet" href="../../../css/theme.min.css">
+
+    
+    
+    
+
+    
+  
+
+
+</head>
+<body>
+        <div id="content" class="mx-auto"><header class="container mt-sm-5 mt-4 mb-4 mt-xs-1">
+    <div class="row">
+        
+        <div class="col-sm-4 col-12 text-sm-right text-center pt-sm-4">
+            <a href="../../../" class="text-decoration-none">
+                <img id="home-image" class="rounded-circle"
+                    
+                        
+                            src="../../../images/avatar.jpg"
+                        
+                    
+                />
+            </a>
+        </div>
+        <div class="col-sm-8 col-12 text-sm-left text-center">
+        
+            <h2 class="m-0 mb-2 mt-4">
+                <a href="../../../" class="text-decoration-none">
+                    
+                        TAN ZILI
+                    
+                </a>
+            </h2>
+            <p class="text-muted mb-1">
+                
+                    test
+                
+            </p>
+            <ul id="nav-links" class="list-inline mb-2">
+                
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../about/" title="About">About</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../post/" title="Posts">Posts</a>
+                    </li>
+                
+                    <li class="list-inline-item">
+                        <a class="badge badge-white " href="../../../categories/" title="Categories">Categories</a>
+                    </li>
+                
+            </ul>
+            <ul id="nav-social" class="list-inline">
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="https://github.com/RuneTan" target="_blank">
+                            <i class="fab fa-github fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+                    <li class="list-inline-item mr-3">
+                        <a href="" target="_blank">
+                            <i class="fa-solid fa-envelope fa-1x text-muted"></i>
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+    <hr />
+</header>
+<div class="container">
+    <div class="pl-sm-2">
+        <div class="mb-3">
+            <h3 class="mb-0"></h3>
+            
+            <small class="text-muted">Published January 1, 0001</small>
+        </div>
+
+        <article>
+            <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="lecture-16-重整化一般化和推广">Lecture 16 重整化Ⅱ：一般化和推广</h2>
+<p>这一节会是一个杂侩，包含很多小主题。首先，我要完成介子自能的计算。然后我会解释任何处理具有多条线的单环图和和多环图。我会系统地把费曼技巧应用到关联图上，把它们都化为对参数的积分。然后我会回到重整化程序去考虑耦合常数重整化。最后，我会进行一些关于重整化如何帮我们摆脱发散的讨论。</p>
+<h3 id="161-完成对介子自能mathcalog2阶的计算">16.1 完成对介子自能（$\mathcal{O}(g^2)$阶）的计算</h3>
+<p>上一节，我们知道：$$-i\tilde{\Pi}^f(p^2)=g^2\int\frac{d^4k}{(2\pi)^4}\int^1_0\frac{dx}{[k^2-p^2x^2+p^2x-m^2+i\epsilon]^2}$$</p>
+<p>于是我们有：$$\tilde{\Pi}^f(p^2)=\frac{g^2}{16\pi^2}\int\frac{d^4k}{(2\pi)^4}\int^1_0\frac{dx}{[k^2-p^2x^2+p^2x-m^2+i\epsilon]^2}$$</p>
+<p>那么由：$$\tilde{\Pi}&rsquo;(p^2)=\tilde{\Pi}^f(p^2)-\tilde{\Pi}^f(\mu^2)-(p^2-\mu^2)\frac{d\tilde{\Pi}^f}{dp^2}\bigg|_{\mu^2}$$</p>
+<p>我们代入上面的表达式得到：$$\tilde{\Pi}&rsquo;(p^2)=\frac{g^2}{16\pi^2}\int^1_0dx\ \bigg{\ln\Big(\frac{m^2-p^2x(1-x)-i\epsilon}{m^2-\mu^2x(1-x)-i\epsilon}\Big)+(p^2-\mu^2)\frac{x(1-x)}{m^2-\mu^2x(1-x)-i\epsilon}\bigg}$$</p>
+<p>现在，我们不需要保留$\tilde{\Pi}^f(\mu^2)$中的$i\epsilon$，它最好是一个实数。另一方面，由于$x(1-x)$的最大值是$\frac{1}{4}$，并且我们总是假定$\mu&lt;2m$，所以分母一定为正，最终我们得到：$$\tilde{\Pi}&rsquo;(p^2)=\frac{g^2}{16\pi^2}\int^1_0dx\ \bigg{\ln\Big(\frac{m^2-p^2x(1-x)-i\epsilon}{m^2-\mu^2x(1-x)}\Big)+(p^2-\mu^2)\frac{x(1-x)}{m^2-\mu^2x(1-x)}\bigg}$$</p>
+<p>注意到，$p^2$在$4m^2$处有一个截断，其性质和$\sigma(p^2)$有关。如果我们考虑：$$\braket{n|\phi&rsquo;(0)|0}$$我们会得到：<!-- raw HTML omitted --></p>
+<p><img src="94.png" alt="intergrate">{width=50% height=auto}</p>
+<p>$\mathcal{O}(g)$和$\mathcal{O}(g^3)$阶的费曼图</p>
+<!-- raw HTML omitted -->
+<p>我们对真空作用场算符，可以得到一个核子-反核子态，这是谱表示中唯一的$g^2$阶贡献，因为两个这个就可以得到一个圈图。而我们到$g^3$阶才有2介子态，也就是说在谱表示中我们要到$g^6$阶它们才会对表达式做贡献。现在考虑传播子的解析性质，这是一个在负实轴有branch out的函数，示意图如下。<!-- raw HTML omitted --></p>
+<p><img src="95.png" alt="intergrate">{width=43% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>当$p^2&lt;4m^2$，我们不需要考虑截断的问题，所以可以把分子上的$i\epsilon$去掉。</p>
+<h3 id="162-多圈图的费曼参数化">16.2 多圈图的费曼参数化</h3>
+<p>现在我们进行费曼技巧的多圈图推广。先前我们只能处理两个分母的情况，现在要做的第一件事则是把所有分母放在一起，这对应着有多个顶点的圈图，比如下图。<!-- raw HTML omitted --></p>
+<p><img src="96.png" alt="intergrate">{width=43% height=auto}</p>
+<p>有4个传播子的单圈图</p>
+<!-- raw HTML omitted -->
+<p>让我们考虑n个费曼分母的乘积：$$\prod^n_{i=1}\frac{1}{a_i+i\epsilon}$$</p>
+<p>首先，让我们将其写成下面的形式：$$\frac{1}{a_i+i\epsilon}=-i\int^\infty_0d\beta_ie^{i\beta_i(a_i+i\epsilon)}$$</p>
+<p>那么：$$\prod^n_{i=1}\frac{1}{a_i+i\epsilon}=(-i)^n\prod^n_{i=1}\int^\infty_0d\beta_ie^{i\beta_i(a_i+i\epsilon)}$$</p>
+<p>把上式乘上一个等于1的积分$B$：$$B=\int^\infty_0\frac{d\lambda}{\lambda}\delta\Big(1-\frac{\beta}{\lambda}\Big)=\int^\infty_0\frac{d\lambda}{\lambda}\bigg|\frac{\beta}{\lambda^2}\bigg|^{-1}\delta(\lambda-\beta)=\int^\infty_0d\lambda\ \delta(\lambda-\beta)=1$$</p>
+<p>这里$\beta$是一个正数。我们令$\beta=\sum^n_{i=1}\beta_i$，就可以把分母的积写成下面的形式：$$\prod^n_{i=1}\frac{1}{a_i+i\epsilon}=(-i)^n\prod^n_{i=1}\int^\infty_0d\beta_ie^{i\beta_i(a_i+i\epsilon)}\int^\infty_0\frac{d\lambda}{\lambda}\delta\Big(1-\frac{\sum\beta_i}{\lambda}\Big)$$</p>
+<p>用$\alpha_i\equiv\beta_i/\lambda$，等式右边变成：$$(-i)^n\int^\infty_0d\lambda\ \lambda^{n-1}\int^1_0d\alpha_1&hellip;d\alpha_n\delta(1-\sum\alpha_i)e^{i\lambda\sum\alpha_i(a_i+i\epsilon)}$$</p>
+<p>由于$\delta$函数的存在，$\alpha_i&gt;1$时被积函数对积分没有贡献，所以我们可以缩短积分域。首先计算有关$\lambda$的积分：$$\int^\infty_0d\lambda\ \lambda^{n-1}e^{i\lambda q}=i^n\frac{\Gamma(n)}{q^n}$$</p>
+<p>于是我们最终得到：$$\prod^n_{i=1}\frac{1}{a_i+i\epsilon}=\int^1_0d\alpha_1&hellip;d\alpha_n\frac{(n-1)!}{[\sum\alpha_i(a_i+i\epsilon)]^n}\delta(1-\sum\alpha_i)$$</p>
+<p>这样，我们就把一系列分母的乘积变成了一个超级大分母。$\alpha$们被称为费曼参数。</p>
+<p>作为一个例子，让我们考虑$\phi^4$理论：$$\mathscr{L}=\mathscr{L}_0-\frac{\lambda}{4!}\phi^4$$</p>
+<p>其最低阶的对介子自能的非平凡贡献包括下图。<!-- raw HTML omitted --></p>
+<p><img src="97.png" alt="intergrate">{width=40% height=auto}</p>
+<p>$\phi^4$理论中介子自能的最低阶图</p>
+<!-- raw HTML omitted -->
+<p>让我们对每一条线的动量做标记，得到下图。<!-- raw HTML omitted --></p>
+<p><img src="98.png" alt="intergrate">{width=40% height=auto}</p>
+<p>$\phi^4$理论中介子自能图的动量流</p>
+<!-- raw HTML omitted -->
+<p>让我们把那些所有图都有的系数抛开，这个图联系着下面的积分：$$I=\int d^4k_1 d^4k_2\frac{1}{(k_1^2-\mu^2)(k_2^2-\mu^2)((p-k_1-k_2)^2-\mu^2)}$$</p>
+<p>现在让我们考虑一般情况，也就是我们有$l$个圈，对每个圈我们有$k_i$。另外，我们有外线动量$q_j$，总的来说，我们有$n$条内线。现在我们对其应用我们的积分表和费曼公式将其变成含费曼参数的形式。首先我们使用费曼机器，然后我们得到：$$I=\int d^4k_1&hellip;d^4k_l\int^1_0d\alpha_1d\alpha_2&hellip;d\alpha_n\delta(1-\sum\alpha)\frac{1}{D^n}$$</p>
+<p>$D$是某些$k$的二次型，每个内部动量都是圈动量的线性组合，对我们的例子来说，我们有：$$D=\sum^l_{i,j=1}A_{ij}k_i\cdot k_j+\sum^l_{i=1}B_i\cdot k_i+C$$</p>
+<p>其中$A_{ij}$是一个$l\times l$的方阵，线性依赖于费曼参数$\alpha_i$，而和外线动量$p_j$无关。如果所有$\alpha_i&gt;0$，我们可以证明矩阵是可逆的。$B_i$是一组4动量，和$\alpha$和外线$p_j$线性相关。$C$是一个标量线性依赖于$\alpha$、$p_i$平方和质量平方。</p>
+<p>实际上，我们可以通过平移来进一步简化$D$的表达式，我们定义：$$k_i&rsquo;=k_i+\frac{1}{2}\sum_jA^{-1}_{ij}B_j$$</p>
+<p>于是我们可以把$D$化为：$$D=\sum^{l}<em>{i,j}A</em>{ij}k&rsquo;_i\cdot k_j&rsquo;+C&rsquo;$$</p>
+<p>其中：$$C&rsquo;=C-\frac{1}{4}\sum^l_{i,j}B_iA_{ij}^{-1}B_j$$</p>
+<p>由于$A_{ij}$是对称矩阵，我们可以通过对角化来进一步简化积分，有$k&rsquo;<em>i\rightarrow k&rsquo;&rsquo;<em>i$，于是积分变为：$$I=\int d^4k_1&rsquo;&rsquo;&hellip;d^4k_l&rsquo;&rsquo;\int^1_0d\alpha_1&hellip;d\alpha_n\delta(1-\sum^n</em>{i=1}\alpha_i)\frac{1}{(\sum^l</em>{i=1}a_i(k_i&rsquo;&rsquo;)^2+C&rsquo;)^n}$$</p>
+<p>最后，我们令$k&rsquo;&rsquo;&rsquo;<em>i=\sqrt{a_i}k_i&rsquo;&rsquo;$，积分变成：$$I=\int d^4k_1&rsquo;&rsquo;&rsquo;&hellip;d^4k_l&rsquo;&rsquo;&rsquo;\int^1_0d\alpha_1&hellip;d\alpha_n\delta(1-\sum^n</em>{i=1}\alpha_i)\frac{1}{(\sum^l_{i=1}a_i(k_i&rsquo;&rsquo;&rsquo;)^2+C&rsquo;)^n}\prod^l_{i=1}\frac{1}{(\sqrt{a_i})^4}$$</p>
+<p>可以看到，现在我们不用担心分析矩阵$A$了。因为本征值的乘积就是矩阵的行列式，于是，积分最终变成：$$I=\int d^4k_1&rsquo;&rsquo;&rsquo;&hellip;d^4k_l&rsquo;&rsquo;&rsquo;\int^1_0d\alpha_1&hellip;d\alpha_n\frac{1}{(\det{A}^2)}\delta(1-\sum^n_{i=1}\alpha_i)\frac{1}{(\sum^l_{i=1}a_i(k_i&rsquo;&rsquo;&rsquo;)^2+C&rsquo;)^n}$$</p>
+<p>现在我们不需要知道$A$的矩阵元，只需要计算其行列式即可。</p>
+<h3 id="163-耦合常数重整化">16.3 耦合常数重整化</h3>
+<p>现在我们简单计算一下决定我们最后的重整化常数的条件。首先我们还是以模型三为例，然后现在我们只剩下一个事情，那就是计算耦合常数$g$的实际值，也就是实验中能够测得的值，这会决定我们的最后一个重整化参数：$F$。</p>
+<p>首先我要进行一些定义，然后展示它们如何通过迭代确定$F$。为了确定$A$，我们引入了单点格林函数；而对$B$、$C$、$D$和$E$我们引入两点格林函数。现在，我们要引入三点格林函数，包含一个$\psi$、一个$\psi^*$和一个$\phi$。</p>
+<p>定义$-i\tilde{\Gamma}&rsquo;(p^2,p&rsquo;^2,q^2)$作为单粒子不可约图1PI：<!-- raw HTML omitted --></p>
+<p><img src="99.png" alt="intergrate">{width=45% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>这首先是一个洛伦兹不变函数，然后由于能动量守恒$p+p&rsquo;+q=0$，我们只有两个独立向量，我们取其为$p$和$p&rsquo;$，然后由此可以得到$p^2$、$p&rsquo;^2$和$p\cdot p&rsquo;$。实际上，把$\tilde{\Gamma}&rsquo;$写成$p^2$、$p&rsquo;^2$和$q^2$的函数更方便。</p>
+<p>我们把其展到$\mathcal{O}(g^3)$阶，可以得到下图。<!-- raw HTML omitted --></p>
+<p><img src="100.png" alt="intergrate">{width=90% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>我们有一个一阶图，对应$-ig(2\pi)^4\delta^{(4)}(p+p&rsquo;+q)$，同时我们有一个可怕的三阶图，最后我们有一个反项：<!-- raw HTML omitted --></p>
+<p><img src="101.png" alt="intergrate">{width=50% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>为了定义重整化耦合常数，我们强加条件：$$\tilde{\Gamma}&rsquo;(m^2,m^2,\mu^2)\equiv g$$</p>
+<p>当三线在壳时，我们就有：$\tilde{\Gamma}&rsquo;=g$。这个定义看上去很武断，但事实上，由于耦合常数的定义是完全任意的，所以任何能从最低阶开始得到$g$的东西都一样好。</p>
+<p>考虑介子-核子散射过程：$$\phi+N\rightarrow \phi+N$$</p>
+<p>其中所有动量都在壳，我们可以把其分解为：<!-- raw HTML omitted --></p>
+<p><img src="102.png" alt="intergrate">{width=100% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>其中可以被剪开的图按照$s$,$t$,$u$三个通道对应着后面三幅图。考虑到$s$代表介子-核子的中心能量，我们可以把$({\rm b})$表为：$$({\rm b})=-i\tilde{\Gamma}&rsquo;(s,m^2,\mu^2)\tilde{D}&rsquo;(s)(-i\tilde{\Gamma}&rsquo;(m^2,s,\mu^2))$$</p>
+<p>其在$s=m^2$有一个奇点。类似地，$({\rm c})$和$({\rm d})$分别在$t=\mu^2$和$u=m^2$有奇点。现在我们要问，在奇点附近的留数是什么？我们刚好知道，因为中间的斑点是重整化传播子$\tilde{D}&rsquo;(s)=i/(s-m^2)$。要找到奇点附近的留数，我们就需要计算上面的表达式在极点处的系数。于是，两个极点都简单得到$-i\tilde{\Gamma}&rsquo;(m^2,m^2,\mu^2)=-ig$，于是我们有：<!-- raw HTML omitted --></p>
+<p><img src="103.png" alt="intergrate">{width=60% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>类似的过程对核子-核子散射也同样适用：$$N+N\rightarrow N+N$$</p>
+<p>我们有t奇点：<!-- raw HTML omitted --></p>
+<p><img src="104.png" alt="intergrate">{width=70% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>类似地，我们有：<!-- raw HTML omitted --></p>
+<p><img src="105.png" alt="intergrate">{width=70% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>我们可以看出，通过计算其在奇点处的留数，就可以直接得到$g^2$。我们从两个不同的散射过程中得到了相同的结果。</p>
+<h3 id="164-所有的量子场论都是可重整化的吗">16.4 所有的量子场论都是可重整化的吗？</h3>
+<p>我们先前讨论过重整化和发散的关系。实际上在我们的理论中，重整化常数比我们需要它们去吃掉的发散要多，比如我们有一个和重整化耦合常数相联系的图（$\tilde{\Gamma}&rsquo;(p^2,p&rsquo;^2 ,q^2)$）<!-- raw HTML omitted --></p>
+<p><img src="106.png" alt="intergrate">{width=30% height=auto}</p>
+<p>模型三的$\mathcal{O}(g^3)$图</p>
+<!-- raw HTML omitted -->
+<p>这个积分是有限的。那么，对于更复杂模型的低阶，重整化是否还可以把发散“吃掉”呢？首先让我们考虑一个自由标量场，和自身发生相互作用：$$\mathscr{L}=\mathscr{L}_o-\frac{1}{4!}g_0\phi^4$$</p>
+<p>这个理论实际上更加发散。让我们考虑$g^2$阶的一个图，我们称为嘴唇图：<!-- raw HTML omitted --></p>
+<p><img src="107.png" alt="intergrate">{width=40% height=auto}</p>
+<p>$\phi^4$理论的$\mathcal{O}(g^2_0)$图</p>
+<!-- raw HTML omitted -->
+<p>对高$k$，这个积分是平方发散的，因为我们有$d^4k_1d^4k_2$，而分母中只有6个$k$。幸好，我们有很多反项。在模型三中，我们只需要一个质量反项$C$来使自作用能有限，而反项$B$则是不需要的。而在$\phi^4$理论中，我们需要两个反项。我们有：$$\tilde{\Pi}&rsquo;(\mu^2)=\frac{d\tilde{\Pi}&rsquo;(p^2)}{dp^2}\bigg|_{\mu^2}=0$$</p>
+<p>于是有：$$\frac{d\tilde{\Pi}&rsquo;(p^2)}{d(p^2)^2}=\frac{d\tilde{\Pi}^f(p^2)}{d(p^2)^2}$$</p>
+<p>实际上，重整化就是做一个减法，使一切东西收敛。<!-- raw HTML omitted --></p>
+<p><img src="108.png" alt="intergrate">{width=60% height=auto}</p>
+<!-- raw HTML omitted -->
+<p>在$\mathcal{O}(g^3)$阶，我们有一个收敛图如下。这很好，后面的就不太友善。<!-- raw HTML omitted --></p>
+<p><img src="109.png" alt="intergrate">{width=20% height=auto}</p>
+<p>$\phi^4$理论的$\mathcal{O}(g^3_0)$</p>
+<!-- raw HTML omitted -->
+<p>考虑第五级相互作用：$$\mathscr{L}=\mathscr{L}_0-\frac{1}{5!}g\phi^5$$</p>
+<p>我们会看到一切都在我们眼前爆炸了。之前的理论里我们的反项可以通过将原本的项拆分得到，而在这里，我们没有一个$\phi^6$项来消去发散。就算我们一开始就放了一个$\phi^6$，如下：$$\mathscr{L}=\mathscr{L}_0-\frac{1}{5!}g\phi^5-\frac{1}{6!}h\phi^6$$<!-- raw HTML omitted --></p>
+<p><img src="110.png" alt="intergrate">{width=60% height=auto}</p>
+<p>$\phi^5$理论的$\phi^6$反项</p>
+<!-- raw HTML omitted -->
+<p>但是其实$\phi^6$项也是会需要我们引入$\phi^7$和$\phi^8$反项，这样下去，我们要引入无穷数量的反项。这种理论称为不可重整化的理论。而只需要有限相互作用项的理论被称为可重整化的。</p>
+
+        </article>
+    </div>
+
+    
+
+            </div>
+        </div><footer class="text-center pb-1">
+    <small class="text-muted">
+        
+            &copy; Copyright 2024-2077(even more), Tune
+        
+        <br>
+        Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a>
+    </small>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '\\[', right: '\\]', display: true},   
+        {left: '$$', right: '$$', display: true},     
+        {left: '$', right: '$', display: false},  
+        {left: '\\(', right: '\\)', display: false},  
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+</footer>
+</body>
+</html>
