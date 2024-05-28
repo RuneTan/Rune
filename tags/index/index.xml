@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on RuneTan</title>
-    <link>https://www.runetan.site/tags/index/</link>
+    <link>http://localhost:1313/tags/index/</link>
     <description>Recent content in Index on RuneTan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2024-2077(even more), Rune</copyright>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.runetan.site/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>https://www.runetan.site/post/</link>
+      <link>http://localhost:1313/post/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/</guid>
+      <guid>http://localhost:1313/post/</guid>
       <description>这个也没什么用，但是别删</description>
     </item>
   </channel>
