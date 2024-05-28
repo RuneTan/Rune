@@ -7,8 +7,22 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2024-2077(even more), Rune</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.runetan.site/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Index</title>
+      <link>https://www.runetan.site/tags/index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.runetan.site/tags/index/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>QFT</title>
+      <link>https://www.runetan.site/tags/qft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.runetan.site/tags/qft/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Css</title>
       <link>https://www.runetan.site/tags/css/</link>
@@ -24,13 +38,6 @@
       <description></description>
     </item>
     <item>
-      <title>Index</title>
-      <link>https://www.runetan.site/tags/index/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/tags/index/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Markdown</title>
       <link>https://www.runetan.site/tags/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -42,20 +49,6 @@
       <link>https://www.runetan.site/tags/themes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.runetan.site/tags/themes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Privacy</title>
-      <link>https://www.runetan.site/tags/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/tags/privacy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Shortcodes</title>
-      <link>https://www.runetan.site/tags/shortcodes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/tags/shortcodes/</guid>
       <description></description>
     </item>
     <item>
