@@ -179,36 +179,36 @@
   @-webkit-keyframes spin {
     to { -webkit-transform: rotate(360deg); }
   }
-  </style><div class="embed-pdf-container" id="embed-pdf-container-22a5ee96">
-    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-22a5ee96">
-        <div class="pdf-loading" id="pdf-loading-22a5ee96"></div>
+  </style><div class="embed-pdf-container" id="embed-pdf-container-f26338d7">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-f26338d7">
+        <div class="pdf-loading" id="pdf-loading-f26338d7"></div>
     </div>
     <div id="overlayText">
-      <a href="../../../Cos/3.1.pdf" aria-label="Download" download>
+      <a href="https://file.runetan.site/3.1.pdf" aria-label="Download" download>
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
             <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
         </svg>
       </a>
     </div>
-    <canvas class="pdf-canvas" id="pdf-canvas-22a5ee96"></canvas>
+    <canvas class="pdf-canvas" id="pdf-canvas-f26338d7"></canvas>
 </div>
 
-<div class="pdf-paginator" id="pdf-paginator-22a5ee96">
-    <button id="pdf-prev-22a5ee96">Previous</button>
-    <button id="pdf-next-22a5ee96">Next</button> &nbsp; &nbsp;
+<div class="pdf-paginator" id="pdf-paginator-f26338d7">
+    <button id="pdf-prev-f26338d7">Previous</button>
+    <button id="pdf-next-f26338d7">Next</button> &nbsp; &nbsp;
     <span>
-      <span class="pdf-pagenum" id="pdf-pagenum-22a5ee96"></span> / <span class="pdf-pagecount" id="pdf-pagecount-22a5ee96"></span>
+      <span class="pdf-pagenum" id="pdf-pagenum-f26338d7"></span> / <span class="pdf-pagecount" id="pdf-pagecount-f26338d7"></span>
     </span>
-    <a class="pdf-source" id="pdf-source-22a5ee96" href="../../../Cos/3.1.pdf">[pdf]</a>
+    <a class="pdf-source" id="pdf-source-f26338d7" href="https://file.runetan.site/3.1.pdf">[pdf]</a>
 </div>
 
 <noscript>
-View the PDF file <a class="pdf-source" id="pdf-source-noscript-22a5ee96" href="../../../Cos/3.1.pdf">here</a>.
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-f26338d7" href="https://file.runetan.site/3.1.pdf">here</a>.
 </noscript>
 
 <script type="text/javascript">
     (function(){
-    var url = '\/Cos\/3.1.pdf';
+    var url = 'https:\/\/file.runetan.site\/3.1.pdf';
 
     var hidePaginator = "" === "true";
     var hideLoader = "" === "true";
@@ -227,10 +227,10 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-22a5ee96" href="
         pageRendering = false,
         pageNumPending = null,
         scale = 3,
-        canvas = document.getElementById('pdf-canvas-22a5ee96'),
+        canvas = document.getElementById('pdf-canvas-f26338d7'),
         ctx = canvas.getContext('2d'),
-        paginator = document.getElementById("pdf-paginator-22a5ee96"),
-        loadingWrapper = document.getElementById('pdf-loadingWrapper-22a5ee96');
+        paginator = document.getElementById("pdf-paginator-f26338d7"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-f26338d7');
 
 
     
@@ -268,7 +268,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-22a5ee96" href="
       });
 
       
-      document.getElementById('pdf-pagenum-22a5ee96').textContent = num;
+      document.getElementById('pdf-pagenum-f26338d7').textContent = num;
     }
 
     
@@ -312,7 +312,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-22a5ee96" href="
       pageNum--;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-prev-22a5ee96').addEventListener('click', onPrevPage);
+    document.getElementById('pdf-prev-f26338d7').addEventListener('click', onPrevPage);
 
     
 
@@ -323,14 +323,14 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-22a5ee96" href="
       pageNum++;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-next-22a5ee96').addEventListener('click', onNextPage);
+    document.getElementById('pdf-next-f26338d7').addEventListener('click', onNextPage);
 
     
 
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
       pdfDoc = pdfDoc_;
       var numPages = pdfDoc.numPages;
-      document.getElementById('pdf-pagecount-22a5ee96').textContent = numPages;
+      document.getElementById('pdf-pagecount-f26338d7').textContent = numPages;
 
       
       if(pageNum > numPages) {

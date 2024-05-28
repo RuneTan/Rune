@@ -179,36 +179,36 @@
   @-webkit-keyframes spin {
     to { -webkit-transform: rotate(360deg); }
   }
-  </style><div class="embed-pdf-container" id="embed-pdf-container-a68db7d0">
-    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-a68db7d0">
-        <div class="pdf-loading" id="pdf-loading-a68db7d0"></div>
+  </style><div class="embed-pdf-container" id="embed-pdf-container-3b979fb4">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-3b979fb4">
+        <div class="pdf-loading" id="pdf-loading-3b979fb4"></div>
     </div>
     <div id="overlayText">
-      <a href="../../../QFTpdf/QFT%20Lecture%203.pdf" aria-label="Download" download>
+      <a href="https://file.runetan.site/QFT%20Lecture%203.pdf" aria-label="Download" download>
         <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
             <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
         </svg>
       </a>
     </div>
-    <canvas class="pdf-canvas" id="pdf-canvas-a68db7d0"></canvas>
+    <canvas class="pdf-canvas" id="pdf-canvas-3b979fb4"></canvas>
 </div>
 
-<div class="pdf-paginator" id="pdf-paginator-a68db7d0">
-    <button id="pdf-prev-a68db7d0">Previous</button>
-    <button id="pdf-next-a68db7d0">Next</button> &nbsp; &nbsp;
+<div class="pdf-paginator" id="pdf-paginator-3b979fb4">
+    <button id="pdf-prev-3b979fb4">Previous</button>
+    <button id="pdf-next-3b979fb4">Next</button> &nbsp; &nbsp;
     <span>
-      <span class="pdf-pagenum" id="pdf-pagenum-a68db7d0"></span> / <span class="pdf-pagecount" id="pdf-pagecount-a68db7d0"></span>
+      <span class="pdf-pagenum" id="pdf-pagenum-3b979fb4"></span> / <span class="pdf-pagecount" id="pdf-pagecount-3b979fb4"></span>
     </span>
-    <a class="pdf-source" id="pdf-source-a68db7d0" href="../../../QFTpdf/QFT%20Lecture%203.pdf">[pdf]</a>
+    <a class="pdf-source" id="pdf-source-3b979fb4" href="https://file.runetan.site/QFT%20Lecture%203.pdf">[pdf]</a>
 </div>
 
 <noscript>
-View the PDF file <a class="pdf-source" id="pdf-source-noscript-a68db7d0" href="../../../QFTpdf/QFT%20Lecture%203.pdf">here</a>.
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-3b979fb4" href="https://file.runetan.site/QFT%20Lecture%203.pdf">here</a>.
 </noscript>
 
 <script type="text/javascript">
     (function(){
-    var url = '\/QFTpdf\/QFT Lecture 3.pdf';
+    var url = 'https:\/\/file.runetan.site\/QFT%20Lecture%203.pdf';
 
     var hidePaginator = "" === "true";
     var hideLoader = "" === "true";
@@ -227,10 +227,10 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-a68db7d0" href="
         pageRendering = false,
         pageNumPending = null,
         scale = 3,
-        canvas = document.getElementById('pdf-canvas-a68db7d0'),
+        canvas = document.getElementById('pdf-canvas-3b979fb4'),
         ctx = canvas.getContext('2d'),
-        paginator = document.getElementById("pdf-paginator-a68db7d0"),
-        loadingWrapper = document.getElementById('pdf-loadingWrapper-a68db7d0');
+        paginator = document.getElementById("pdf-paginator-3b979fb4"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-3b979fb4');
 
 
     
@@ -268,7 +268,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-a68db7d0" href="
       });
 
       
-      document.getElementById('pdf-pagenum-a68db7d0').textContent = num;
+      document.getElementById('pdf-pagenum-3b979fb4').textContent = num;
     }
 
     
@@ -312,7 +312,7 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-a68db7d0" href="
       pageNum--;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-prev-a68db7d0').addEventListener('click', onPrevPage);
+    document.getElementById('pdf-prev-3b979fb4').addEventListener('click', onPrevPage);
 
     
 
@@ -323,14 +323,14 @@ View the PDF file <a class="pdf-source" id="pdf-source-noscript-a68db7d0" href="
       pageNum++;
       queueRenderPage(pageNum);
     }
-    document.getElementById('pdf-next-a68db7d0').addEventListener('click', onNextPage);
+    document.getElementById('pdf-next-3b979fb4').addEventListener('click', onNextPage);
 
     
 
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
       pdfDoc = pdfDoc_;
       var numPages = pdfDoc.numPages;
-      document.getElementById('pdf-pagecount-a68db7d0').textContent = numPages;
+      document.getElementById('pdf-pagecount-3b979fb4').textContent = numPages;
 
       
       if(pageNum > numPages) {
