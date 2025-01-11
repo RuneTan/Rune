@@ -2,74 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Photos on RuneTan</title>
-    <link>https://www.runetan.site/tags/photos/</link>
+    <link>http://localhost:1313/tags/photos/</link>
     <description>Recent content in Photos on RuneTan</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2024-2077(even more), Rune</copyright>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.runetan.site/tags/photos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/photos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GanSu, China</title>
-      <link>https://www.runetan.site/post/photos/9/</link>
+      <link>http://localhost:1313/post/photos/9/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/9/</guid>
+      <guid>http://localhost:1313/post/photos/9/</guid>
       <description> </description>
     </item>
     <item>
       <title>Guangzhou, China</title>
-      <link>https://www.runetan.site/post/photos/2/</link>
+      <link>http://localhost:1313/post/photos/2/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/2/</guid>
+      <guid>http://localhost:1313/post/photos/2/</guid>
       <description> </description>
     </item>
     <item>
       <title>Melbourne, Australia</title>
-      <link>https://www.runetan.site/post/photos/7/</link>
+      <link>http://localhost:1313/post/photos/7/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/7/</guid>
+      <guid>http://localhost:1313/post/photos/7/</guid>
       <description> </description>
     </item>
     <item>
       <title>Qinhai, China</title>
-      <link>https://www.runetan.site/post/photos/8/</link>
+      <link>http://localhost:1313/post/photos/8/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/8/</guid>
+      <guid>http://localhost:1313/post/photos/8/</guid>
       <description> </description>
     </item>
     <item>
       <title>Shenzhen, China</title>
-      <link>https://www.runetan.site/post/photos/5/</link>
+      <link>http://localhost:1313/post/photos/5/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/5/</guid>
+      <guid>http://localhost:1313/post/photos/5/</guid>
       <description> </description>
     </item>
     <item>
       <title>Singapore</title>
-      <link>https://www.runetan.site/post/photos/1/</link>
+      <link>http://localhost:1313/post/photos/1/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/1/</guid>
+      <guid>http://localhost:1313/post/photos/1/</guid>
       <description> </description>
     </item>
     <item>
       <title>Sydney, Australia</title>
-      <link>https://www.runetan.site/post/photos/6/</link>
+      <link>http://localhost:1313/post/photos/6/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/6/</guid>
+      <guid>http://localhost:1313/post/photos/6/</guid>
       <description> </description>
     </item>
     <item>
       <title>Wuhan, China</title>
-      <link>https://www.runetan.site/post/photos/4/</link>
+      <link>http://localhost:1313/post/photos/4/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/4/</guid>
+      <guid>http://localhost:1313/post/photos/4/</guid>
       <description> </description>
     </item>
     <item>
       <title>Zhuhai, China</title>
-      <link>https://www.runetan.site/post/photos/3/</link>
+      <link>http://localhost:1313/post/photos/3/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://www.runetan.site/post/photos/3/</guid>
+      <guid>http://localhost:1313/post/photos/3/</guid>
       <description> </description>
     </item>
   </channel>
